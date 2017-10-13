@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigNoodleTitling';
+  src: url('../fonts/BigNoodleTitling.eot');
+  src: url('../fonts/BigNoodleTitling.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BigNoodleTitling.woff') format('woff'),
+  url('../fonts/BigNoodleTitling.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Cond';
+  src: url('../fonts/DINNextLTPro-Condensed.woff') format('woff'),
+  url('../fonts/DINNextLTPro-Condensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Bold';
+  src: url('../fonts/DINNextLTPro-Bold.woff') format('woff'),
+  url('../fonts/DINNextLTPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN LtCon';
+  src: url('../fonts/DINNextLTPro-LightCondensed.woff') format('woff'),
+  url('../fonts/DINNextLTPro-LightCondensed.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN BdCon';
+  src: url('../fonts/DINNextLTPro-BoldCondensed.woff') format('woff'),
+  url('../fonts/DINNextLTPro-BoldCondensed.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN MdCon';
+  src: url('../fonts/DINNextLTPro-MediumCond.woff') format('woff'),
+  url('../fonts/DINNextLTPro-MediumCond.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Lt';
+  src: url('../fonts/DINNextLTPro-Light.woff') format('woff'),
+  url('../fonts/DINNextLTPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, #shappify_count_down, .events .event h1, .feature-has-icon .feature-icon, .h4, .share-icons, .product-price, .events .event h2, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 100;
+  line-height: 1.42858;
+  color: $color-brand-primary;
+
+}
+
+h1 a, h1 a:hover, h1 a:active, h1 a:focus, h2 a, h2 a:hover, h2 a:active, h2 a:focus, h3 a, h3 a:hover, h3 a:active, h3 a:focus, h4 a, h4 a:hover, h4 a:active, h4 a:focus, h5 a, h5 a:hover, h5 a:active, h5 a:focus, h6 a, h6 a:hover, h6 a:active, h6 a:focus, .h1 a, .h1 a:hover, .h1 a:active, .h1 a:focus, .h2 a, .h2 a:hover, .h2 a:active, .h2 a:focus, .h3 a, #shappify_count_down a, .events .event h1 a, .feature-has-icon .feature-icon a, .h3 a:hover, #shappify_count_down a:hover, .events .event h1 a:hover, .feature-has-icon .feature-icon a:hover, .h3 a:active, #shappify_count_down a:active, .events .event h1 a:active, .feature-has-icon .feature-icon a:active, .h3 a:focus, #shappify_count_down a:focus, .events .event h1 a:focus, .feature-has-icon .feature-icon a:focus, .h4 a, .share-icons a, .product-price a, .events .event h2 a, .h4 a:hover, .share-icons a:hover, .product-price a:hover, .events .event h2 a:hover, .h4 a:active, .share-icons a:active, .product-price a:active, .events .event h2 a:active, .h4 a:focus, .share-icons a:focus, .product-price a:focus, .events .event h2 a:focus, .h5 a, .h5 a:hover, .h5 a:active, .h5 a:focus, .h6 a, .h6 a:hover, .h6 a:active, .h6 a:focus {
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, #shappify_count_down, .events .event h1, .feature-has-icon .feature-icon, .h4, .share-icons, .product-price, .events .event h2, .h5, .h6 {
+  font-style: normal;
+  text-transform: none;
+  margin-top: 1em;
+}
+
+
+h4, .h4, .share-icons, .product-price, .events .event h2 {
+  font-size: 20px;
+}
+
+
+/* Heading Helpers */
+.h-tb-p-10{
+
+  padding:10px 0;
+}
+
+.h-b-m-10{
+  margin-bottom:10px;
+
+}
+.h-b-m-15{
+  margin-bottom:15px;
+
+}
+.h-b-m-20{
+  margin-bottom:20px;
+
+}
+
+.lh-60{
+  line-height:60px;
+
+}
+.lh-original{
+  line-height:1.42858;
+
+}
+
+
+
+h2{
+  font-family: $font-family-work-sans;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  line-height:1.42858;
+  color: $brand-h2-heading-color;
+  font-style: normal;
+
+  &.secondary{
+    font-family: $font-family-bebas;
+    font-size: 50px;
+    margin: 0 60px 0 0;
+    color: $color-brand-primary;
+    letter-spacing: 4px;
+    font-weight:normal;
+    text-align:right;
+
+  }
+  &.sub-title{
+
+    font-family: $font-family-bebas;
+    text-align: center;
+    font-weight:300;
+    font-size: 40px;
+    letter-spacing:0px;
+    line-height:1.42858;
+    color: $brand-h2-sub-heading-color;
+  }
+  &.sub-title-secodnary{
+
+    font-family: 'DIN Lt';
+    font-size: 18px;
+    color: #fff;
+    margin: 1em 0;
+    text-transform:none;
+    letter-spacing: 0;
+    font-weight:normal;
+  }
+
+  &.h2-light{
+
+    color:#ccc;
+  }
+}
+.internal-h2{
+
+  font-size: 45px;
+  color: #fff;
+  margin: 25px 0;
+  padding: 10px;
+  letter-spacing:0;
+}
+
+//page headings
+
+.page-header-fixed {
+  position: absolute;
+  padding: 0 10px;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  min-height: initial;
+  margin: 0;
+  color: #ccc;
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+      h2 {
+        font-size: 30px;
+        line-height: 35px;
+        &.secondary{
+            margin: 0;
+            display: inline-block;
+            text-align:left;
+            line-height:1.42858;
+        }
+        &.sub-title{
+
+          font-size: 25px;
+          line-height: 35px;
+        }
+      }
+  .lh-60 {
+    line-height: 35px;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  h2 {
+    letter-spacing: 0;
+  }
+}
+

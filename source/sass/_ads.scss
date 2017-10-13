@@ -1,0 +1,35 @@
+
+@media (max-width: 991px){
+  .article-container {
+    .dfptiledesktop {
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 768px){
+  .dfptilemobile{
+    //width: 300px;
+    //height: 250px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px){
+  .dfpbanner{
+    //width: 728px;
+    //height: 90px;
+    margin: 0 auto;
+  }
+  .dfptiledesktop{
+    //width: 300px;
+    //height: 250px;
+    margin: 0 auto;
+  }
+}
+
+.swell-tab{ display: none !important; }
+
+.article-container {
+  .dfptiledesktop {
+    margin: inherit;
+  }
+}

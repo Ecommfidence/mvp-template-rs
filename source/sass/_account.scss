@@ -1,0 +1,365 @@
+/*Customers Page*/
+
+/* TODO Make this background color a variable for account pages */
+body.template-customers-login, body.template-customers-account{
+  #content {
+    background: #f9f7f6;
+  }
+}
+
+
+// Form Styles
+.input--ichiro {
+  float: none;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em;
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+
+.input__field--ichiro {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 60%;
+  border: none;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field--ichiro:focus {
+  outline: none;
+}
+
+.input__label--ichiro {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  color: #6a7989;
+  font-weight: bold;
+  font-size: 13px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input__label-content--ichiro {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+
+.input__field--ichiro {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 100;
+  display: block;
+  padding: 0 0.55em;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  background: #f0f0f0;
+  color: #7F8994;
+  opacity: 0;
+  -webkit-transform: scale3d(1, 0, 1);
+  transform: scale3d(1, 0, 1);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.input__label--ichiro {
+  width: 100%;
+  text-align: left;
+  cursor: text;
+}
+
+.input__label--ichiro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input__label-content--ichiro {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input__field--ichiro:focus,
+.input--filled .input__field--ichiro {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.input__field--ichiro:focus + .input__label--ichiro,
+.input--filled .input__label--ichiro {
+  cursor: default;
+  pointer-events: none;
+}
+
+.input__field--ichiro:focus + .input__label--ichiro::before,
+.input--filled .input__label--ichiro::before {
+  -webkit-transform: scale3d(1, 1.5, 1);
+  transform: scale3d(1, 1.5, 1);
+}
+
+.input__field--ichiro:focus + .input__label--ichiro .input__label-content--ichiro,
+.input--filled .input__label-content--ichiro {
+  -webkit-transform: translate3d(0, -3.15em, 0) scale3d(0.8, 0.8, 1);
+  transform: translate3d(0, -3.15em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
+}
+
+.has-error .form-control:focus,
+.form-control,
+.form-control:focus {
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#login_email,
+#login_password {
+  text-align: center;
+  padding: 0;
+}
+#customer-login-form {
+  padding: 0 15px;
+}
+.shopify-challenge__container {
+  font-family: 'Work Sans', sans-serif;
+  margin: 50px auto !important;
+  .btn {
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'BigNoodleTitling';
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    background: $color-brand-primary;
+    &:hover {
+      background: $color-btn-primary;
+    }
+  }
+}
+
+.def-btn {
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'BigNoodleTitling';
+  font-size: 22px;
+  letter-spacing: 1px;
+  border-radius: 0;
+  border: 0;
+  margin-left: 15px;
+  &:hover {
+    background: $color-btn-primary;
+  }
+}
+
+
+.form-wrapper-horizontal #customer-login-form form #login_password {
+  margin-left: 15px;
+}
+.form-wrapper-horizontal #customer-login-form #forgotten-password-link {
+  font-family: 'Work Sans', sans-serif;
+}
+.form-wrapper-horizontal #customer-login-form form .form-group.sign-in-div {
+  .btn {
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'BigNoodleTitling';
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-radius: 0;
+    border: 0;
+    &:hover {
+      background: $brand-btn-hover;
+    }
+  }
+}
+.reset-btn .btn {
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'BigNoodleTitling';
+  font-size: 22px;
+  letter-spacing: 1px;
+  border-radius: 0;
+  border: 0;
+  &:hover {
+    background: $brand-btn-hover;
+  }
+}
+.reg-btn .btn {
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'BigNoodleTitling';
+  font-size: 22px;
+  letter-spacing: 1px;
+  border-radius: 0;
+  border: 0;
+  &:hover {
+    background: $brand-btn-hover;
+  }
+}
+#customer_details {
+  font-family: 'Work Sans', sans-serif;
+}
+.action_add {
+  font-family: 'BigNoodleTitling';
+  a {
+    font-size: 22px;
+    padding: 10px 0;
+  }
+}
+.customer_addresses {
+  font-family: 'Work Sans', sans-serif;
+}
+#customer-address-form {
+  font-family: 'Work Sans', sans-serif;
+  .form-control, .form-control:focus {
+    border: 1px solid #000;
+    margin-top: 5px;
+  }
+  .btn {
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'BigNoodleTitling';
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-radius: 0;
+    border: 0;
+    &:hover {
+      background: $color-btn-primary;
+    }
+  }
+}
+#customer_logout_link {
+  padding: 5px;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'BigNoodleTitling';
+  font-size: 22px;
+  letter-spacing: 1px;
+  border-radius: 0;
+  border: 0;
+  background: $color-btn-primary;
+  color: #fff;
+  &:hover {
+    background: $color-brand-primary;
+  }
+}
+.form-wrapper-horizontal #customer-address-form form .control-label {
+  text-align: left;
+}
+.no-results {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Customer */
+.form-wrapper-horizontal{
+  #customer-register-form form,
+  #customer-login-form form,
+  #customer-recover-password-form form,
+  #customer-password-form form,
+  #customer-address-form form{
+    @extend .form-horizontal;
+  }
+}
+.quick-cart {
+  @include make-row();
+  padding: $thumbnail-caption-padding;
+  .quick-cart-btn-wrapper {
+    @include make-sm-column(6);
+    margin-top: 1em;
+  }
+}
+.quick-cart-btn {
+  @extend .btn;
+  @extend .btn-lg;
+  @extend .btn-block;
+  &.view {
+    @extend .btn-default;
+  }
+  &.add-to-cart {
+    @extend .btn-primary;
+  }
+}
+.dl-horizontal-left{
+  @extend .dl-horizontal;
+  dt{
+    text-align: left;
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+  .form-wrapper-horizontal #customer-login-form #forgotten-password-link,
+  .form-wrapper-horizontal #customer-login-form form .form-group.sign-in-div,
+  .form-wrapper-horizontal #customer-login-form form .form-group.reg-div {
+    margin-left: -16px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .form-wrapper-horizontal #customer-login-form form #login_password {
+    margin-left: -15px;
+  }
+  .input__label--ichiro {
+    font-size: 12px;
+  }
+  #login_email,
+  #login_password {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  #customer-register-form {
+    .form-group {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.btn-brand-default{
+
+  display: inline-block;
+  text-align: center;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  border-radius:0;
+  font-weight:500;
+  color: #000;
+  font-family: $font-family-work-sans;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &:hover, &:focus{
+    color: #fff;
+    background: $color-brand-primary;
+    border-color: $color-brand-primary;
+  }
+
+}
+
+.btn-light {
+  color:$btn-light-color;
+  background-color:$btn-light-bg;
+  border-color: $btn-light-border;
+}
+.btn-dark {
+
+  color:$btn-dark-color;
+  background-color:$btn-dark-bg;
+  border-color: $btn-dark-border;
+
+}
+.btn-brand-sm{
+  font-size:14px;
+}
+
+.btn-secondary{
+
+  font-family: 'DIN Bold';
+  background: transparent;
+  border: 2px solid #ddd;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  -webkit-appearance: none;
+  border-radius: 0;
+
+}
+
+// skew slider button
+.blog-read-more {
+  font-family: $font-family-work-sans;
+  font-weight: bold;
+  font-size: 3vw;
+  display: block;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 10px;
+  margin: 0 auto;
+  &:hover {
+    background: $color-brand-primary;
+    border-color: $color-brand-primary;
+    color: #fff;
+  }
+}
+
+
+// Foundation Button
+.foundation-learn {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  display: block;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 5px 8px 5px;
+  width: 120px;
+  margin: 5px 0 0 0;
+  border-color: #fff;
+  &:hover {
+    background: $color-brand-primary;
+    color: #fff;
+    border-color: $color-brand-primary;
+  }
+}
+
+//Owl News Button
+.news-readmore {
+  font-family: $font-family-work-sans;
+  z-index: 1;
+  color: #000;
+  background: $btn-default-bg;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  &:hover {
+    color: $owl-news-body-text;
+    background: $color-brand-primary;
+    border-color: $color-brand-primary;
+  }
+}
+.btn-center-block{
+
+  font-weight: 500;
+  display: block;
+  padding: 5px 5px 8px 5px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.search-btn{
+
+}

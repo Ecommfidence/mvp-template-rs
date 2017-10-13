@@ -1,0 +1,133 @@
+/**
+ * Responsive mixin. The media breakpoints are as defined
+ * in the twitter bootstrap framework:
+ *
+ * - phone
+ * - tablet-portrait
+ * - tablet-landscape-desktop
+ * - large-desktop
+ *
+ * Additional parameters for tagetting retina and non-retina
+ * devices
+ *
+ * - retina
+ * - non-retina
+ *
+ * Moreover, a specific value in px can be passed which is
+ * used to generate a max-width media query.
+ */
+@mixin respond-to($media) {
+    /* Landscape phones and down */
+    @if $media == phone {
+        @media (max-width: 480px) { @content; }
+    }
+    /* Landscape phone to portrait tablet */
+    @else if $media == tablet-portrait {
+        @media (max-width: 767px) {@content; }
+    }
+    /* Portrait tablet to landscape and desktop */
+    @else if $media == tablet-landscape-desktop {
+        @media (min-width: 768px) and (max-width: 979px) { @content; }
+    }
+    /* Large desktop */
+    @else if $media == large-desktop {
+        @media (min-width: 1200px) { @content; }
+    }
+    // Non-Retina
+    @else if $media == non-retina {
+        @media screen and (-webkit-max-device-pixel-ratio: 1) { @content; }
+    }
+    // Retina Only
+    @else if $media == retina {
+        @media screen and (-webkit-min-device-pixel-ratio: 2) { @content; }
+    }
+    // Specific max width
+    @else {
+        @media only screen and (max-width: #{$media}px) { @content; }
+    }
+}
+
+
+
+/* Sldier Buttons */
+@mixin slider_link($btn-color, $btn-hover-color) {
+    -webkit-transition: all .3s ease-out 0.1s;
+    -moz-transition: all .3s ease-out 0.1s;
+    -o-transition: all .3s ease-out 0.1s;
+    transition: all .3s ease-out 0.1s;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    border: 2px solid $btn-color;
+    color: $btn-color;
+    background: transparent;
+    &:hover {
+        background: $btn-hover-color;
+        border-color: $btn-hover-color;
+        color: #fff;
+    }
+
+}
+
+@mixin bg-center-cover(){
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin slider_text ($left_post, $right_pos:auto){
+
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: $right_pos;
+    left: $left_post;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+@mixin visually-hidden() {
+    // sass-lint:disable no-important
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+@mixin visually-shown() {
+    // sass-lint:disable no-important
+    position: inherit !important;
+    overflow: auto;
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+@mixin make-flex-div(){
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+
+}
+
+
+@mixin owl-bg-control($owl-img, $owl-pos, $owl-size){
+
+    background-image: url(#{$owl-img});
+    background-position: $owl-pos;
+    background-size: $owl-size;
+    background-repeat: no-repeat;
+
+}

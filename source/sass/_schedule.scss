@@ -1,0 +1,260 @@
+.schedule-page .game-week {
+  background-image: url("https://cdn.shopify.com/s/files/1/2292/0769/files/JM95-Website-Desktop-Schedule-Page-banner.jpg?16930963938895669413");
+  background-position: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 250px;
+  padding: 25px 0
+}
+
+.schedule-page .game-week .week {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  border-bottom: 1px solid #fff
+}
+
+.schedule-page .game-week .game-opp {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  padding: 80px 0 100px 0
+}
+
+.schedule-page .game-week .game-opp .team-1 {
+  text-align: left;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-family: 'BigNoodleTitling'
+}
+
+.schedule-page .game-week .game-opp .vs {
+  display: inline-block;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  border-bottom: 1px solid #fff;
+  font-weight: 500;
+  position: relative;
+  top: 10px
+}
+
+.schedule-page .game-week .game-opp .team-2 {
+  text-align: right;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-family: 'BigNoodleTitling'
+}
+
+.schedule-page .game-week .game-opp span {
+  font-size: 90px
+}
+
+.schedule-page .game-week .game-time {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* Use Variable for schedule background image */
+.schedule-page .schedule {
+  width: 100%;
+  background-image: url("https://cdn.shopify.com/s/files/1/0259/2151/files/7.26.17-RS25-Banner-Image-001-min.jpg?174528367304382617");
+  padding-bottom: 10px
+}
+
+.schedule-page .schedule .ind-game {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.schedule-page .schedule .ind-game i {
+  padding: 5px;
+  color: #fff;
+  background: #0c371d
+}
+
+.schedule-page .schedule .ind-game i:hover {
+  background: $color-brand-primary;
+}
+
+.schedule-page .schedule .ind-game .row {
+  margin: 0;
+  background: #eee;
+  padding: 15px 0;
+  margin: 10px 0 0 0;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #0c371d
+}
+
+.schedule-page .schedule .ind-game .row .game-location,
+.schedule-page .schedule .ind-game .row .game-score {
+  font-weight: 500;
+}
+
+.schedule-page .schedule .ind-game .row .game-toggle {
+  cursor: pointer
+}
+
+.schedule-page .schedule .ind-game .row.past {
+  color: white;
+  background: #006400;
+  font-weight: 500;
+}
+
+.schedule-page .schedule .ind-game .game-stats {
+  margin: 0;
+  background: #fff;
+  display: none;
+  padding: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.schedule-page .schedule .ind-game .game-stats .stats-div {
+  display: inline-block;
+  border-right: 2px solid #aaa;
+  padding: 5px 40px
+}
+
+.schedule-page .schedule .ind-game .game-stats .stats-div div {
+  font-family: 'Bebas Neue'; /* Changed from Bold, should we include another font */
+  color: #117a3a;
+  font-size: 40px;
+  line-height: 40px
+}
+
+.schedule-page .schedule .ind-game .game-stats .stats-div:nth-child(4) {
+  border-right: none
+}
+
+.schedule-page .schedule .ind-game .game-stats p {
+  font-family: 'DIN Bold';
+  color: #000;
+  font-size: 24px;
+  margin: 0
+}
+
+@media screen and (min-width: 1199px) {
+  .gal-height {
+    height: 515px;
+    overflow: hidden
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .gal-height {
+    height: 415px;
+    overflow: hidden
+  }
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .gal-height {
+    height: 300px;
+    overflow: hidden
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+
+  .schedule-page .game-week {
+    padding: 20px 15px 15px 15px
+  }
+  .schedule-page .game-week .game-opp {
+    padding: 50px 0 70px 0;
+    max-width: 700px
+  }
+  .schedule-page .schedule .ind-game .row {
+    font-size: 18px
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .schedule-page .game-week {
+    min-height: 200px;
+    padding: 15px
+  }
+  .schedule-page .game-week .week,
+  .schedule-page .game-week .game-time {
+    font-size: 20px
+  }
+  .schedule-page .game-week .game-time {
+    margin: 0
+  }
+  .schedule-page .game-week .game-opp {
+    max-width: 300px;
+    padding: 20px 0 45px 0
+  }
+  .schedule-page .game-week .game-opp .team-1,
+  .schedule-page .game-week .game-opp .team-2 {
+    font-size: 30px;
+    line-height: 40px
+  }
+  .schedule-page .game-week .game-opp .team-1 span,
+  .schedule-page .game-week .game-opp .team-2 span {
+    font-size: 50px
+  }
+  .schedule-page .game-week .game-opp .vs {
+    font-size: 20px;
+    top: 0;
+    margin: 0
+  }
+  .schedule-page .schedule .ind-game .row {
+    font-size: 16px;
+    padding-bottom: 0
+  }
+  .schedule-page .schedule .ind-game .row .game-score {
+    clear: left;
+    margin: 10px 0
+  }
+  .schedule-page .schedule .ind-game .row .game-toggle {
+    width: 100%;
+    padding: 0
+  }
+  .schedule-page .schedule .ind-game .row .game-toggle i {
+    width: 100%
+  }
+  .schedule-page .schedule .ind-game .game-stats {
+    padding: 15px 0;
+    padding-bottom: 0
+  }
+  .schedule-page .schedule .ind-game .game-stats p {
+    margin-bottom: 10px;
+    font-size: 20px
+  }
+  .schedule-page .schedule .ind-game .game-stats .stats-div {
+    padding: 5px 10px;
+    margin-bottom: 15px
+  }
+  .schedule-page .schedule .ind-game .game-stats .stats-div div {
+    font-size: 30px;
+    line-height: 35px
+  }
+}
+

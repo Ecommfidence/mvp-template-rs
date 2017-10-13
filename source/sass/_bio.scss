@@ -1,0 +1,113 @@
+/* Bio Page Styles */
+
+
+/* Change Images in Variables File */
+.bio{
+  font-family: $font-family-work-sans;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+
+  &.bio-1{
+    background-image: url(#{$bio-img-1});
+    background-position: right top;
+    min-height: 300px;
+  }
+  &.bio-2{
+    background-image: url(#{$bio-img-2});
+  }
+  &.bio-3{
+    background-image: url(#{$bio-img-3});
+  }
+  &.bio-4{
+    background-image: url(#{$bio-img-4});
+  }
+  &.bio-5{
+    background-image: url(#{$bio-img-5});
+
+  }
+}
+
+.bio-text {
+  color: #fff;
+}
+.bio-1 .bio-header-1 {
+
+  font-weight: bold;
+  color: $color-brand-light-gray;
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 10px 0;
+  margin: 0;
+}
+.bio-header-1 {
+
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin: 0;
+  color: #777;
+}
+.bio-header-2 {
+  font-family: $font-family-bebas;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-top: -28px;
+  color: #fff;
+}
+.bio-info {
+  background: rgba(0,0,0,0.5);
+}
+@media screen and (max-width: 991px) {
+  .col-md-6 {
+    padding: 0;
+  }
+  .bio-info {
+    padding: 15px;
+    text-align: left;
+  }
+  .bio{
+    &.bio-1 {
+      min-height: 200px;
+    }
+    &.bio-2 {
+      display: block;
+      background-position: right;
+    }
+    &.bio-3 {
+      display: block;
+      background-position: left;
+    }
+    &.bio-4 {
+      display: block;
+      background-position: right;
+    }
+    &.bio-5 {
+      display: block;
+      background-position: left;
+    }
+
+
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .bio-1 {
+    min-height: 50px;
+  }
+  .bio-1 .bio-header-1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+}

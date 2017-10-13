@@ -1,0 +1,206 @@
+// Home Page Index Foundation Area
+
+.index-foundation {
+  .foundation-header {
+    background-image: url(#{$foundation-bg-img});
+    @include bg-center-cover();
+    padding: 50px;
+
+    h2{
+         @extend .lh-60;
+       }
+    }
+
+    a{
+      @extend .btn-brand-default, .btn-light, .btn-brand-sm;
+    }
+
+  .foundation-text {
+    font-family: $font-family-work-sans;
+    background-image: url(#{$foundation-bg});
+    @include bg-center-cover();
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    .foundation-content {
+      width: 60%;
+      padding-right: 30px;
+      display: block;
+      margin-left: auto;
+    }
+    p {
+      font-size: 16px;
+      margin: 0;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    img {
+      display: block;
+      margin: 20px auto 0 auto;
+      max-width: 275px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .index-foundation {
+    .foundation-header {
+      padding: 25px;
+
+    }
+    .foundation-text {
+      background-position: right;
+      min-height: inherit;
+      .foundation-content {
+        width: 100%;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      img {
+        width: 125px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px){
+
+  .index-foundation .foundation-header .foundation-header-1 {
+    letter-spacing: 0;
+  }
+
+
+}
+
+
+/*Foundation Page*/
+.foundation-page {
+  .index-foundation .foundation-text .foundation-header-1 {
+    font-family: $font-family-work-sans;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: 30px;
+    margin: 0;
+    color: #999;
+    text-align: left;
+    letter-spacing: 0px;
+
+  }
+  .index-foundation .foundation-text .foundation-header-2 {
+    font-family: 'BigNoodleTitling';
+    font-weight: 100;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-align: left;
+    line-height:60px;
+    margin-bottom: 15px;
+  }
+  .index-foundation .foundation-text .foundation-content {
+    padding: 15px 30px 15px 15px;
+  }
+}
+#foundation-wrap {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  h2{
+
+    color: #ccc;
+
+  }
+}
+.donate-row {
+  margin: 0;
+  img {
+    width: 100%;
+  }
+  .col-md-6 {
+    padding: 0;
+    position: relative;
+    .donate-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      p {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        margin: 0;
+        color: #fff;
+        margin-bottom: 15px;
+      }
+      a {
+       @extend .btn-brand-default, .btn-light, .btn-brand-sm;
+
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight:300;
+        padding: 8px 15px 10px 15px;
+
+      }
+    }
+  }
+}
+.foundation-gallery {
+  margin: 0;
+  background-image: url(#{$foundation-gallery-bg});
+  @include bg-center-cover();
+  padding-bottom:1em;
+
+  h2 {
+   @extend .internal-h2;
+  }
+  img {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .foundation-page {
+    .index-foundation {
+      .foundation-text {
+        p {
+          font-size: 14px;
+        }
+        .foundation-header-1 {
+          font-size: 30px;
+          line-height: 30px;
+        }
+        .foundation-header-2 {
+          font-size: 20px;
+          letter-spacing: 2px;
+          margin-bottom: 10px;
+        }
+
+      }
+    }
+    .foundation-gallery {
+      p {
+        font-family: $font-family-work-sans;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 26px;
+        color: #fff;
+        text-align: center;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+      .container {
+        padding: 0;
+      }
+    }
+  }
+
+}

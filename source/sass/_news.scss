@@ -1,0 +1,141 @@
+
+
+.template-blog-news{
+  .wrap {
+    background: #3c3c3c;
+  }
+  // Change Content ID to use class
+  #content {
+    background-image: url('https://cdn.shopify.com/s/files/1/0259/2151/files/7.31.17-RS25-Website-2017-NewsPage-001.jpg?11652835036440552667');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+
+  .banner-snippet {
+    margin-top: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    .banner-snippet {
+      margin-top: 0;
+      margin-bottom: -15px;
+      padding: 15px 0;
+    }
+  }
+
+
+}
+
+body.template-news-article {
+ #wrap {
+   background: #3c3c3c;
+ }
+#content {
+  background-image: url('https://cdn.shopify.com/s/files/1/0259/2151/files/7.31.17-RS25-Website-2017-NewsPage-001.jpg?11652835036440552667');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.page-header {
+  color: #ccc;
+}
+article p {
+  font-family: 'Work Sans', sans-serif;
+  color: #ddd;
+}
+article div {
+  color: #ddd;
+}
+.article-container .article-date {
+  color: #ddd;
+  font-size: 30px;
+  font-family: 'Bebas Neue';
+  margin: 10px 0 0 0;
+}
+.article-container h4 {
+  color: #fff;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.article-container .posted-by {
+  font-family: 'Work Sans', sans-serif;
+  color: $color-brand-primary;
+}
+.blog-sidebar .recent-article h6 {
+  color: #fff;
+}
+.blog-sidebar .recent-article em {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 3px;
+  font-style: normal;
+}
+.blog-sidebar .related-title {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+.blog-search button {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #000;
+}
+.blog-search button:hover {
+  border: 1px solid $color-brand-primary;
+  background: $color-brand-primary;
+  color: #fff;
+}
+::-webkit-input-placeholder {
+  color: #999;
+}
+::-moz-placeholder {
+  color: #999;
+}
+:-ms-input-placeholder {
+  color: #999;
+}
+:-moz-placeholder {
+  color: #999;
+}
+
+ .banner-snippet {
+   margin-top: 40px;
+ }
+@media screen and (max-width: 767px) {
+  .banner-snippet {
+    margin-top: 0;
+    margin-bottom: -15px;
+    padding: 15px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .article-container .article-date {
+    font-size: 24px;
+  }
+  .article-container h4 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+}
+}
+
+
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+::-moz-placeholder {
+  color: #999;
+}
+:-ms-input-placeholder {
+  color: #999;
+}
+:-moz-placeholder {
+  color: #999;
+}
+
+
+

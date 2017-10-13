@@ -1,0 +1,40 @@
+{
+  "name": "rs25",
+  "version": "0.0.1",
+  "description": "MVP Template",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-bower": "0.0.13",
+    "gulp-environments": "^0.1.2",
+    "gulp-filter": "^5.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-include": "^2.3.1",
+    "gulp-jquery": "^1.1.2",
+    "gulp-jshint": "^2.0.4",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "run-sequence": "^2.1.0"
+  }
+}
