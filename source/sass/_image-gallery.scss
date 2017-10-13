@@ -59,11 +59,11 @@
 }
 
 .skw-itemNext .skw-content:after {
-  background-color: rgba(25,47,107,.6);
+  background-color: $skw-bg-next;
 }
 
 .skw-itemPrev .skw-content:after {
-  background-color: rgba(101,196,2,.6);
+  background-color: $skw-bg-prev;
 }
 
 .main-slide .skw-content {
