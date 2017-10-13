@@ -1,23 +1,36 @@
 .btn-brand-default{
 
-  display: inline-block;
-  text-align: center;
-  padding: 5px 15px;
-  margin-bottom: 20px;
-  border: 2px solid #000;
-  border-radius:0;
-  font-weight:500;
-  color: #000;
-  font-family: $font-family-work-sans;
-  font-size: 16px;
-  text-transform: uppercase;
+   display: inline-block;
+   text-align: center;
+   padding: 5px 15px;
+   margin-bottom: 20px;
+   border: 2px solid #000;
+   border-radius:0;
+   font-weight:500;
+   color: #000;
+   font-family: $font-family-work-sans;
+   font-size: 16px;
+   text-transform: uppercase;
 
-  &:hover, &:focus{
-    color: #fff;
-    background: $color-brand-primary;
-    border-color: $color-brand-primary;
+   &:hover, &:focus{
+     color: #fff;
+     background: $color-brand-primary;
+     border-color: $color-brand-primary;
+   }
+
+ }
+
+.btn-brand-inverse{
+  color: #FFF;
+  background-color:$color-brand-primary;
+  border-color: $color-brand-primary;
+
+  &:hover{
+    color: #000;
+    background-color:#FFF;
+    border-color: $btn-dark-bg;
+
   }
-
 }
 
 .btn-light {
@@ -32,8 +45,24 @@
   border-color: $btn-dark-border;
 
 }
+.btn-trans {
+
+  color:$btn-dark-color;
+  background-color:transparent;
+  border-color: $btn-light-border;
+
+}
+
 .btn-brand-sm{
   font-size:14px;
+}
+
+.btn-brand-secondary{
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:300;
+  padding: 8px 15px 10px 15px;
+
 }
 
 .btn-secondary{
@@ -55,7 +84,7 @@
   font-family: $font-family-work-sans;
   font-weight: bold;
   font-size: 3vw;
-  display: block;
+
   background-color: rgba(0,0,0,0.5);
   color: #fff;
   border: 2px solid #fff;
@@ -93,8 +122,9 @@
 }
 
 //Owl News Button
+
 .news-readmore {
-  font-family: $font-family-work-sans;
+  @extend .btn-brand-default;
   z-index: 1;
   color: #000;
   background: $btn-default-bg;

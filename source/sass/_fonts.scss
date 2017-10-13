@@ -93,24 +93,24 @@ h4, .h4, .share-icons, .product-price, .events .event h2 {
 /* Heading Helpers */
 .h-tb-p-10{
 
-  padding:10px 0;
+  padding:10px 0!important;
 }
 
 .h-b-m-10{
-  margin-bottom:10px;
+  margin-bottom:10px!important;
 
 }
 .h-b-m-15{
-  margin-bottom:15px;
+  margin-bottom:15px!important;
 
 }
 .h-b-m-20{
-  margin-bottom:20px;
+  margin-bottom:20px!important;
 
 }
 
 .lh-60{
-  line-height:60px;
+  line-height:60px!important;
 
 }
 .lh-original{
@@ -123,7 +123,6 @@ h4, .h4, .share-icons, .product-price, .events .event h2 {
 h2{
   font-family: $font-family-work-sans;
   font-weight: bold;
-  text-align: center;
   font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -145,7 +144,6 @@ h2{
   &.sub-title{
 
     font-family: $font-family-bebas;
-    text-align: center;
     font-weight:300;
     font-size: 40px;
     letter-spacing:0px;
@@ -215,9 +213,9 @@ h2{
           line-height: 35px;
         }
       }
-  .lh-60 {
-    line-height: 35px;
-  }
+      .lh-60 {
+        line-height: 35px!important;
+      }
 
 }
 
