@@ -3408,19 +3408,19 @@ h4, .h4, .share-icons, .product-price, .share-icons, .product-price, .events .ev
 
 /* Heading Helpers */
 .h-tb-p-10, .product-slick-container h2 {
-  padding: 10px 0; }
+  padding: 10px 0 !important; }
 
 .h-b-m-10 {
-  margin-bottom: 10px; }
+  margin-bottom: 10px !important; }
 
 .h-b-m-15 {
-  margin-bottom: 15px; }
+  margin-bottom: 15px !important; }
 
 .h-b-m-20 {
-  margin-bottom: 20px; }
+  margin-bottom: 20px !important; }
 
 .lh-60, .index-foundation .foundation-header h2 {
-  line-height: 60px; }
+  line-height: 60px !important; }
 
 .lh-original, .insta-feed .insta-header h2 {
   line-height: 1.42858; }
@@ -3428,7 +3428,6 @@ h4, .h4, .share-icons, .product-price, .share-icons, .product-price, .events .ev
 h2 {
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
-  text-align: center;
   font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -3446,7 +3445,6 @@ h2 {
     text-align: right; }
   h2.sub-title {
     font-family: "Bebas Neue";
-    text-align: center;
     font-weight: 300;
     font-size: 40px;
     letter-spacing: 0px;
@@ -3494,7 +3492,7 @@ h2 {
       font-size: 25px;
       line-height: 35px; }
   .lh-60, .index-foundation .foundation-header h2 {
-    line-height: 35px; } }
+    line-height: 35px !important; } }
 
 @media screen and (max-width: 767px) {
   h2 {
@@ -3650,7 +3648,8 @@ a:hover, a:focus {
 .body-bg {
   background-image: url("https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-001.jpg?15383927691305019179");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  text-align: center; }
 
 .page-header {
   font-family: 'Work Sans', sans-serif;
@@ -3717,7 +3716,7 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
-.btn-brand-default, .product-slick-container .see-all a, #index-bio .verticalCarousel .see-all-blogs a, .index-foundation a, .donate-row .col-md-6 .donate-content a {
+.btn-brand-default, .news-readmore, .product-slick-container .see-all a, #index-bio .verticalCarousel .see-all-blogs a, .index-foundation a, .donate-row .col-md-6 .donate-content a {
   display: inline-block;
   text-align: center;
   padding: 5px 15px;
@@ -3729,10 +3728,19 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   text-transform: uppercase; }
-  .btn-brand-default:hover, .product-slick-container .see-all a:hover, #index-bio .verticalCarousel .see-all-blogs a:hover, .index-foundation a:hover, .donate-row .col-md-6 .donate-content a:hover, .btn-brand-default:focus, .product-slick-container .see-all a:focus, #index-bio .verticalCarousel .see-all-blogs a:focus, .index-foundation a:focus, .donate-row .col-md-6 .donate-content a:focus {
+  .btn-brand-default:hover, .news-readmore:hover, .product-slick-container .see-all a:hover, #index-bio .verticalCarousel .see-all-blogs a:hover, .index-foundation a:hover, .donate-row .col-md-6 .donate-content a:hover, .btn-brand-default:focus, .news-readmore:focus, .product-slick-container .see-all a:focus, #index-bio .verticalCarousel .see-all-blogs a:focus, .index-foundation a:focus, .donate-row .col-md-6 .donate-content a:focus {
     color: #fff;
     background: #65c402;
     border-color: #65c402; }
+
+.btn-brand-inverse {
+  color: #FFF;
+  background-color: #65c402;
+  border-color: #65c402; }
+  .btn-brand-inverse:hover {
+    color: #000;
+    background-color: #FFF;
+    border-color: #000; }
 
 .btn-light, #index-bio .verticalCarousel .see-all-blogs a, .index-foundation a, .donate-row .col-md-6 .donate-content a {
   color: #000;
@@ -3744,8 +3752,18 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
   background-color: #000;
   border-color: #000; }
 
+.btn-trans {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #fff; }
+
 .btn-brand-sm, #index-bio .verticalCarousel .see-all-blogs a, .index-foundation a, .donate-row .col-md-6 .donate-content a {
   font-size: 14px; }
+
+.btn-brand-secondary, .donate-row .col-md-6 .donate-content a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  padding: 8px 15px 10px 15px; }
 
 .btn-secondary {
   font-family: 'DIN Bold';
@@ -3762,7 +3780,6 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
   font-size: 3vw;
-  display: block;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   border: 2px solid #fff;
@@ -3794,7 +3811,6 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
     border-color: #65c402; }
 
 .news-readmore {
-  font-family: "Work Sans", sans-serif;
   z-index: 1;
   color: #000;
   background: #fff;
@@ -4224,7 +4240,7 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
   color: #fff; }
 
 .index-news .col-md-3:hover .news-tint {
-  background: rgba(78, 174, 71, 0.7); }
+  background: rgba(101, 196, 2, 0.7); }
 
 .index-news .col-md-3:hover .news-readmore {
   border-color: #65c402;
@@ -6025,6 +6041,7 @@ li.product-single__thumbnails-item {
 --------------------------------------------------------------*/
 .index-foundation .foundation-header {
   background-image: url(https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-003.jpg?18356651564452868234);
+  text-align: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -6125,10 +6142,6 @@ li.product-single__thumbnails-item {
         margin: 0;
         color: #fff;
         margin-bottom: 15px; }
-      .donate-row .col-md-6 .donate-content a {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 300;
-        padding: 8px 15px 10px 15px; }
 
 .foundation-gallery {
   margin: 0;

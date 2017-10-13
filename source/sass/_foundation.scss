@@ -3,6 +3,7 @@
 .index-foundation {
   .foundation-header {
     background-image: url(#{$foundation-bg-img});
+    text-align:center;
     @include bg-center-cover();
     padding: 50px;
 
@@ -141,11 +142,9 @@
         margin-bottom: 15px;
       }
       a {
-       @extend .btn-brand-default, .btn-light, .btn-brand-sm;
+       @extend .btn-brand-default, .btn-brand-secondary, .btn-light, .btn-brand-sm;
 
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight:300;
-        padding: 8px 15px 10px 15px;
+
 
       }
     }
