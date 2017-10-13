@@ -1,3 +1,47 @@
+.text-light{
+
+  > .btn-brand-default{
+    color: #FFF;
+    border-color:#FFF;
+
+  }
+
+  > .btn-brand-inverse{
+    color:#fff;
+    border-color:$color-brand-primary;
+
+
+      &:hover, &:focus{
+
+        color: #FFF;
+        background-color:#000;
+        border-color:#FFF;
+
+      }
+  }
+
+  > .btn-brand-double{
+    border-color:$color-brand-secondary;
+
+  }
+
+  > .btn-light{
+
+    color:#000;
+
+    &:hover{
+
+
+    }
+  }
+
+}
+
+
+
+
+
+
 .btn-brand-default{
 
    display: inline-block;
@@ -19,13 +63,39 @@
    }
 
  }
+.btn-brand-double{
+  background-color:$color-brand-secondary;
+  border-color:$color-brand-secondary;
+
+  color:#fff;
+
+  &:hover, &:focus{
+    color:#fff;
+    background-color:$color-brand-primary;
+    border-color:$color-brand-primary;
+
+  }
+
+  &.inverted{
+
+    background-color:$color-brand-primary;
+    border-color:$color-brand-primary;
+
+    &:hover, &:focus{
+
+      background-color:$color-brand-secondary;
+      border-color:$color-brand-secondary;
+    }
+  }
+
+}
 
 .btn-brand-inverse{
   color: #FFF;
   background-color:$color-brand-primary;
   border-color: $color-brand-primary;
 
-  &:hover{
+  &:hover, &:focus{
     color: #000;
     background-color:#FFF;
     border-color: $btn-dark-bg;
@@ -33,8 +103,11 @@
   }
 }
 
+
+
+
 .btn-light {
-  color:$btn-light-color;
+  color:#000;
   background-color:$btn-light-bg;
   border-color: $btn-light-border;
 }

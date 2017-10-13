@@ -3716,6 +3716,24 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
+.text-light > .btn-brand-default, .text-light > .news-readmore, .product-slick-container .see-all .text-light > a, #index-bio .verticalCarousel .see-all-blogs .text-light > a, .index-foundation .text-light > a, .donate-row .col-md-6 .donate-content .text-light > a {
+  color: #FFF;
+  border-color: #FFF; }
+
+.text-light > .btn-brand-inverse {
+  color: #fff;
+  border-color: #65c402; }
+  .text-light > .btn-brand-inverse:hover, .text-light > .btn-brand-inverse:focus {
+    color: #FFF;
+    background-color: #000;
+    border-color: #FFF; }
+
+.text-light > .btn-brand-double {
+  border-color: #192f6b; }
+
+.text-light > .btn-light, #index-bio .verticalCarousel .see-all-blogs .text-light > a, .index-foundation .text-light > a, .donate-row .col-md-6 .donate-content .text-light > a {
+  color: #000; }
+
 .btn-brand-default, .news-readmore, .product-slick-container .see-all a, #index-bio .verticalCarousel .see-all-blogs a, .index-foundation a, .donate-row .col-md-6 .donate-content a {
   display: inline-block;
   text-align: center;
@@ -3733,11 +3751,26 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
     background: #65c402;
     border-color: #65c402; }
 
+.btn-brand-double {
+  background-color: #192f6b;
+  border-color: #192f6b;
+  color: #fff; }
+  .btn-brand-double:hover, .btn-brand-double:focus {
+    color: #fff;
+    background-color: #65c402;
+    border-color: #65c402; }
+  .btn-brand-double.inverted {
+    background-color: #65c402;
+    border-color: #65c402; }
+    .btn-brand-double.inverted:hover, .btn-brand-double.inverted:focus {
+      background-color: #192f6b;
+      border-color: #192f6b; }
+
 .btn-brand-inverse {
   color: #FFF;
   background-color: #65c402;
   border-color: #65c402; }
-  .btn-brand-inverse:hover {
+  .btn-brand-inverse:hover, .btn-brand-inverse:focus {
     color: #000;
     background-color: #FFF;
     border-color: #000; }
