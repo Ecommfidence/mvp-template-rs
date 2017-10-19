@@ -3322,6 +3322,7 @@ a.label:hover, a.label:focus {
 /*--------------------------------------------------------------
 # Site Variables
 --------------------------------------------------------------*/
+/*@import "variables";*/
 /* Variables to Use to change main values for different templates */
 /* Colors */
 /* Body Text Color */
