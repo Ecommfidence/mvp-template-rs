@@ -137,11 +137,7 @@ body.page-rewards{
     padding: 15px;
     margin-bottom: 20px ;
     overflow: hidden ;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    @include make-flex-div();
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -309,7 +305,7 @@ body.page-rewards{
   }
   #swell-bootstrap .container.how-container {
     margin-top: 35px;
-    display: flex;
+    @include make-flex-div();
   }
   .how-container .col-md-4 {
     background-image: url('https://cdn.shopify.com/s/files/1/0259/2151/files/RS25-LoginBox.jpg?6441389875070774912');
@@ -317,11 +313,7 @@ body.page-rewards{
     background-position: center;
     background-repeat: no-repeat;
     margin-right: 15px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    @include make-flex-div();
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -393,7 +385,7 @@ body.page-rewards{
     background: #777;
   }
   #swell-bootstrap .give-container {
-    display: flex;
+    @include make-flex-div();
     padding: 0 30px;
   }
   #swell-bootstrap .give-container .col-md-8 {
@@ -470,7 +462,7 @@ body.page-rewards{
     background: transparent;
   }
   #redeem-options-region {
-    display: flex;
+    @include make-flex-div();
   }
   #swell-bootstrap #rewards-page-redeem-options-region .container {
     padding: 0 30px;

@@ -28,18 +28,11 @@
     <meta property="og:description" content="Shipping Information: Shipping All Prices are in US Dollars. Upon Release of your shipment, you will receive a confirmation email with your tracking information"/>
     <meta property="og:url" content="https://www.richardsherman25.com/"/>
 
-
-
     <!-- External Front-end Libraries -->
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet">
-    <link href="https://cdn.shopify.com/s/files/1/0259/2151/t/105/assets/owl.carousel.css?13550032680311357315"
-          rel="stylesheet" type="text/css" media="all"/>
-    <link href="https://cdn.shopify.com/s/files/1/0259/2151/t/105/assets/owl.theme.css?13550032680311357315"
-          rel="stylesheet" type="text/css" media="all"/>
-    <link href="https://cdn.shopify.com/s/files/1/0259/2151/t/105/assets/owl.transitions.css?13550032680311357315"
-          rel="stylesheet" type="text/css" media="all"/>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,800" rel="stylesheet">
@@ -68,10 +61,10 @@
 </head>
 
 <!--[if IE]>
-<body class="page- template-cart  has-cart has-prices has-top-navbar has-fixed-top-navbar has-footer banner-window-width thumbnails-cropped thumbnail-layout-ordered  is-sold-out ie"
+<body class="page-internal template-cart has-cart has-prices has-top-navbar has-fixed-top-navbar has-footer banner-window-width thumbnails-cropped thumbnail-layout-ordered  is-sold-out ie"
       ng-app="Athlete"> <![endif]-->
 <!--[if !(IE)]><!-->
-<body class="page- template-cart  has-cart has-prices has-top-navbar has-fixed-top-navbar has-footer banner-window-width thumbnails-cropped thumbnail-layout-ordered  is-sold-out"
+<body class="page-internal template-cart has-cart has-prices has-top-navbar has-fixed-top-navbar has-footer banner-window-width thumbnails-cropped thumbnail-layout-ordered  is-sold-out"
       ng-app="Athlete"> <!--<![endif]-->
 <!-- TODO Fix paypal button colors -->
 <div class="wrap">
@@ -199,23 +192,11 @@
             </div>
         </header>
 
-
-
-
-
-
-
-
-
-        <p class="page-header">CART</p>
+        <h2>CART</h2>
         <section id="cart-wrap" class="section-wrap">
-
-
             <div class="container">
-
                 <div class="row">
                     <div class="main-content col-xs-12">
-
 
                         <script type="text/javascript">
                             function remove_item(id) {
@@ -272,12 +253,8 @@
                                     <div class="form-actions pull-right text-right col-sm-4 col-md-3">
                                         <div class="product-price"><small style="color:black;">Sub-total</small> <span style="color:black;" class="money">$29.99&nbsp;USD</span></div>
 
-
-
                                         <input type="submit" id="update-cart" name="update" value="Update" class="btn btn-primary btn-block">
                                         <input type="submit" name="checkout" value="Checkout" class="btn checkout-btn btn-primary btn-block">
-
-
 
                                         <div class="additional-checkout-buttons">
                                             <span class="text-muted">or</span>
@@ -322,19 +299,13 @@
 
                                 </div>
 
-
                                 <div class="row">
-
 
                                     <div class="form-actions pull-right text-right col-sm-4 col-md-3">
                                         <div class="product-price"><small style="color:black;">Sub-total</small> <span style="color:black;" class="money">$29.99&nbsp;USD</span></div>
 
-
-
                                         <input type="submit" id="update-cart" name="update" value="Update" class="btn btn-primary btn-block">
                                         <input type="submit" name="checkout" value="Checkout" class="btn  checkout-btn btn-primary btn-block">
-
-
 
                                         <div class="additional-checkout-buttons">
                                             <span class="text-muted" style="color: #000;">or</span>
@@ -347,24 +318,12 @@
                             </form>
                         </div>
                         <!-- TODO Move to cart.css -->
-                        <style>
-                            .mobile-shopping-cart a{
-                                color: #000;
-                            }
-                            .mobile-shopping-cart a:hover, .mobile-shopping-cart a:focus{
-                                color: #f6af1f;
-                            }
-                        </style>
-
 
                     </div>
                 </div>
             </div>
 
-
-
         </section>
-
 
         <script>
             if (sessionStorage.getItem("discount")) {
@@ -373,11 +332,9 @@
             };
         </script>
 
-
     </div>
 
     <!-- Still Needs Clean Up Past This Point -->
-
 
     <footer id="footer-content" class="footer">
         <div class="container-fluid">
@@ -392,46 +349,12 @@
         </div>
     </footer>
 
-
 </div>
-
 
 <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
 
-
 <script src="https://cdn.shopify.com/s/files/1/0259/2151/t/105/assets/typeahead.js?13550032680311357315"
         type="text/javascript"></script>
-<script>
-
-
-    $(document).ready(function () {
-        $('.search-bar').typeahead({
-            name: 'Products',
-            local: [""]
-        }).on('typeahead:selected', function (object, datum) {
-            $(this).closest('form').submit();
-        });
-    });
-
-
-    (function() {
-
-        "use strict";
-
-        var toggles = document.querySelectorAll(".c-hamburger");
-
-        for (var i = toggles.length - 1; i >= 0; i--) {
-            var toggle = toggles[i];
-            toggleHandler(toggle);
-        };
-
-        function toggleHandler(toggle) {
-            toggle.addEventListener( "click", function(e) {
-                e.preventDefault();
-                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-            });
-        }
-
-    })();
-</script>
+<script src="assets/js/dist/scripts.js"
+        type="text/javascript"></script>
 </body>

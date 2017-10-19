@@ -1,53 +1,4 @@
-/**
- * Responsive mixin. The media breakpoints are as defined
- * in the twitter bootstrap framework:
- *
- * - phone
- * - tablet-portrait
- * - tablet-landscape-desktop
- * - large-desktop
- *
- * Additional parameters for tagetting retina and non-retina
- * devices
- *
- * - retina
- * - non-retina
- *
- * Moreover, a specific value in px can be passed which is
- * used to generate a max-width media query.
- */
-@mixin respond-to($media) {
-    /* Landscape phones and down */
-    @if $media == phone {
-        @media (max-width: 480px) { @content; }
-    }
-    /* Landscape phone to portrait tablet */
-    @else if $media == tablet-portrait {
-        @media (max-width: 767px) {@content; }
-    }
-    /* Portrait tablet to landscape and desktop */
-    @else if $media == tablet-landscape-desktop {
-        @media (min-width: 768px) and (max-width: 979px) { @content; }
-    }
-    /* Large desktop */
-    @else if $media == large-desktop {
-        @media (min-width: 1200px) { @content; }
-    }
-    // Non-Retina
-    @else if $media == non-retina {
-        @media screen and (-webkit-max-device-pixel-ratio: 1) { @content; }
-    }
-    // Retina Only
-    @else if $media == retina {
-        @media screen and (-webkit-min-device-pixel-ratio: 2) { @content; }
-    }
-    // Specific max width
-    @else {
-        @media only screen and (max-width: #{$media}px) { @content; }
-    }
-}
-
-
+/* Sitewide Mixins */
 
 /* Sldier Buttons */
 @mixin slider_link($btn-color, $btn-hover-color) {
@@ -90,6 +41,76 @@
 
 }
 
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-variant-mvp($color, $background, $border, $border-size) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+    border-width:$border-size;
+
+    &:focus,
+    &.focus {
+        color: $color;
+        background-color: $color;
+        border-color: darken($border, 25%);
+    }
+    &:hover {
+        color: $background;
+        background-color: $color;
+        border-color: darken($border, 12%);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        color: $background;
+        background-color: $color;
+        border-color: darken($border, 12%);
+
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $background;
+            background-color: $color;
+            border-color: darken($border, 25%);
+        }
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            background-color: $background;
+            border-color: $border;
+        }
+    }
+
+    .badge {
+        color: $background;
+        background-color: $color;
+    }
+}
+
+@mixin main_font_stack(){
+
+
+    font-family: $main-template-font;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.42858;
+    font-size: 14px;
+    color: #000;
+}
+
 @mixin visually-hidden() {
     // sass-lint:disable no-important
     position: absolute !important;
@@ -118,10 +139,7 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-
-
 }
-
 
 @mixin owl-bg-control($owl-img, $owl-pos, $owl-size){
 
@@ -130,4 +148,8 @@
     background-size: $owl-size;
     background-repeat: no-repeat;
 
+}
+
+.black-bg{
+    background-color:#000;
 }

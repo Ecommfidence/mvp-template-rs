@@ -1,14 +1,11 @@
 /* Bio Page Styles */
 
 
+
 /* Change Images in Variables File */
 .bio{
   font-family: $font-family-work-sans;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  @include make-flex-div();
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -37,27 +34,21 @@
 }
 
 .bio-text {
-  color: #fff;
+  font-size:14px;
 }
-.bio-1 .bio-header-1 {
+.bio-page{
 
-  font-weight: bold;
-  color: $color-brand-light-gray;
-  text-align: center;
-  font-size: 60px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  padding: 10px 0;
-  margin: 0;
+  h3{
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height:1.42858;
+    margin: 0;
+    color: #777;
+  }
 }
-.bio-header-1 {
 
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 45px;
-  margin: 0;
-  color: #777;
-}
 .bio-header-2 {
   font-family: $font-family-bebas;
   font-size: 20px;
@@ -66,7 +57,14 @@
   color: #fff;
 }
 .bio-info {
-  background: rgba(0,0,0,0.5);
+  background: rgba(255,255,255,0.5);
+}
+.dark-block {
+
+  *.bio-info {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
 }
 @media screen and (max-width: 991px) {
   .col-md-6 {
@@ -96,18 +94,14 @@
       display: block;
       background-position: left;
     }
-
-
   }
-
 }
 @media screen and (max-width: 767px) {
-  .bio-1 {
-    min-height: 50px;
+  .bio{
+    &.bio-1 {
+      min-height: 50px;
+    }
+
   }
-  .bio-1 .bio-header-1 {
-    margin: 0;
-    font-size: 30px;
-    letter-spacing: 0;
-  }
+
 }

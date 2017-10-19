@@ -127,11 +127,8 @@ body.template-page-gallery{
   }
 }
 
-*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .clearfix:before, .clearfix:after { display: table; content: ''; }
 .clearfix:after { clear: both; }
-
-
 
 .media-item {
   display: inline-block;
@@ -160,19 +157,6 @@ body.template-page-gallery{
 }
 
 .media {
-  .page-header {
-    color: #ccc;
-  }
-  h3 {
-    font-family: 'BigNoodleTitling';
-    margin: 10px 0 20px 0;
-    color: #fff;
-    display: inline-block;
-    -webkit-transition: all .3s ease-out 0.1s;
-    -moz-transition: all .3s ease-out 0.1s;
-    -o-transition: all .3s ease-out 0.1s;
-    transition: all .3s ease-out 0.1s;
-  }
   img {
     -webkit-transition: all .3s ease-out 0.1s;
     -moz-transition: all .3s ease-out 0.1s;
@@ -191,7 +175,6 @@ body.template-page-gallery{
     clear: left;
   }
 }
-
 
 #photos {
   line-height: 0;
@@ -282,7 +265,7 @@ body.template-page-gallery{
 }
 
 figure.effect-apollo {
-  background: $color-btn-primary;
+  background: $color-brand-primary;
 }
 
 figure.effect-apollo img {
@@ -346,7 +329,6 @@ figure.effect-apollo:hover p {
 
 
 
-
 @media screen and (max-width: 991px) {
 
   .media .ind-gallery:nth-child(3n+1) {
@@ -369,7 +351,6 @@ figure.effect-apollo:hover p {
     column-count: 2;
   }
 }
-
 
 @media (max-width: 480px) {
   #photos {

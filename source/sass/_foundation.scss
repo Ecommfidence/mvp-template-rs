@@ -6,14 +6,9 @@
     text-align:center;
     @include bg-center-cover();
     padding: 50px;
-
     h2{
-         @extend .lh-60;
+      line-height:60px;
        }
-    }
-
-    a{
-      @extend .btn-brand-default, .btn-light, .btn-brand-sm;
     }
 
   .foundation-text {
@@ -21,7 +16,7 @@
     background-image: url(#{$foundation-bg});
     @include bg-center-cover();
     min-height: 600px;
-    display: flex;
+    @include make-flex-div();
     align-items: center;
     .foundation-content {
       width: 60%;
@@ -29,16 +24,15 @@
       display: block;
       margin-left: auto;
     }
-    p {
-      font-size: 16px;
-      margin: 0;
-      color: #fff;
-      margin-bottom: 15px;
-    }
     img {
       display: block;
       margin: 20px auto 0 auto;
       max-width: 275px;
+    }
+    p{
+        font-size: 16px;
+        margin-bottom: 15px;
+
     }
   }
 }
@@ -48,7 +42,9 @@
   .index-foundation {
     .foundation-header {
       padding: 25px;
-
+      h2{
+        line-height:32px;
+      }
     }
     .foundation-text {
       background-position: right;
@@ -66,19 +62,9 @@
 
 }
 
-@media screen and (max-width: 767px){
-
-  .index-foundation .foundation-header .foundation-header-1 {
-    letter-spacing: 0;
-  }
-
-
-}
-
-
-/*Foundation Page*/
+/*Foundation Internal Page*/
 .foundation-page {
-  .index-foundation .foundation-text .foundation-header-1 {
+  .foundation-header-1 {
     font-family: $font-family-work-sans;
     font-weight: bold;
     text-transform: uppercase;
@@ -90,30 +76,41 @@
     letter-spacing: 0px;
 
   }
-  .index-foundation .foundation-text .foundation-header-2 {
-    font-family: 'BigNoodleTitling';
+  .foundation-header-2 {
+    font-family: $font-secondary-h2;
     font-weight: 100;
     font-size: 30px;
     letter-spacing: 3px;
+    line-height: 60px;
+    text-transform: uppercase;
     color: #fff;
     text-align: left;
-    line-height:60px;
+    margin:0;
     margin-bottom: 15px;
   }
-  .index-foundation .foundation-text .foundation-content {
-    padding: 15px 30px 15px 15px;
+  p{
+
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .index-foundation{
+    .foundation-text{
+      .foundation-content{
+        padding: 15px 30px 15px 15px;
+      }
+    }
   }
 }
-#foundation-wrap {
+
+
+.foundation-wrap {
   position: relative;
   img {
     width: 100%;
   }
-  h2{
 
-    color: #ccc;
-
-  }
 }
 .donate-row {
   margin: 0;
@@ -134,30 +131,25 @@
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-      p {
-        font-family: 'Work Sans', sans-serif;
-        font-size: 16px;
-        margin: 0;
-        color: #fff;
-        margin-bottom: 15px;
-      }
       a {
        @extend .btn-brand-default, .btn-brand-secondary, .btn-light, .btn-brand-sm;
-
-
+        margin-bottom:0;
 
       }
+
     }
   }
 }
 .foundation-gallery {
   margin: 0;
+  text-align:center;
   background-image: url(#{$foundation-gallery-bg});
   @include bg-center-cover();
   padding-bottom:1em;
 
   h2 {
    @extend .internal-h2;
+    margin:0;
   }
   img {
     display: block;
@@ -169,11 +161,11 @@
 
   .foundation-page {
     .index-foundation {
-      .foundation-text {
         p {
           font-size: 14px;
         }
         .foundation-header-1 {
+          letter-spacing: 0;
           font-size: 30px;
           line-height: 30px;
         }
@@ -182,20 +174,8 @@
           letter-spacing: 2px;
           margin-bottom: 10px;
         }
-
-      }
     }
     .foundation-gallery {
-      p {
-        font-family: $font-family-work-sans;
-        font-weight: 500;
-        text-transform: uppercase;
-        font-size: 26px;
-        color: #fff;
-        text-align: center;
-        margin: 10px 0;
-        padding: 0 10px;
-      }
       .container {
         padding: 0;
       }

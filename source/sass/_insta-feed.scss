@@ -8,7 +8,7 @@
     }
   }
   .insta-content {
-    display: flex;
+    @include make-flex-div();
     width: 50%;
   }
   .insta-content:hover .insta-image{
@@ -31,7 +31,7 @@
   }
   #instafeed1 {
     margin: 0;
-    display: flex;
+    @include make-flex-div();
     min-height: 400px;
     .col-md-6 {
       padding: 0;
@@ -74,7 +74,7 @@
 
   #instafeed2 {
     margin: 0;
-    display: flex;
+    @include make-flex-div();
     min-height: 400px;
     .col-md-6 {
       padding: 0;
@@ -148,7 +148,7 @@
       display: block;
       .insta-content {
         width: 100%;
-        display: flex;
+        @include make-flex-div();
         &:nth-child(2) {
           flex-direction: row-reverse;
           .white-arrow-left {
@@ -169,7 +169,7 @@
       display: block;
       .insta-content {
         width: 100%;
-        display: flex;
+        @include make-flex-div();
         &:first-child {
           flex-direction: row-reverse;
           .white-arrow-right {
