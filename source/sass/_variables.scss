@@ -6,8 +6,13 @@ $color-brand-primary: #65c402;
 $color-brand-secondary: #192f6b;
 $color-cart-button: #06192e;
 
+
+$color-brand-primary-nav: #65c402;
+
+
 $btn-brand-font-weight:500;
 $font-size-brand-base:16px;
+$font-button-letter-spacing: 4px;
 
 $button-brand-primary-text: #FFF;
 $color-brand-body-color: #FFF;
@@ -15,6 +20,8 @@ $color-brand-body-color: #FFF;
 /* Body Text Color */
 $color-light-text: #FFF;
 $color-light-p-text: #DDD;
+
+$color-link-hover: $color-brand-primary;
 
 $dropdown-link-hover-color: #000;
 $dropdown-link-hover-bg: #000;
@@ -24,7 +31,7 @@ $brand-h2-heading-color:#777;
 $brand-h2-heading-light-color: #CCC;
 $brand-h2-sub-heading-color: #000;
 
-
+$color-news-date: #FFF;
 
 /* Skw slider hover background */
 $skw-bg-prev: rgba($color-brand-primary, 0.6);
@@ -43,7 +50,7 @@ $btn-dark-border: #000;
 
 $dropdown-link-color: #fff;
 $border-radius-base: 3px;
-$owl-news-body-text: #fff;
+$owl-news-body-text-color: #fff;
 
 //** Background for the dropdown menu.
 $dropdown-bg: #fff !default;
@@ -75,6 +82,7 @@ $border-radius-small: 3px !default;
 
 $font-family-work-sans:       'Work Sans', sans-serif !default;
 $font-family-bebas:           'Bebas Neue' !default;
+$font-family-bebas-bold:           'Bebas Neue Bold';
 $main-template-font:          $font-family-work-sans;
 $thumbnail-caption-padding:    9px !default;
 $font-slider-titles:          'Bebas Neue' !default;
@@ -86,9 +94,32 @@ $font-main-text:              $font-family-work-sans;
 
 $font-blog-date:              $font-family-bebas;
 $font-secondary-buttons:      "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-slider-buttons:         "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-account-buttons:        'BigNoodleTitling';
 $font-secondary-h2:           'BigNoodleTitling';
 $font-main-nav:               $font-family-bebas;
+$font-sub-title-secondary:    'DIN Lt';
+$color-sub-title-secondary:   $color-brand-primary;
+
+
+/* Newsletter Styles */
+$font-newsletter-input:    'DIN Bold';
+$color-newsletter-input-border: #BBB;
+$placeholder-text-color: $color-newsletter-input-border;
+$color-newsletter-button-bg: $color-brand-primary;
+
+$logo-height: 33px;
+$logo-width: auto;
+
+/* Countdown Styles */
+$font-countdown-number: 'DIN Cond';
+$font-countdown-title: $font-family-bebas;
+
+/* Main Slider Variables */
+$font-slider-titles: $font-family-bebas-bold;
+$font-slider-text-shadow: none; /* -2px 0px 20px rgba(0, 0, 0, 1) */
+$color-slider-titles:         $color-brand-primary;
+$color-slider-titles-dark:    #FFF;
 
 
 /*Font Sizes */
@@ -107,10 +138,20 @@ $font-size-nav-icons:            $font-size-nav-sm - 2px;
 $width-site:                  1200px;
 
 
+
+$skw-border-width:3px;
+$skw-buttons-padding: 0 30px;
+$skw-font: $font-family-work-sans;
+$skw-text-padding:0;
+
+
 /*Slider Variables */
 $color-slider-radio: #aaa;
 $color-slider-radio-active: #fff;
 
+$color-stats-bg: rgba(#000, 0.2);
+$color-stats-value: #fff;
+$color-stats-title-value: #ccc;
 
 $overlay-img-bg:'https://cdn.shopify.com/s/files/1/0535/3409/files/Blue-Hero-min.jpg?14462823438105375394';
 /* Home Page Owl News */

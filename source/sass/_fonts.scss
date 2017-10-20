@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url("../fonts/BebasNeue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal
+}
+
+
+@font-face {
   font-family: 'BigNoodleTitling';
   src: url('../fonts/BigNoodleTitling.eot');
   src: url('../fonts/BigNoodleTitling.eot?#iefix') format('embedded-opentype'),
@@ -172,9 +180,9 @@ h2 {
   }
   &.sub-title-secondary {
 
-    font-family: 'DIN Lt';
+    font-family: $font-sub-title-secondary;
     font-size: 18px;
-    color: #fff;
+    color: $color-sub-title-secondary;
     margin: 1em 0;
     text-transform: none;
     letter-spacing: 0;

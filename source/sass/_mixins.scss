@@ -1,7 +1,7 @@
 /* Sitewide Mixins */
 
 /* Sldier Buttons */
-@mixin slider_link($btn-color, $btn-hover-color) {
+@mixin slider_link($btn-color, $btn-hover-color, $btn-background-color:transparent, $btn-text-color-hover:$btn-light-color ) {
     -webkit-transition: all .3s ease-out 0.1s;
     -moz-transition: all .3s ease-out 0.1s;
     -o-transition: all .3s ease-out 0.1s;
@@ -12,11 +12,32 @@
     text-transform: uppercase;
     border: 2px solid $btn-color;
     color: $btn-color;
-    background: transparent;
+    background: $btn-background-color;
     &:hover {
         background: $btn-hover-color;
         border-color: $btn-hover-color;
-        color: #fff;
+        color: $btn-text-color-hover;
+    }
+
+}
+
+/* Sldier Buttons */
+@mixin slider_link_custom($btn-text-color, $btn-border-color, $btn-bg-color, $btn-text-color-h, $btn-border-color-h, $btn-bg-color-h  ) {
+    -webkit-transition: all .3s ease-out 0.1s;
+    -moz-transition: all .3s ease-out 0.1s;
+    -o-transition: all .3s ease-out 0.1s;
+    transition: all .3s ease-out 0.1s;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    border: 2px solid $btn-border-color;
+    color: $btn-text-color;
+    background: $btn-bg-color;
+    &:hover {
+        background: $btn-bg-color-h;
+        border-color: $btn-border-color-h;
+        color: $btn-text-color-h;
     }
 
 }

@@ -50,7 +50,7 @@
         border-radius: 0;
         display: none;
         i {
-          color: $color-brand-primary;
+          color: $color-brand-primary-nav;
           margin: 0;
         }
       }
@@ -98,9 +98,9 @@
       font-weight: 400;
       display: inline-block;
       width: auto;
-      background-color: $color-brand-primary;
+      background-color: $color-brand-primary-nav;
       color: #fff;
-      border: 2px solid $color-brand-primary;
+      border: 2px solid $color-brand-primary-nav;
       text-transform: uppercase;
       text-align: center;
       padding: 5px 10px;
@@ -108,8 +108,8 @@
       font-size: 11px;
       &:hover {
         color: #fff;
-        background: $color-brand-primary;
-        border-color: $color-brand-primary;
+        background: $color-brand-primary-nav;
+        border-color: $color-brand-primary-nav;
       }
     }
 
@@ -126,24 +126,24 @@
       color: #fff;
       margin: 0 5px;
       &:hover {
-        color: $color-brand-primary;
+        color: $color-brand-primary-nav;
       }
     }
     a {
       color: #fff;
       text-transform: uppercase;
       &:hover {
-        color: $color-brand-primary;
+        color: $color-brand-primary-nav;
       }
     }
     a.active {
-      color: $color-brand-primary;
+      color: $color-brand-primary-nav;
     }
     .nav-cart {
       padding-left: 5px;
       padding-right: 8px;
-      border-right: 2px solid $color-brand-primary;
-      border-left: 2px solid $color-brand-primary;
+      border-right: 2px solid $color-brand-primary-nav;
+      border-left: 2px solid $color-brand-primary-nav;
       font-size: $font-size-nav-icons;
       position: relative;
       top: -2px;
@@ -159,7 +159,8 @@
     margin-top: 2px;
 
     img {
-      width: 240px;
+      width: $logo-width;
+      height: $logo-height;
       @media screen and (max-width: $screen-md) {
         margin-left: 40px;
         width: 50px;
@@ -200,7 +201,7 @@
         font-size: $font-size-nav;
         margin: 0 0 0 10px;
         &:hover {
-          color: $color-brand-primary;
+          color: $color-brand-primary-nav;
         }
       }
     }
@@ -434,7 +435,7 @@
         }
       }
       i:hover {
-        color: $color-brand-primary;
+        color: $color-brand-primary-nav;
       }
       .input-group-addon, .input-group-btn {
         width: 1% !important;
@@ -547,7 +548,7 @@
   height: 32px;
   text-align: center;
   line-height: 30px;
-  background: $color-brand-primary;
+  background: $color-brand-primary-nav;
   color: #444;
   cursor: pointer;
   border: 0;
@@ -558,7 +559,7 @@
 
   &:hover{
 
-    background: $color-brand-primary;
+    background: $color-brand-primary-nav;
   }
   &.show{
     opacity: 1;
@@ -581,7 +582,7 @@
   margin-bottom: 15px;
   .page{
     a {
-      color: $color-brand-primary;
+      color: $color-brand-primary-nav;
     }
     &.current {
       color: #fff;

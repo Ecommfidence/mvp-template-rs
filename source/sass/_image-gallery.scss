@@ -62,12 +62,16 @@
 
     @extend .btn-brand-default;
     @extend .btn-dark;
+    font-family: $skw-font;
     font-weight: bold;
     font-size: 3vw;
+    letter-spacing:$font-button-letter-spacing;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #fff;
-    padding: 0 10px;
+    border: $skw-border-width solid #fff;
+    padding: $skw-buttons-padding;
     margin: 0 auto;
+    padding-top: $skw-text-padding;
+
     &:hover {
       background: $color-brand-primary;
       border-color: $color-brand-primary;

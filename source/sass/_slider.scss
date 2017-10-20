@@ -27,17 +27,19 @@
   .slide_1 {
     .slide-text {
 
-      @include slider_text(75%);
+      @include slider_text(25%);
+
       p:first-child {
         font-family: $font-slider-titles;
-        font-size: 6vw;
-        line-height: 6vw;
+        color:$color-slider-titles-dark;
+        font-size: 4vw;
+        line-height: 4vw;
         text-align: center;
         margin: 0;
-        text-shadow: -2px 0px 20px rgba(0, 0, 0, 1);
+        text-shadow: $font-slider-text-shadow;
         position: relative;
       }
-      p:nth-child(2) {
+   /*   p:nth-child(2) {
         font-family: $font-slider-titles;
         font-size: 6vw;
         line-height: 6vw;
@@ -45,23 +47,31 @@
         margin: 0;
         text-shadow: -2px 0px 6px rgba(0, 0, 0, 1);
         position: relative;
-      }
+      }*/
       .slide_1_link {
-        @include slider_link(#FFFFFF, $color-brand-primary);
+     /* slider_link_custom variables $btn-text-color, $btn-border-color, $btn-bg-color, $btn-text-color-h, $btn-border-color-h, $btn-bg-color-h*/
+      @include slider_link_custom(#FFF, #FFF, transparent, $color-brand-primary, #FFF, #FFF );
+
+        font-family:$font-slider-buttons;
+
       }
     }
   }
 
   .slide_2 {
     .slide-text {
-      @include slider_text(auto, 0%);
+
+      @include slider_text(50%);
+      bottom:0;
+      top:auto;
+     /* @include slider_text(auto, 0%);
       p:first-child {
         font-family: $font-slider-titles;
         font-size: 6vw;
         line-height: 5vw;
         text-align: center;
         margin: 0;
-        text-shadow: -2px 0px 20px rgba(0, 0, 0, 1);
+        text-shadow: $font-slider-text-shadow;
         position: relative;
       }
       p:nth-child(2) {
@@ -70,32 +80,32 @@
         line-height: 5vw;
         text-align: center;
         margin: 0;
-        text-shadow: -2px 0px 6px rgba(0, 0, 0, 1);
+        text-shadow: $font-slider-text-shadow;
         position: relative;
-      }
+      }*/
       .slide_2_link {
-        @include slider_link($color-brand-primary, $color-brand-primary);
+        @include slider_link_custom($color-brand-primary, #FFF, #FFF, #FFF, $color-brand-primary, $color-brand-primary );
+
+        font-family:$font-slider-buttons;
+        margin-bottom:10px;
+
       }
     }
   }
 
   .slide_3 {
     .slide-text {
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      left: 75%;
-      -ms-transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      @include slider_text(75%);
+
       p:first-child {
         font-family: $font-slider-titles;
-        font-size: 5vw;
-        line-height: 5vw;
+        font-size: 6vw;
+        line-height: 6vw;
         text-align: center;
         margin: 0;
-        text-shadow: -2px 0px 20px rgba(0, 0, 0, 1);
+        text-shadow: $font-slider-text-shadow;
         position: relative;
+        color:$color-slider-titles;
       }
       p:nth-child(2) {
         font-family: $font-slider-titles;
@@ -103,11 +113,13 @@
         line-height: 5vw;
         text-align: center;
         margin: 0;
-        text-shadow: -2px 0px 6px rgba(0, 0, 0, 1);
+        text-shadow: $font-slider-text-shadow;
         position: relative;
       }
       .slide_3_link {
-        @include slider_link(#FFFFFF, $color-brand-primary);
+        @include slider_link_custom($color-brand-primary, $color-brand-primary, transparent, #FFF, $color-brand-primary, $color-brand-primary );
+        font-family:$font-slider-buttons;
+
       }
     }
   }
@@ -159,6 +171,7 @@
 
 .product-slick-container {
   position: relative;
+  padding-top:10px;
   h2{
     @extend .h-tb-p-10;
   }
@@ -501,7 +514,7 @@
           position: relative;
           top: 3px;
         }
-        &:hover, &:focus{
+        &:hover{
           color:$btn-dark-color;
         }
       }
@@ -526,7 +539,7 @@
         bottom: 0;
       }
       .slick-dots li button:before {
-        color: $color-slider-radio-active;
+        color: #fff;
         opacity: 1;
         font-size: 8px;
         line-height: 19px;

@@ -8,37 +8,41 @@
 
     form {
       input {
-        font-family: 'DIN Bold';
+        font-family: $font-newsletter-input;
         background: transparent;
-        border: 2px solid #ddd;
+        border: 2px solid $color-newsletter-input-border;
         padding: 10px 20px;
         outline: none;
         font-size: 16px;
-        color: #fff;
+        color: $color-brand-primary;
         -webkit-appearance: none;
         border-radius: 0;
       }
       #submit {
         width: 100px;
-        color: #000;
-        background: #fff;
-        border: 2px solid #fff;
+        color: $button-brand-primary-text;
+        background: $color-newsletter-button-bg;
+        border: 2px solid $color-newsletter-button-bg;
         -webkit-transition: all .3s ease-out 0.1s;
         -moz-transition: all .3s ease-out 0.1s;
         -o-transition: all .3s ease-out 0.1s;
         transition: all .3s ease-out 0.1s;
         &:hover {
           border: 2px solid $color-brand-primary;
-          background: $color-brand-primary;
-          color: #fff;
+          background: $btn-light-bg;
+          color: $color-brand-primary;
         }
+      }
+      ::placeholder {
+
+        color:$placeholder-text-color;
       }
     }
   }
   .stats-row {
     margin: 0;
     padding: 25px;
-    background: rgba(0,0,0,0.7);
+    background: $color-stats-bg;
     text-align: center;
     .stats-div {
       display: inline-block;
@@ -49,14 +53,14 @@
       border-right: none;
     }
     p {
-      font-family: 'DIN Bold';
-      color: #fff;
+      font-family: $font-newsletter-input;
+      color: $color-stats-title-value;
       font-size: 24px;
       margin: 0 0 15px 0;
     }
     span {
-      font-family: 'Bebas Neue';
-      color: $color-brand-primary;
+      font-family: $font-countdown-title;
+      color: $color-stats-value;
       font-size: 40px;
     }
     .odometer.odometer-auto-theme, .odometer.odometer-theme-default {
@@ -159,4 +163,43 @@
     }
   }
 
+}
+
+
+.game-countdown {
+  background: $color-brand-primary;
+  padding: 15px 0 25px 0;
+  text-align: center;
+  color: #fff;
+  .game-title {
+    font-family: $font-countdown-number;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0
+  }
+  #clock {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    div {
+      display: inline-block;
+      font-family: $font-countdown-number;
+      font-size: 60px;
+      line-height: 35px;
+      margin: 0 5px;
+      span {
+        font-family: $font-countdown-number;
+        font-size: 16px;
+        display: block
+      }
+    }
+  }
+  a {
+    @extend .btn-brand-default, .btn-light, .btn-trans ;
+    margin-bottom:0;
+
+    &:hover {
+      @extend .btn-light;
+    }
+  }
 }
