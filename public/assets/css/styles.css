@@ -4740,7 +4740,7 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
         width: 100%; }
     .menu-container .navbar-form .tt-hint {
       display: none; }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 991px) {
       .menu-container .navbar-form .search-btn-grp {
         position: absolute;
         top: -9px;
@@ -4802,7 +4802,7 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
     .menu-container .logo-div img {
       width: auto;
       height: 33px; }
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 991px) {
         .menu-container .logo-div img {
           margin-left: 40px;
           width: 50px; } }
@@ -4836,7 +4836,7 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
         margin: 0 0 0 10px; }
         .menu-container .main-nav li a:hover {
           color: #65c402; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       .menu-container .main-nav {
         z-index: 3;
         background: #777;
@@ -4891,7 +4891,7 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
         background-color: #fff;
         content: "";
         top: -10px; }
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 991px) {
           .menu-container .c-hamburger span::before {
             top: -7px; } }
       .menu-container .c-hamburger span::after {
@@ -4903,10 +4903,10 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
         background-color: #fff;
         content: "";
         bottom: -10px; }
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 991px) {
           .menu-container .c-hamburger span::after {
             bottom: -7px; } }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       .menu-container .c-hamburger {
         display: block;
         top: 17px;
@@ -4956,7 +4956,7 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
     z-index: 2;
     font-size: 12px;
     cursor: pointer; }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991px) {
     .menu-container {
       font-family: "Bebas Neue";
       padding: 15px 0 13px 0; }

@@ -79,7 +79,7 @@
       display: none;
     }
 
-    @media screen and (min-width: $screen-md) {
+    @media screen and (min-width: $screen-sm-max) {
       .search-btn-grp {
         position: absolute;
         top: -9px;
@@ -161,7 +161,7 @@
     img {
       width: $logo-width;
       height: $logo-height;
-      @media screen and (max-width: $screen-md) {
+      @media screen and (max-width: $screen-sm-max) {
         margin-left: 40px;
         width: 50px;
       }
@@ -206,7 +206,7 @@
       }
     }
 
-    @media screen and (max-width: $screen-md) {
+    @media screen and (max-width: $screen-sm-max) {
       z-index: 3;
       background: #777;
       top: 48px;
@@ -272,7 +272,7 @@
         background-color: #fff;
         content: "";
         top: -10px;
-        @media screen and (max-width: $screen-md) {
+        @media screen and (max-width: $screen-sm-max) {
           top: -7px;
         }
 
@@ -287,7 +287,7 @@
         content: "";
         bottom: -10px;
 
-        @media screen and (max-width: $screen-md) {
+        @media screen and (max-width: $screen-sm-max) {
           bottom: -7px;
         }
 
@@ -295,7 +295,7 @@
 
     }
 
-    @media screen and (max-width: $screen-md) {
+    @media screen and (max-width: $screen-sm-max) {
 
       display: block;
       top: 17px;
@@ -388,7 +388,7 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: $screen-md) {
+  @media screen and (max-width: $screen-sm-max) {
     font-family: $font-main-nav;
     padding: 15px 0 13px 0;
 
