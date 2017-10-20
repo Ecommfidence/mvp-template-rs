@@ -543,12 +543,12 @@
   position: fixed;
   bottom: 40px;
   right: 40px;
-  z-index: 9999;
+  z-index: 999;
   width: 32px;
   height: 32px;
   text-align: center;
   line-height: 30px;
-  background: $color-brand-primary-nav;
+  background: #65c402;
   color: #444;
   cursor: pointer;
   border: 0;
@@ -556,14 +556,20 @@
   text-decoration: none;
   transition: opacity 0.2s ease-out;
   opacity: 0;
-
+  -webkit-transition: all .3s ease-out 0.1s;
+  -moz-transition: all .3s ease-out 0.1s;
+  -o-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
   &:hover{
-
-    background: $color-brand-primary-nav;
+    color:#fff;
+    background: $color-brand-primary;
   }
   &.show{
     opacity: 1;
 
+  }
+  i {
+    transition: none;
   }
 
   @media screen and (max-width: 767px) {

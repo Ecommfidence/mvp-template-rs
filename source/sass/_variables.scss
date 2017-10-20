@@ -117,7 +117,9 @@ $font-countdown-title: $font-family-bebas;
 
 /* Main Slider Variables */
 $font-slider-titles: $font-family-bebas-bold;
-$font-slider-text-shadow: none; /* -2px 0px 20px rgba(0, 0, 0, 1) */
+$font-slider-text-shadow: -2px 0px 20px rgba(0, 0, 0, 1); /* -2px 0px 20px rgba(0, 0, 0, 1) */
+$font-slider-text-shadow-secondary: -2px 0px 6px rgba(0, 0, 0, 1); /* -2px 0px 20px rgba(0, 0, 0, 1) */
+
 $color-slider-titles:         $color-brand-primary;
 $color-slider-titles-dark:    #FFF;
 

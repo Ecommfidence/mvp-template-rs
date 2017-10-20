@@ -6,6 +6,7 @@ $color-brand-primary: #0c371d;
 $color-brand-secondary: #192f6b;
 $color-cart-button: #06192e;
 
+/* Used for nav and base link hover state */
 
 $color-brand-primary-nav: #65c402;
 
@@ -24,17 +25,19 @@ $color-light-p-text: #DDD;
 
 
 
-$color-link-hover: $color-brand-primary;
+$color-link-hover: $color-brand-primary-nav;
 
 $dropdown-link-hover-color: #000;
 $dropdown-link-hover-bg: #000;
 
 
 $brand-h2-heading-color: $color-brand-primary;
-$brand-h2-heading-light-color: #CCC;
+$brand-h2-heading-light-color: #FFF;
 $brand-h2-sub-heading-color: #000;
 
 $color-news-date: #FFF;
+$color-news-article-date: #65c402;
+$color-news-posted-by: #777;
 
 /* Skw slider hover background */
 $skw-bg-prev: rgba($color-brand-primary, 0.6);
@@ -121,6 +124,8 @@ $font-countdown-title: $font-family-bebas;
 /* Main Slider Variables */
 $font-slider-titles: $font-family-bebas-bold;
 $font-slider-text-shadow: none; /* -2px 0px 20px rgba(0, 0, 0, 1) */
+$font-slider-text-shadow-secondary: none; /* -2px 0px 20px rgba(0, 0, 0, 1) */
+
 $color-slider-titles:         $color-brand-primary;
 $color-slider-titles-dark:    #FFF;
 
@@ -182,8 +187,8 @@ $main-bg-img:'https://cdn.shopify.com/s/files/1/2292/0769/files/9.19.17-JM95-Web
 /* News Page Variables */
 $blog-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.31.17-RS25-Website-2017-BlogPage-001.jpg?11652835036440552667';
 $color-blog-bg: #fefefe;
-$color-blog-news-bg: #3c3c3c;
-$news-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.31.17-RS25-Website-2017-NewsPage-001.jpg?11652835036440552667';
+$color-blog-news-bg: #202020;
+$news-bg-img: 'https://cdn.shopify.com/s/files/1/2292/0769/files/9.21.17-JM95-Website-2017-News-Background-01.jpg?14516689298437051388';
 
 $foundation-bg-img:'https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-003.jpg?18356651564452868234';
 $index-bio-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.21.17-RS25-BlogBkgrnd-Graphic-001.jpg?1294120…';
