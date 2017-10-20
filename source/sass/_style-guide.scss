@@ -1,0 +1,26 @@
+.color-swatch {
+
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+
+  background-color: transparent;border:2px solid #CCC;
+
+}
+
+.swatch-1{
+
+  background-color:$color-brand-primary;
+}
+.swatch-2{
+
+  background-color:$color-brand-secondary;
+}
+.swatch-3{
+
+  background-color:$color-cart-button;
+}
+.swatch-4{
+
+  background-color:$brand-h2-heading-color;
+}
