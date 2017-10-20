@@ -23,20 +23,13 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.42858;
-  color:#000;
-  overflow-x:hidden;
-  overflow-y:scroll;
-  padding:0;
+  @include main_font_stack();
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
 
 }
 
-p, pre {
-  margin: 0 0 10px;
-}
 
 .img-responsive, img {
   display: block;
@@ -45,7 +38,7 @@ p, pre {
   height: auto;
 }
 
-a, i, .btn {
+a, i, .btn, .btn-slider-nav {
   -webkit-transition: all .3s ease-out 0.1s;
   -moz-transition: all .3s ease-out 0.1s;
   -o-transition: all .3s ease-out 0.1s;
@@ -53,13 +46,14 @@ a, i, .btn {
 }
 
 a {
-  color: $color-brand-primary;
+  color: $color-brand-primary-nav;
   text-decoration: none;
 }
 
 a:hover, a:focus {
   text-decoration: none;
   outline: none !important;
+  color:$color-link-hover;
 }
 
 
@@ -114,9 +108,9 @@ a:hover, a:focus {
 }
 
 .page-header {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-main-text;
   font-weight: bold;
-  color: #777;
+  color: $brand-h2-heading-color;
   text-align: center;
   font-size: 60px;
   text-transform: uppercase;
@@ -127,6 +121,7 @@ a:hover, a:focus {
   @include make-flex-div();
   align-items: center;
   justify-content: center;
+  border:0;
 }
 
 @media screen and (max-width: 991px) {
@@ -149,13 +144,32 @@ a:hover, a:focus {
 
 
 
+/* Other */
+
+
+.index-social-row {
+  background: #3b3838;
+  padding: 25px 0;
+  text-align: center;
+  a {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  i {
+    font-size: 6vw;
+  }
+}
+
+
+
+
 .section-wrap:last-of-type .main-content {
   padding-bottom: 3em;
 }
 
 
 body hr, body .page-header, body .collection--header .collection--intro>h1, .collection--header body .collection--intro>h1, body .collection--header .collection--intro>h2, .collection--header body .collection--intro>h2, body .thumbnail, body .product-thumbnail, body .collection-thumbnail, body .well {
-  border-color: transparent;
+/*  border-color: transparent;*/
 }
 
 

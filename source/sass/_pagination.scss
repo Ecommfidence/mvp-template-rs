@@ -120,7 +120,7 @@
   @extend .clearfix;
 
   .money {
-    color: $brand-primary;
+    color: $color-brand-primary;
   }
 
   .text-muted .money {
@@ -153,7 +153,3 @@
 }
 
 
-
-h3, .h3, #shappify_count_down, .events .event h1, .feature-has-icon .feature-icon {
-  font-size: 27px;
-}

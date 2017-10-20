@@ -8,7 +8,7 @@
    border-radius:0;
    font-weight:500;
    color: #000;
-   font-family: $font-family-work-sans;
+   font-family: $font-main-buttons;
    font-size: 16px;
    text-transform: uppercase;
 
@@ -19,13 +19,39 @@
    }
 
  }
+.btn-brand-double{
+  background-color:$color-brand-secondary;
+  border-color:$color-brand-secondary;
+
+  color:#fff;
+
+  &:hover, &:focus{
+    color:#fff;
+    background-color:$color-brand-primary;
+    border-color:$color-brand-primary;
+
+  }
+
+  &.inverted{
+
+    background-color:$color-brand-primary;
+    border-color:$color-brand-primary;
+
+    &:hover, &:focus{
+
+      background-color:$color-brand-secondary;
+      border-color:$color-brand-secondary;
+    }
+  }
+
+}
 
 .btn-brand-inverse{
   color: #FFF;
   background-color:$color-brand-primary;
   border-color: $color-brand-primary;
 
-  &:hover{
+  &:hover, &:focus{
     color: #000;
     background-color:#FFF;
     border-color: $btn-dark-bg;
@@ -33,10 +59,54 @@
   }
 }
 
+
+.btn-default, .quick-cart-btn.view {
+  color: #000;
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+}
+
+.btn{
+
+  font-family:$font-main-buttons;
+  text-transform:uppercase;
+}
+.btn-button-brand{
+
+  /*
+  @include button-variant($color, $background, $border);
+  */
+ @include button-variant-mvp($color-brand-primary, #FFF,  $color-brand-primary, 2px);
+  /*
+  @@include button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius);
+  */
+  @include button-size(5px, 15px, 16px, 1.1, 0);
+}
+#update-cart,
+.checkout-btn {
+  padding: 5px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-account-buttons;
+  font-size: 22px;
+  letter-spacing: 1px;
+  border-radius: 0;
+  border: 0;
+  background: $color-cart-button;
+  color: #fff;
+  outline: none;
+  &:hover {
+    background: $color-brand-primary;
+  }
+}
+
+
 .btn-light {
-  color:$btn-light-color;
+  color:#000;
   background-color:$btn-light-bg;
-  border-color: $btn-light-border;
+  border-color: $btn-light-bg;
 }
 .btn-dark {
 
@@ -53,13 +123,162 @@
 
 }
 
+
+
+/* Product Slider Buttons */
+.btn-slider-nav{
+  font-size: 40px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: rgba(119, 119, 119, 0.6);
+  text-align: center;
+  border-radius: 50%;
+
+  &:hover{
+    background: rgba($color-brand-primary, 1);
+
+  }
+}
+
+/* Blog and News Page Buttons */
+.blog-search {
+  button {
+    width: 20%;
+    border: 2px solid #000;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    background: #fff;
+    -webkit-transition: all .3s ease-out 0.1s;
+    -moz-transition: all .3s ease-out 0.1s;
+    -o-transition: all .3s ease-out 0.1s;
+    transition: all .3s ease-out 0.1s;
+    i {
+      color: #000;
+    }
+
+    &:hover {
+      background: $color-brand-primary;
+      border-color: $color-brand-primary;
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+
+.dark-block{
+
+  *.btn-brand-default{
+    color: #FFF;
+    border-color:#FFF;
+    &:hover, &:focus{
+      border-color:$color-brand-primary;
+    }
+  }
+
+  *.btn-brand-inverse{
+    color:#fff;
+    border-color:$color-brand-primary;
+    &:hover, &:focus{
+
+      color: #FFF;
+      background-color:#000;
+      border-color:#FFF;
+    }
+  }
+
+  *.btn-brand-double{
+    border-color:$color-brand-secondary;
+
+    &.inverted {
+      border-color:$color-brand-primary;
+      &:hover{
+
+        border-color:$color-brand-secondary;
+      }
+    }
+  }
+
+  *.btn-light{
+    color:#000;
+    &:hover{
+      color:#FFF;
+    }
+  }
+  *.btn-trans {
+    color:$btn-dark-color;
+    background-color:transparent;
+    border-color: $btn-dark-color;
+    &:hover{
+      color:$btn-dark-color;
+      background-color:$color-brand-primary;
+      border-color: $color-brand-primary;
+    }
+  }
+
+  *.blog-search{
+
+    button{
+      border-color:#FFF;
+
+    &:hover{
+
+      border-color: $color-brand-primary;
+    }
+    }
+  }
+
+}
+/* Button Mixins */
+
+@mixin slick-nav-button($left_post:auto, $right_pos:auto){
+  position: absolute;
+  top: 45%;
+  left: $left_post;
+  right: $right_pos;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  span {
+    @extend .btn-slider-nav;
+    &:before{
+      @if $left_post == auto {
+        padding-left:3px;
+      } @else {
+        padding-right:3px;
+      }
+    }
+  }
+}
+
+
+.btn-product-reveal{
+  @extend .btn-brand-default;
+  background: #000;
+  outline: none !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 15px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  font-family: $font-family-bebas;
+  text-transform: uppercase;
+}
+
 .btn-brand-sm{
   font-size:14px;
 }
 
 .btn-brand-secondary{
 
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-secondary-buttons;
   font-weight:300;
   padding: 8px 15px 10px 15px;
 
@@ -79,30 +298,30 @@
 
 }
 
-// skew slider button
-.blog-read-more {
-  font-family: $font-family-work-sans;
-  font-weight: bold;
-  font-size: 3vw;
 
-  background-color: rgba(0,0,0,0.5);
+// Focus and Hover states TODO Make Modular using scss
+
+.btn-primary:focus, .purchase-btn:focus, .quick-cart-btn.add-to-cart:focus, .btn-primary.focus, .focus.purchase-btn, .focus.quick-cart-btn.add-to-cart {
   color: #fff;
-  border: 2px solid #fff;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 0 10px;
-  margin: 0 auto;
-  &:hover {
-    background: $color-brand-primary;
-    border-color: $color-brand-primary;
-    color: #fff;
-  }
+  background-color: #4b9201;
+  border-color: #396e01;
+}
+
+.btn-primary:active, .purchase-btn:active, .quick-cart-btn.add-to-cart:active, .btn-primary.active, .active.purchase-btn, .active.quick-cart-btn.add-to-cart, .open > .btn-primary.dropdown-toggle, .open > .dropdown-toggle.purchase-btn, .open > .dropdown-toggle.quick-cart-btn.add-to-cart {
+  color: #fff;
+  background-color: #4b9201;
+  border-color: #396e01;
+}
+.btn-primary:active:hover, .purchase-btn:active:hover, .quick-cart-btn.add-to-cart:active:hover, .btn-primary:active:focus, .purchase-btn:active:focus, .quick-cart-btn.add-to-cart:active:focus, .btn-primary:active.focus, .purchase-btn:active.focus, .quick-cart-btn.add-to-cart:active.focus, .btn-primary.active:hover, .active.purchase-btn:hover, .active.quick-cart-btn.add-to-cart:hover, .btn-primary.active:focus, .active.purchase-btn:focus, .active.quick-cart-btn.add-to-cart:focus, .btn-primary.active.focus, .active.focus.purchase-btn, .active.focus.quick-cart-btn.add-to-cart, .open > .btn-primary.dropdown-toggle:hover, .open > .dropdown-toggle.purchase-btn:hover, .open > .dropdown-toggle.quick-cart-btn.add-to-cart:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .dropdown-toggle.purchase-btn:focus, .open > .dropdown-toggle.quick-cart-btn.add-to-cart:focus, .open > .btn-primary.dropdown-toggle.focus, .open > .dropdown-toggle.focus.purchase-btn, .open > .dropdown-toggle.focus.quick-cart-btn.add-to-cart {
+  color: #fff;
+  background-color: #4b9201;
+  border-color: #396e01;
 }
 
 
 // Foundation Button
 .foundation-learn {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-main-buttons;
   font-weight: 500;
   display: block;
   background-color: #fff;
@@ -113,7 +332,7 @@
   padding: 5px 5px 8px 5px;
   width: 120px;
   margin: 5px 0 0 0;
-  border-color: #fff;
+
   &:hover {
     background: $color-brand-primary;
     color: #fff;
@@ -124,23 +343,18 @@
 //Owl News Button
 
 .news-readmore {
-  @extend .btn-brand-default;
+  @extend .btn-brand-default, .btn-brand-inverse, .btn-brand-sm;
   z-index: 1;
-  color: #000;
-  background: $btn-default-bg;
+
   padding: 5px 10px;
   font-size: 12px;
-  border: 2px solid #fff;
-  text-transform: uppercase;
-  &:hover {
-    color: $owl-news-body-text;
-    background: $color-brand-primary;
-    border-color: $color-brand-primary;
-  }
+
+
 }
+
 .btn-center-block{
 
-  font-weight: 500;
+
   display: block;
   padding: 5px 5px 8px 5px;
   width: 100px;

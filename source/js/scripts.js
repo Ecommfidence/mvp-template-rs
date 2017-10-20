@@ -20,6 +20,21 @@ $(document).ready(function() {
     });
 
 
+    $("#banner-owl-2").owlCarousel({
+        pagination: true,
+        rewindNav: true,
+        touchDrag: false,
+        mouseDrag: false,
+        loop: true,
+        autoPlay: 4000,
+        items: 1,
+        itemsDesktop: [1200, 1],
+        itemsDesktopSmall: [1024, 1],
+        itemsTablet: [768, 1],
+        itemsMobile: [480, 1]
+    });
+
+
     $('.game-toggle').click(function(){
         $(this).find('i').toggleClass('fa-angle-down fa-angle-up');
         $(this).parent().next().slideToggle();

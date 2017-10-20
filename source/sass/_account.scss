@@ -1,7 +1,7 @@
 /*Customers Page*/
 
 /* TODO Make this background color a variable for account pages */
-body.template-customers-login, body.template-customers-account{
+.template-customers-login, .template-customers-account, .template-customers-register{
   #content {
     background: #f9f7f6;
   }
@@ -32,10 +32,10 @@ body.template-customers-login, body.template-customers-account{
   font-weight: bold;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-appearance: none; /* for box shadows to show on iOS */
-}
 
-.input__field--ichiro:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .input__label--ichiro {
@@ -143,14 +143,17 @@ body.template-customers-login, body.template-customers-account{
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
 #login_email,
 #login_password {
   text-align: center;
   padding: 0;
 }
+
 #customer-login-form {
   padding: 0 15px;
 }
+
 .shopify-challenge__container {
   font-family: 'Work Sans', sans-serif;
   margin: 50px auto !important;
@@ -167,7 +170,7 @@ body.template-customers-login, body.template-customers-account{
     color: #fff;
     background: $color-brand-primary;
     &:hover {
-      background: $color-btn-primary;
+      background: $color-brand-primary;
     }
   }
 }
@@ -184,7 +187,7 @@ body.template-customers-login, body.template-customers-account{
   border: 0;
   margin-left: 15px;
   &:hover {
-    background: $color-btn-primary;
+    background: $color-brand-primary;
   }
 }
 
@@ -207,7 +210,7 @@ body.template-customers-login, body.template-customers-account{
     border-radius: 0;
     border: 0;
     &:hover {
-      background: $brand-btn-hover;
+      background: $color-cart-button;
     }
   }
 }
@@ -222,7 +225,7 @@ body.template-customers-login, body.template-customers-account{
   border-radius: 0;
   border: 0;
   &:hover {
-    background: $brand-btn-hover;
+    background: $color-cart-button;
   }
 }
 .reg-btn .btn {
@@ -236,7 +239,7 @@ body.template-customers-login, body.template-customers-account{
   border-radius: 0;
   border: 0;
   &:hover {
-    background: $brand-btn-hover;
+    background: $color-cart-button;
   }
 }
 #customer_details {
@@ -248,6 +251,9 @@ body.template-customers-login, body.template-customers-account{
     font-size: 22px;
     padding: 10px 0;
   }
+}
+.action_add {
+  font-family: 'BigNoodleTitling';
 }
 .customer_addresses {
   font-family: 'Work Sans', sans-serif;
@@ -269,7 +275,7 @@ body.template-customers-login, body.template-customers-account{
     border-radius: 0;
     border: 0;
     &:hover {
-      background: $color-btn-primary;
+      background: $color-brand-primary;
     }
   }
 }
@@ -284,7 +290,7 @@ body.template-customers-login, body.template-customers-account{
   letter-spacing: 1px;
   border-radius: 0;
   border: 0;
-  background: $color-btn-primary;
+  background: $color-brand-primary;
   color: #fff;
   &:hover {
     background: $color-brand-primary;
@@ -361,5 +367,572 @@ body.template-customers-login, body.template-customers-account{
       margin-bottom: 10px;
       margin-top: 10px;
     }
+  }
+}
+
+
+
+#swell-bootstrap .rewards-templete h1,
+#swell-bootstrap .rewards-templete h2,
+#swell-bootstrap .rewards-templete h3,
+#swell-bootstrap .rewards-templete h4,
+#swell-bootstrap .rewards-templete h5,
+#swell-bootstrap .rewards-templete h6 {
+  letter-spacing: 0;
+  word-spacing: 0;
+  text-transform: capitalize;
+  padding: 5px 10px;
+}
+#swell-bootstrap .rewards-templete .banner .img-responsive {
+  margin: 0;
+  min-height: 180px;
+}
+#swell-bootstrap .rewards-templete .container .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+#swell-bootstrap .rewards-templete .caption h1 {
+  font-size: 36px;
+  color: #111144;
+  margin: 10px 0;
+  padding: 0;
+  opacity: 1;
+  float: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+#swell-bootstrap .rewards-templete .caption p {
+  font-size: 14px;
+  color: #111144;
+  opacity: 1;
+  float: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+#swell-bootstrap .rewards-templete .point-circle {
+  background-color: #111144;
+}
+#swell-bootstrap .rewards-templete .point-circle h2,
+#swell-bootstrap .rewards-templete .point-circle p {
+  opacity: 1;
+  float: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+#swell-bootstrap .rewards-templete .earn-section {
+  padding-top: 25px;
+}
+#swell-bootstrap .rewards-templete .rewards-page-campaigns-section-image {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+#swell-bootstrap .rewards-templete .redeem-section {
+  padding-top: 0;
+}
+#swell-bootstrap .rewards-templete .rewards-page-redeem-section-image {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+#swell-bootstrap .rewards-templete .banner {
+  overflow: inherit ;
+  position: relative ;
+  -webkit-background-size: cover ;
+  -moz-background-size: cover ;
+  -o-background-size: cover ;
+  background-size: cover ;
+}
+#swell-bootstrap .rewards-templete .banner .caption {
+  width: 100% ;
+  text-align: center ;
+}
+#swell-bootstrap .rewards-templete .banner .caption h1,
+#swell-bootstrap .rewards-templete .banner .caption p {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+#swell-bootstrap .rewards-templete .banner .point-circle {
+  bottom: -63px ;
+  left: 0 ;
+  right: 0 ;
+  margin: 0 auto ;
+  border-radius: 100% ;
+  text-align: center ;
+  vertical-align: middle ;
+  width: 170px ;
+  height: 170px ;
+  font-size: 25px ;
+}
+#swell-bootstrap .rewards-templete .banner .point-circle h2 {
+  font-size: 60px ;
+  margin: 30px 0 0 ;
+  line-height: 55px ;
+}
+#swell-bootstrap .rewards-templete .main-block .heading-holder {
+  text-align: center ;
+  margin: 0;
+  font-size: 20px ;
+}
+#swell-bootstrap .rewards-templete .main-block .heading-holder h2 {
+  text-transform: capitalize ;
+  font-size: 40px;
+  font-weight: normal ;
+  margin: 0 ;
+  text-align: center ;
+}
+#swell-bootstrap .rewards-templete .main-block .heading-holder p {
+  text-align: center ;
+}
+#swell-bootstrap .rewards-templete .main-block .block-holder {
+  margin-bottom: 0 ;
+  overflow: hidden ;
+}
+#swell-bootstrap .rewards-templete .main-block .block-holder .item-box {
+  min-height: 230px ;
+  text-align: center ;
+  padding: 15px;
+  margin-bottom: 20px ;
+  overflow: hidden ;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#swell-bootstrap .rewards-templete .main-block .block-holder .item-box .icon-holder {
+  max-width: 60px ;
+  margin: 0 auto ;
+  border-radius: 100% ;
+  text-align: center ;
+}
+#swell-bootstrap .rewards-templete .main-block .block-holder .item-box .icon-holder i {
+  font-size: 30px ;
+  padding: 3px 0 0 ;
+}
+#swell-bootstrap .rewards-templete .main-block .block-holder .item-box h3 {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px auto;
+}
+#swell-bootstrap .rewards-templete .main-block .block-holder .item-box h2 {
+  margin: 0 auto 10px auto;
+  text-align: center;
+  display: block;
+  width: 130px;
+  background: #65c402;
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 0 !important;
+}
+#swell-bootstrap .rewards-templete .referral-block {
+  padding: 5px 0 0 0;
+  text-align: center ;
+  font-size: 20px ;
+  height: auto ;
+}
+#swell-bootstrap .rewards-templete .referral-block h2 {
+  font-size: 40px;
+  font-weight: normal ;
+  margin-bottom: 3px ;
+  text-align: center ;
+  opacity: 1 ;
+  float: none ;
+  display: block ;
+  width: 100% ;
+  height: auto ;
+  background: transparent ;
+}
+#swell-bootstrap .rewards-templete .referral-block p {
+  text-align: center ;
+  opacity: 1 ;
+  float: none ;
+  display: block ;
+  width: 100% ;
+  height: auto ;
+  background: transparent ;
+}
+#swell-bootstrap .rewards-templete .referral-block .share-link {
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#swell-bootstrap .rewards-templete .referral-block .swell-referral-link{
+  text-transform: lowercase;
+  height: auto !important;
+  margin: 0;
+  text-align: center;
+}
+#swell-bootstrap .rewards-templete .btn-block ul {
+  text-align: center ;
+  padding: 0 ;
+  margin: 15px 0 0 ;
+  opacity: 1 ;
+  float: none ;
+  display: block ;
+  width: 100% ;
+  height: auto ;
+  background: transparent ;
+}
+#swell-bootstrap .rewards-templete .hover-logout-box .btn-block ul li {
+  display: block ;
+}
+#swell-bootstrap .rewards-templete .hover-logout-box .btn-block ul li a {
+  display: inline-block ;
+  width: 92% ;
+  margin: 0 0 10px ;
+}
+#swell-bootstrap .rewards-templete .btn-block ul li {
+  display: inline-block ;
+  padding: 0 ;
+  margin: 0 10px 10px ;
+  font-size: 14px ;
+  cursor: pointer ;
+}
+#swell-bootstrap .rewards-templete .btn-block ul li a {
+  padding: 12px 5px ;
+  color: #FFFFFF ;
+  border: 2px solid #FFFFFF ;
+  min-width: 180px ;
+  display: inline-block;
+}
+#swell-bootstrap .rewards-templete .btn-block ul li a:hover {
+  background-color: #FFFFFF ;
+  color: #111144 ;
+  text-decoration: none ;
+}
+#swell-bootstrap .rewards-templete .faq-block {
+  text-align: center ;
+  padding: 50px 0 ;
+  background-color: #D9E1F6 ;
+}
+#swell-bootstrap .rewards-templete .block-holder .heading-holder h2 {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#swell-bootstrap .rewards-templete .block-holder .heading-holder p {
+  font-family: 'Work Sans', sans-serif;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 15px;
+  display: block;
+  margin: 10px auto;
+}
+#swell-bootstrap .rewards-templete .faq-block .content-block {
+  background-color: #D9E1F6 ;
+}
+#swell-bootstrap .rewards-templete .faq-block .content-block h2 {
+  color: #58595B ;
+  margin: 0 ;
+  font-size: 22px ;
+  text-align: center ;
+  opacity: 1 ;
+  float: none ;
+  display: block;
+  width: 100% ;
+  height: auto ;
+  padding: 0 ;
+  background: transparent ;
+}
+#swell-bootstrap .rewards-templete .faq-block .content-block p {
+  color: #58595B ;
+  margin-bottom: 25px ;
+  font-size: 15px ;
+  opacity: 1 ;
+  float: none ;
+  display: block;
+  width: 100% ;
+  height: auto ;
+  padding: 0 ;
+  background: transparent ;
+}
+#swell-bootstrap .container.how-container {
+  margin-top: 35px;
+  display: flex;
+}
+.how-container .col-md-4 {
+  background-image: url('https://cdn.shopify.com/s/files/1/0259/2151/files/RS25-LoginBox.jpg?6441389875070774912');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#swell-bootstrap .how-container .col-md-4 .login-swell {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  color: #65c402;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.how-container .col-md-4 .earn-swell {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+#swell-bootstrap .how-container .col-md-4 .login-swell-btn {
+  margin: 0 auto 10px auto;
+  text-align: center;
+  display: block;
+  width: 130px;
+  padding: 5px 0;
+  background: #65c402;
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: all .3s ease-out 0.1s;
+  -moz-transition: all .3s ease-out 0.1s;
+  -o-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+#swell-bootstrap .how-container .col-md-4 .login-swell-btn:hover {
+  background: #fff;
+  color: #06192e;
+  text-decoration: none;
+}
+#swell-bootstrap .how-container .col-md-4 .signup-swell-btn {
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  font-weight: 500;
+}
+#swell-bootstrap .how-container .col-md-4 .signup-swell-btn a {
+  color: #65c402;
+  -webkit-transition: all .3s ease-out 0.1s;
+  -moz-transition: all .3s ease-out 0.1s;
+  -o-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+#swell-bootstrap .how-container .col-md-4 .signup-swell-btn a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.green-line {
+  height: 3px;
+  width: 50px;
+  display: block;
+  margin: 0 auto 15px auto;
+  background: #65c402;
+}
+.grey-line {
+  height: 1px;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 15px auto;
+  background: #777;
+}
+#swell-bootstrap .give-container {
+  display: flex;
+  padding: 0;
+}
+#swell-bootstrap .give-container .col-md-8 {
+  padding: 30px 15px;
+  background: #000;
+}
+#swell-bootstrap .give-container .col-md-4 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0259/2151/files/RS25-ActionShot.jpg?757811375787633573);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#swell-bootstrap .give-container .col-md-8 .give-10 {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  color: #65c402;
+  font-size: 30px;
+  font-weight: 500;
+}
+#swell-bootstrap .give-container .col-md-8 .refer-friends {
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 15px;
+  max-width: 500px;
+  display: block;
+  margin: 10px auto;
+  border-bottom: 1px solid #777;
+}
+#swell-bootstrap .give-container .col-md-8 .ref-login {
+  margin: 20px auto 10px auto;
+  text-align: center;
+  display: block;
+  width: 180px;
+  padding: 5px 0;
+  background: #65c402;
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: all .3s ease-out 0.1s;
+  -moz-transition: all .3s ease-out 0.1s;
+  -o-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+#swell-bootstrap .give-container .col-md-8 .ref-login:hover {
+  background: #fff;
+  color: #06192e;
+  text-decoration: none;
+}
+#swell-bootstrap .give-container .col-md-8 .ref-reg {
+  margin: 0 auto 10px auto;
+  text-align: center;
+  display: block;
+  width: 180px;
+  padding: 5px 0;
+  background: #65c402;
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: all .3s ease-out 0.1s;
+  -moz-transition: all .3s ease-out 0.1s;
+  -o-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+#swell-bootstrap .give-container .col-md-8 .ref-reg:hover {
+  background: #fff;
+  color: #06192e;
+  text-decoration: none;
+}
+#swell-bootstrap .rewards-templete .main-block .block-holder #redeem-options-region .item-box h2 {
+  background: transparent;
+}
+#redeem-options-region {
+  display: flex;
+}
+#swell-bootstrap #rewards-page-redeem-options-region .container {
+  padding: 0 30px;
+}
+#swell-bootstrap #redeem-options-region .col-md-4 {
+  padding: 0;
+}
+#redeem-options-region .col-md-4:nth-child(1) .item-box{
+  background-color: #63c01e;
+}
+#redeem-options-region .col-md-4:nth-child(2) .item-box{
+  background-color: #58a81a;
+}
+#redeem-options-region .col-md-4:nth-child(3) .item-box{
+  background-color: #519918;
+}
+#redeem-options-region .col-md-4:nth-child(4) .item-box{
+  background-color: #4a8a15;
+}
+.you-have {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.you-have p {
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  #swell-bootstrap .container.how-container {
+    display: block;
+    margin-top: 15px;
+  }
+  #swell-bootstrap .how-container .col-md-8 {
+    padding: 0;
+  }
+  .how-container .col-md-4 {
+    margin-top: 15px;
+    margin-right: 0;
+    padding: 15px;
+  }
+  #swell-bootstrap .give-container {
+    display: block;
+    padding: 0;
+  }
+  #swell-bootstrap .give-container .col-md-4 {
+    display: none;
+  }
+  #swell-bootstrap #rp-campaigns-region .col-md-4 {
+    padding: 0;
+  }
+  #swell-bootstrap #rewards-page-redeem-options-region .container {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 786px) {
+  #swell-bootstrap .rewards-templete .banner {
+    padding: 0;
+  }
+  #swell-bootstrap .rewards-templete .banner .caption h1 {
+    font-size: 17px;
+  }
+  #swell-bootstrap .rewards-templete .block-holder .heading-holder h2 {
+    font-size: 20px;
+  }
+  #redeem-options-region {
+    display: block;
+  }
+  #swell-bootstrap .rewards-templete .banner .caption{
+    top:20% ;
+  }
+  #swell-bootstrap .rewards-templete .banner .point-circle {
+    bottom: -35px ;
+    width: 70px ;
+    height: 70px ;
+    font-size: 16px ;
+  }
+  #swell-bootstrap .rewards-templete .banner .point-circle h2 {
+    font-size: 20px ;
+    margin: 15px 0 0 ;
+    line-height: 20px ;
+  }
+  #swell-bootstrap .rewards-templete .hover-logout-box .btn-block ul li {
+    width: 100% ;
+    margin: 0 0 10px ;
+  }
+  .you-have {
+    font-size: 20px;
+  }
+  #swell-bootstrap .give-container .col-md-8 .give-10 {
+    font-size: 24px;
   }
 }

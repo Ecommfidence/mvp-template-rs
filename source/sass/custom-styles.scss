@@ -1,0 +1,15 @@
+/* Styles for custom overrides or use master variables file. */
+
+
+/* New Theme Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+/*$font-main-brand: 'Montserrat', sans-serif;
+$font-main-text: 'Montserrat', sans-serif;*/
+/*$font-main-nav: 'Montserrat', sans-serif;*/
+
+/* Nav */
+/* Nav */
+$font-size-nav:               20px;
+$font-size-nav-sm:            $font-size-nav - 2px;
+$font-size-nav-icons:            $font-size-nav-sm - 2px;

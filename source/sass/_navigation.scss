@@ -1,18 +1,18 @@
-// Navigation Styles
+// navigation styles
 
 
 .menu-container {
   position: relative;
-  display: flex;
+  @include make-flex-div();
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   background-color: #000;
   color: #fff;
   padding: 15px;
-  font-family: 'Bebas Neue';
+  font-family: $font-main-nav;
 
-  // General Navbar-form Styles
+  // general navbar-form styles
   .navbar-form {
     //position: absolute;
     display: inline-block;
@@ -20,7 +20,7 @@
     right: 70px;
     color: #fff;
     z-index: 2;
-    font-size: 20px;
+    font-size: $font-size-nav;
     cursor: pointer;
     margin: 0;
     width: auto;
@@ -30,15 +30,15 @@
 
     .btn {
 
-      font-size: 16px;
+      font-size: $font-size-nav-icons;
     }
     i {
-      font-size: 18px;
+      font-size: $font-size-nav-sm;
       color: #fff;
       margin-left: 10px;
       margin-right: 20px;
       &:hover {
-        color: $color-brand-cart;
+        color: $color-brand-secondary;
       }
     }
     .input-group {
@@ -50,7 +50,7 @@
         border-radius: 0;
         display: none;
         i {
-          color: $color-brand-primary;
+          color: $color-brand-primary-nav;
           margin: 0;
         }
       }
@@ -61,7 +61,7 @@
       border-radius: 0 !important;
       box-shadow: none;
       border: none;
-      font-size: 16px;
+      font-size: $font-size-nav-icons;
       display: none;
       height: 34px;
       padding: 0 12px;
@@ -94,13 +94,13 @@
     padding: 0;
 
     .view-cart-success {
-      font-family: 'Work Sans', sans-serif;
+
       font-weight: 400;
       display: inline-block;
       width: auto;
-      background-color: $color-btn-primary;
+      background-color: $color-brand-primary-nav;
       color: #fff;
-      border: 2px solid $color-btn-primary;
+      border: 2px solid $color-brand-primary-nav;
       text-transform: uppercase;
       text-align: center;
       padding: 5px 10px;
@@ -108,8 +108,8 @@
       font-size: 11px;
       &:hover {
         color: #fff;
-        background: $color-brand-primary;
-        border-color: $color-brand-primary;
+        background: $color-brand-primary-nav;
+        border-color: $color-brand-primary-nav;
       }
     }
 
@@ -119,32 +119,32 @@
     }
     .nav-customer {
       display: inline-block;
-      font-size: 18px;
+      font-size: $font-size-nav-sm;
     }
     i {
-      font-size: 16px;
+      font-size: $font-size-nav-icons;
       color: #fff;
       margin: 0 5px;
       &:hover {
-        color: $color-brand-primary;
+        color: $color-brand-primary-nav;
       }
     }
     a {
       color: #fff;
       text-transform: uppercase;
       &:hover {
-        color: $color-brand-primary;
+        color: $color-brand-primary-nav;
       }
     }
     a.active {
-      color: $color-brand-primary;
+      color: $color-brand-primary-nav;
     }
     .nav-cart {
       padding-left: 5px;
       padding-right: 8px;
-      border-right: 2px solid $color-brand-primary;
-      border-left: 2px solid $color-brand-primary;
-      font-size: 16px;
+      border-right: 2px solid $color-brand-primary-nav;
+      border-left: 2px solid $color-brand-primary-nav;
+      font-size: $font-size-nav-icons;
       position: relative;
       top: -2px;
       i {
@@ -159,7 +159,8 @@
     margin-top: 2px;
 
     img {
-      width: 240px;
+      width: $logo-width;
+      height: $logo-height;
       @media screen and (max-width: $screen-md) {
         margin-left: 40px;
         width: 50px;
@@ -181,26 +182,26 @@
   .main-nav {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translatex(-50%);
     display: inline-block;
     padding: 0;
     text-align: right;
     /* top: 80px; */
     z-index: 1;
     text-align: center;
-    font-size: 20px;
+    font-size: $font-size-nav;
     margin: 0;
     li {
       display: inline-block;
       margin-top: 4px;
       a {
-        font-family: 'Bebas Neue';
+        font-family: $font-main-nav;
         color: #fff;
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: $font-size-nav;
         margin: 0 0 0 10px;
         &:hover {
-          color: $color-brand-primary;
+          color: $color-brand-primary-nav;
         }
       }
     }
@@ -361,7 +362,7 @@
     min-width: 10px;
     padding: 1px 5px;
     font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-main-text;
     font-weight: 400;
     color: #fff;
     vertical-align: baseline;
@@ -376,7 +377,7 @@
 
   }
 
-  .badge.cartCount {
+  .badge.cartcount {
     //position: absolute;
     top: 40px;
     right: 40px;
@@ -388,9 +389,12 @@
   }
 
   @media screen and (max-width: $screen-md) {
-    font-family: 'Bebas Neue';
+    font-family: $font-main-nav;
     padding: 15px 0 13px 0;
 
+    .logo-div {
+      align-self: flex-end;
+    }
     .right-nav {
 
       align-self: center;
@@ -411,20 +415,33 @@
         top: 7px;
       }
     }
-    .logo-div {
-      align-self: flex-end;
-    }
 
+    .navbar-form .input-group-addon, .navbar-form .input-group-btn {
+      width: 1% !important;
+      white-space: nowrap !important;
+      vertical-align: middle;
+    }
     .navbar-form {
       position: absolute;
       top: -1px;
       right: 55px;
       width: 200px;
-    }
-    .navbar-form .input-group-addon, .navbar-form .input-group-btn {
-      width: 1% !important;
-      white-space: nowrap !important;
-      vertical-align: middle;
+      .input-group {
+        .form-control.search-bar {
+          width: 150px;
+          right: 0;
+          position: absolute !important;
+          left: inherit;
+        }
+      }
+      i:hover {
+        color: $color-brand-primary-nav;
+      }
+      .input-group-addon, .input-group-btn {
+        width: 1% !important;
+        white-space: nowrap !important;
+        vertical-align: middle;
+      }
     }
     .info-div {
 
@@ -434,15 +451,23 @@
   }
 }
 
+/*
+
+#navbar-top,
+.brand {
+  display: none;
+}
+*/
+
+
 #navbar-top,
 .brand {
   display: none;
 }
 
+// utility classes to make top nav sticky
 
-// Utility Classes to make top nav sticky
-
-// If body has class, add top padding to wrap for fixed navbar
+// if body has class, add top padding to wrap for fixed navbar
 
 .has-fixed-top-navbar {
   .wrap {
@@ -450,7 +475,7 @@
   }
 }
 
-// Make top nav stick by adding utility class
+// make top nav stick by adding utility class
 .sticky-top {
   position: fixed;
   top: 0;
@@ -458,21 +483,21 @@
   width: 100%;
 }
 
-// Overlay Nav Styles
+// overlay nav styles
 .overlay {
   height: 100%;
   width: 0%;
-  position: fixed; /* Stay in place */
-  z-index: 9; /* Sit on top */
+  position: fixed; /* stay in place */
+  z-index: 9; /* sit on top */
   left: 0;
   top: 0;
-  background-image: url('https://cdn.shopify.com/s/files/1/0535/3409/files/Blue-Hero-min.jpg?14462823438105375394');
+  background-image: url('https://cdn.shopify.com/s/files/1/0535/3409/files/blue-hero-min.jpg?14462823438105375394');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow: hidden; /* Disable horizontal scroll */
+  background-color: rgb(0,0,0); /* black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* black w/opacity */
+  overflow: hidden; /* disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 
   a{
@@ -482,7 +507,7 @@
     display: table;
     margin: 10px auto;
     transition: 0.3s;
-    font-family: 'DIN Bold';
+    font-family: 'din bold';
     @media screen and (max-height: 450px) {
       font-size: 20px
     }
@@ -504,9 +529,9 @@
 .overlay-content {
   position: relative;
   top: 45%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translatey(-50%);
+  -ms-transform: translatey(-50%);
+  transform: translatey(-50%);
   width: 100%;
   text-align: center;
   margin: 0;
@@ -518,12 +543,12 @@
   position: fixed;
   bottom: 40px;
   right: 40px;
-  z-index: 9999;
+  z-index: 999;
   width: 32px;
   height: 32px;
   text-align: center;
   line-height: 30px;
-  background: $color-brand-primary;
+  background: #65c402;
   color: #444;
   cursor: pointer;
   border: 0;
@@ -531,30 +556,42 @@
   text-decoration: none;
   transition: opacity 0.2s ease-out;
   opacity: 0;
-
+  -webkit-transition: all .3s ease-out 0.1s;
+  -moz-transition: all .3s ease-out 0.1s;
+  -o-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
   &:hover{
-
+    color:#fff;
     background: $color-brand-primary;
   }
   &.show{
     opacity: 1;
 
   }
-}
-@media screen and (max-width: 767px) {
-  #back-to-top {
-    right: 10px;
+  i {
+    transition: none;
   }
+
+  @media screen and (max-width: 767px) {
+    #back-to-top {
+      right: 10px;
+    }
+  }
+
+
 }
+
 
 .article-paginate {
   clear: both;
   text-align: center;
   margin-bottom: 15px;
-  .page a {
-    color: $color-brand-primary;
-  }
-  .page.current {
-    color: #fff;
+  .page{
+    a {
+      color: $color-brand-primary-nav;
+    }
+    &.current {
+      color: #fff;
+    }
   }
 }

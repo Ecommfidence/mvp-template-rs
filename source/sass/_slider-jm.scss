@@ -26,87 +26,100 @@
   }
   .slide_1 {
     .slide-text {
-      @include slider_text(75%);
+
+      @include slider_text(25%);
+
       p:first-child {
-        font-family: $font-family-bebas;
-        font-size: 6vw;
-        line-height: 6vw;
+        font-family: $font-slider-titles;
+        color:$color-slider-titles-dark;
+        font-size: 4vw;
+        line-height: 4vw;
         text-align: center;
         margin: 0;
-        text-shadow: -2px 0px 20px rgba(0, 0, 0, 1);
+        text-shadow: $font-slider-text-shadow;
         position: relative;
       }
-      p:nth-child(2) {
-        font-family: $font-family-bebas;
+   /*   p:nth-child(2) {
+        font-family: $font-slider-titles;
         font-size: 6vw;
         line-height: 6vw;
         text-align: center;
         margin: 0;
         text-shadow: -2px 0px 6px rgba(0, 0, 0, 1);
         position: relative;
-      }
+      }*/
       .slide_1_link {
-        @include slider_link(#FFFFFF, $color-brand-primary);
+     /* slider_link_custom variables $btn-text-color, $btn-border-color, $btn-bg-color, $btn-text-color-h, $btn-border-color-h, $btn-bg-color-h*/
+      @include slider_link_custom(#FFF, #FFF, transparent, $color-brand-primary, #FFF, #FFF );
+
+        font-family:$font-slider-buttons;
+
       }
     }
   }
 
   .slide_2 {
     .slide-text {
-      @include slider_text(auto, 0%);
+
+      @include slider_text(50%);
+      bottom:0;
+      top:auto;
+     /* @include slider_text(auto, 0%);
       p:first-child {
-        font-family: $font-family-bebas;
+        font-family: $font-slider-titles;
         font-size: 6vw;
         line-height: 5vw;
         text-align: center;
         margin: 0;
-        text-shadow: -2px 0px 20px rgba(0, 0, 0, 1);
+        text-shadow: $font-slider-text-shadow;
         position: relative;
       }
       p:nth-child(2) {
-        font-family: $font-family-bebas;
+        font-family: $font-slider-titles;
         font-size: 5vw;
         line-height: 5vw;
         text-align: center;
         margin: 0;
-        text-shadow: -2px 0px 6px rgba(0, 0, 0, 1);
+        text-shadow: $font-slider-text-shadow;
         position: relative;
-      }
+      }*/
       .slide_2_link {
-        @include slider_link($color-brand-primary, $color-brand-primary);
+        @include slider_link_custom($color-brand-primary, #FFF, #FFF, #FFF, $color-brand-primary, $color-brand-primary );
+
+        font-family:$font-slider-buttons;
+        margin-bottom:10px;
+
       }
     }
   }
 
   .slide_3 {
     .slide-text {
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      left: 75%;
-      -ms-transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      @include slider_text(75%);
+
       p:first-child {
-        font-family: $font-family-bebas;
-        font-size: 5vw;
-        line-height: 5vw;
+        font-family: $font-slider-titles;
+        font-size: 6vw;
+        line-height: 6vw;
         text-align: center;
         margin: 0;
-        text-shadow: -2px 0px 20px rgba(0, 0, 0, 1);
+        text-shadow: $font-slider-text-shadow;
         position: relative;
+        color:$color-slider-titles;
       }
       p:nth-child(2) {
-        font-family: $font-family-bebas;
+        font-family: $font-slider-titles;
         font-size: 5vw;
         line-height: 5vw;
         text-align: center;
         margin: 0;
-        text-shadow: -2px 0px 6px rgba(0, 0, 0, 1);
+        text-shadow: $font-slider-text-shadow;
         position: relative;
       }
       .slide_3_link {
-        @include slider_link(#FFFFFF, $color-brand-primary);
+        @include slider_link_custom($color-brand-primary, $color-brand-primary, transparent, #FFF, $color-brand-primary, $color-brand-primary );
+        font-family:$font-slider-buttons;
+
       }
     }
   }
@@ -124,23 +137,23 @@
   z-index: -1;
 }*/
 
-#slick-1 {
+.slick-1 {
   .slick-dots {
     margin-bottom: 0;
     position: absolute;
     bottom: 10px;
 
     li {
-      background: #aaa;
+      background: $color-slider-radio;
       border-radius: 50%;
       width: 15px;
       height: 15px;
 
       &.slick-active {
-        background: #fff;
+        background: $color-slider-radio-active;
       }
       &:hover {
-        background: #fff;
+        background: $color-slider-radio-active;
       }
       button {
         color: transparent;
@@ -154,13 +167,21 @@
   }
 }
 
-
+/* Product Slider */
 
 .product-slick-container {
   position: relative;
+  padding-top:10px;
   h2{
-
     @extend .h-tb-p-10;
+  }
+  .reveal {
+    button{
+      @extend .btn;
+      @extend .btn-brand-default;
+      @extend .btn-product-reveal;
+      @extend .btn-dark;
+    }
   }
   .product-slick {
     max-width: 80%;
@@ -175,42 +196,10 @@
       outline: none !important;
     }
     .slick-prev-arrow {
-      position: absolute;
-      top: 45%;
-      left: -60px;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      cursor: pointer;
-      span {
-        font-size: 40px;
-        color: #fff;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        background: rgba(119, 119, 119, 0.6);
-        text-align: center;
-        border-radius: 50%;
-      }
+      @include slick-nav-button(-60px, auto);
     }
     .slick-next-arrow {
-      position: absolute;
-      top: 45%;
-      right: -60px;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      cursor: pointer;
-      span {
-        font-size: 40px;
-        color: #fff;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        background: rgba(119, 119, 119, 0.6);
-        text-align: center;
-        border-radius: 50%;
-      }
+      @include slick-nav-button(auto, -60px);
     }
     .slick-dots {
       bottom: 0;
@@ -242,7 +231,7 @@
       width: 30px;
     }
     p {
-      font-family: 'DIN MdCon';
+     font-family: $font-product-info-overlay;
       font-size: 20px;
     }
   }
@@ -252,7 +241,7 @@
     border: none;
     border-radius: 0;
     margin-top: 15px;
-    font-family: 'DIN LtCon';
+    font-family: $font-family-work-sans;
     text-transform: uppercase;
     &:hover {
       background: $color-brand-primary;
@@ -278,16 +267,7 @@
     font-size: 16px;
     margin: 0;
   }
-  .see-all {
-    text-align: center;
-    margin: 0 auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-transform: uppercase;
-    a{
-      @extend .btn, .btn-brand-default;
-    }
-  }
+
 }
 
 .slick-dots li button {
@@ -301,7 +281,6 @@
   display: inline-block;
   padding: 1em;
   overflow: hidden;
-  color: #fff;
   background: #000;
   @include make-flex-div();
   align-items: center;
@@ -330,27 +309,15 @@
   }
 }
 
-
 .bio-slide-image {
   max-width: 100%;
   position: relative;
 }
 
-.blog-slant {
-  position: relative;
-  display: inline-block;
-  padding: 1em;
-  overflow: hidden;
-  color: #fff;
-  background: #000;
-  @include make-flex-div();
-  align-items: center;
-  justify-content: center;
-}
 
-#index-bio {
+.index-bio {
   min-height: 700px;
-  display: flex;
+  @include make-flex-div();
   margin: 0;
   overflow: hidden;
   background-image: url(#{$index-bio-bg-img});
@@ -358,7 +325,7 @@
   background-position: center;
 
   .col-md-7 {
-    display: flex;
+    @include make-flex-div();
   }
   .bio-image-fade {
     align-self: flex-end;
@@ -392,6 +359,11 @@
     text-align: center;
     color: #fff;
     outline: none;
+
+    &:hover{
+
+      color:$color-brand-primary;
+    }
   }
   .verticalCarouselGroup.vc_list > li {
     border-width: 0px;
@@ -439,7 +411,7 @@
       }
     }
     .blog-content {
-      color: #fff;
+      color:$color-brand-body-color;
       font-size: 16px;
       margin: 5px 0;
     }
@@ -449,15 +421,19 @@
       i {
         color: $color-brand-primary;
         font-size: 24px;
-      }
-    }
-    .see-all-blogs {
-      text-align: center;
 
-      a {
-        @extend .btn-brand-default, .btn-light, .btn-brand-sm, .btn-center-block;
+        &:hover{
+
+          color:$btn-dark-color;
+        }
       }
     }
+
+
+  }
+
+  .see-all-blogs-link {
+      @extend .btn-brand-default, .btn-brand-sm, .btn-center-block, .btn-brand-secondary,;
   }
 }
 
@@ -476,37 +452,10 @@
   }
 }
 
-.news-tint {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-transition: all .3s ease-out 0.1s;
-  -moz-transition: all .3s ease-out 0.1s;
-  -o-transition: all .3s ease-out 0.1s;
-  transition: all .3s ease-out 0.1s;
-}
-
-.index-news .col-md-3:hover {
-  .news-date {
-    color: #fff;
-  }
-  .news-tint {
-    background: rgba($color-brand-primary, 0.7);
-  }
-  .news-readmore {
-    border-color: $color-brand-primary;
-    background: $color-brand-primary;
-    color: #fff;
-  }
-}
-
 @media screen and (max-width: 767px) {
 
   /* Main Slider  */
-  #slick-1 .slick-dots li {
+  .slick-1 .slick-dots li {
     width: 10px;
     height: 10px;
   }
@@ -549,10 +498,11 @@
 
 
   /* Index Slider */
-  #index-bio {
+  .index-bio {
     min-height: initial;
     .vc_list {
       margin-right: 0;
+      margin-bottom:1em;
     }
     .verticalCarousel {
       .blog-readmore {
@@ -560,8 +510,12 @@
         i {
           font-size: 18px;
           margin-left: 7px;
+
           position: relative;
           top: 3px;
+        }
+        &:hover{
+          color:$btn-dark-color;
         }
       }
 
@@ -609,7 +563,7 @@
   .follow-scroll {
     clear: both;
   }
-  #index-bio {
+  .index-bio {
     display: block;
     min-height: initial;
     padding: 0;
@@ -620,28 +574,11 @@
       text-align: left;
     }
 
-    .see-all-blogs-link {
-      display: block;
-      margin: 15px auto 15px auto;
-      text-align: center;
-      width: 100px;
-      text-transform: uppercase;
-      background: transparent;
-      color: #fff;
-      border: 1px solid #fff;
-      padding: 5px 0;
-      &:hover {
-        color: #fff;
-        background: $color-brand-primary;
-        border: 1px solid $color-brand-primary;
-      }
-    }
+
     .verticalCarousel .blog-date {
       margin-left: inherit;
     }
   }
-  .index-news {
-    flex-wrap: wrap;
-  }
+
 
 }

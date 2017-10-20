@@ -2,10 +2,11 @@
 
 /* Colors */
 
-$color-brand-primary: #65c402;
+$color-brand-primary: #0c371d;
 $color-brand-secondary: #192f6b;
 $color-cart-button: #06192e;
 
+/* Used for nav and base link hover state */
 
 $color-brand-primary-nav: #65c402;
 
@@ -21,14 +22,17 @@ $color-brand-body-color: #FFF;
 $color-light-text: #FFF;
 $color-light-p-text: #DDD;
 
-$color-link-hover: $color-brand-primary;
+
+
+
+$color-link-hover: $color-brand-primary-nav;
 
 $dropdown-link-hover-color: #000;
 $dropdown-link-hover-bg: #000;
 
 
-$brand-h2-heading-color:#777;
-$brand-h2-heading-light-color: #CCC;
+$brand-h2-heading-color: $color-brand-primary;
+$brand-h2-heading-light-color: #FFF;
 $brand-h2-sub-heading-color: #000;
 
 $color-news-date: #FFF;
@@ -37,7 +41,7 @@ $color-news-posted-by: #777;
 
 /* Skw slider hover background */
 $skw-bg-prev: rgba($color-brand-primary, 0.6);
-$skw-bg-next: rgba($color-brand-secondary, 0.6);
+$skw-bg-next: rgba(12, 55, 29, 0.6);
 
 $btn-light-color: #000;
 $btn-light-bg: #fff;
@@ -87,10 +91,10 @@ $font-family-bebas:           'Bebas Neue' !default;
 $font-family-bebas-bold:           'Bebas Neue Bold';
 $main-template-font:          $font-family-work-sans;
 $thumbnail-caption-padding:    9px !default;
-$font-slider-titles:          'Bebas Neue' !default;
+$font-slider-titles:          'Bebas Neue Bold' !default;
 $font-product-info-overlay:   'DIN MdCon' !default;
 
-$font-main-brand:             $font-family-work-sans;
+$font-main-brand:             $font-family-bebas-bold;
 $font-main-buttons:           $font-family-work-sans;
 $font-main-text:              $font-family-work-sans;
 
@@ -119,20 +123,27 @@ $font-countdown-title: $font-family-bebas;
 
 /* Main Slider Variables */
 $font-slider-titles: $font-family-bebas-bold;
-$font-slider-text-shadow: -2px 0px 20px rgba(0, 0, 0, 1); /* -2px 0px 20px rgba(0, 0, 0, 1) */
-$font-slider-text-shadow-secondary: -2px 0px 6px rgba(0, 0, 0, 1); /* -2px 0px 20px rgba(0, 0, 0, 1) */
+$font-slider-text-shadow: none; /* -2px 0px 20px rgba(0, 0, 0, 1) */
+$font-slider-text-shadow-secondary: none; /* -2px 0px 20px rgba(0, 0, 0, 1) */
 
 $color-slider-titles:         $color-brand-primary;
 $color-slider-titles-dark:    #FFF;
 
 
+$font-account-buttons:        'BigNoodleTitling';
+$font-secondary-h2:           'BigNoodleTitling';
+$font-main-nav:               $font-family-bebas;
+
+
+
 /*Font Sizes */
 
 /* Main Page Header */
+
 $font-weight-h2:              bold;
 $font-size-h2:                60px;
 $font-spacing-h2:             4px;
-$font-lineheight-h2:             1.1;
+$font-lineheight-h2:           1.1;
 
 /* Nav */
 $font-size-nav:               26px;
@@ -142,42 +153,46 @@ $font-size-nav-icons:            $font-size-nav-sm - 2px;
 $width-site:                  1200px;
 
 
-
 $skw-border-width:3px;
 $skw-buttons-padding: 0 30px;
-$skw-font: $font-family-work-sans;
-$skw-text-padding:0;
-
+$skw-font: $font-family-bebas-bold;
+$skw-text-padding:3px;
 
 /*Slider Variables */
 $color-slider-radio: #aaa;
 $color-slider-radio-active: #fff;
 
-$color-stats-bg: rgba(#000, 0.2);
+
+
+$color-stats-bg: $color-brand-primary;
 $color-stats-value: #fff;
 $color-stats-title-value: #ccc;
 
+
+
 $overlay-img-bg:'https://cdn.shopify.com/s/files/1/0535/3409/files/Blue-Hero-min.jpg?14462823438105375394';
 /* Home Page Owl News */
-$owl-img-1: 'https://cdn.shopify.com/s/files/1/0259/2151/t/105/assets/news_1.jpg?13550032680311357315';
-$owl-img-2: 'https://cdn.shopify.com/s/files/1/0259/2151/t/105/assets/news_2.jpg?13550032680311357315';
-$owl-img-3: 'https://cdn.shopify.com/s/files/1/0259/2151/t/105/assets/news_3.jpg?13550032680311357315';
-$owl-img-4: 'https://cdn.shopify.com/s/files/1/0259/2151/t/105/assets/news_4.jpg?13550032680311357315';
+$owl-img-1: 'https://cdn.shopify.com/s/files/1/2292/0769/t/2/assets/news_1.jpg?4613713377817309306';
+$owl-img-2: 'https://cdn.shopify.com/s/files/1/2292/0769/t/2/assets/news_2.jpg?4613713377817309306';
+$owl-img-3: 'https://cdn.shopify.com/s/files/1/2292/0769/t/2/assets/news_3.jpg?4613713377817309306';
+$owl-img-4: 'https://cdn.shopify.com/s/files/1/2292/0769/t/2/assets/news_4.jpg?4613713377817309306';
 $owl-pos: default !default;
 $owl-size: default !default;
 
+
+
 /* Main Background Image on Product Slider */
-$main-bg-img:'https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-001.jpg?15383927691305019179';
+$main-bg-img:'https://cdn.shopify.com/s/files/1/2292/0769/files/9.19.17-JM95-Website-Desktop-Apparel-01.jpg?12061983155472766960';
 
 /* News Page Variables */
 $blog-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.31.17-RS25-Website-2017-BlogPage-001.jpg?11652835036440552667';
 $color-blog-bg: #fefefe;
-$color-blog-news-bg: #3c3c3c;
-$news-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.31.17-RS25-Website-2017-NewsPage-001.jpg?11652835036440552667';
+$color-blog-news-bg: #202020;
+$news-bg-img: 'https://cdn.shopify.com/s/files/1/2292/0769/files/9.21.17-JM95-Website-2017-News-Background-01.jpg?14516689298437051388';
 
 $foundation-bg-img:'https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-003.jpg?18356651564452868234';
 $index-bio-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.21.17-RS25-BlogBkgrnd-Graphic-001.jpg?1294120…';
-$newsletter-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-002.jpg?8372329649154329708';
+$newsletter-bg-img: 'https://cdn.shopify.com/s/files/1/2292/0769/files/9.19.17-JM95-Website-Desktop-Newsletter-01.jpg?18100947108492007874';
 
 $foundation-bg: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Charity-Image-001.jpg?10286305261302719757';
 $foundation-gallery-bg: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.28.17-RS25-Website-2017-FoundationsPage-Collage-2-001.jpg?594795211302029631';
