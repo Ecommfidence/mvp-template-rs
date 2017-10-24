@@ -5,18 +5,31 @@
 # OSCAR - SCSS still needs to be reworked to follow Atomic CSS Design.
 
 # Bootstrap
-# Fonts
 # Site Variables
+# Custom Styles
 # Mixins
+# Helper
+# Fonts
 # Base Styles
+# Buttons
+# Styleguide styles
 # Slider
+# Bio
 # Navigation
-# Cart Styles
+# Cart
 # Newsletter
 # Foundation
-# Instagram Feed
+# Instagram and Owl News
+# Blog
+# Media
+# Rewards
+# Schedule
+# Search
+# Pagination
+# Ads
+# Account
+# SKW Gallery
 # Footer
-# Utilities
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -3319,6 +3332,7 @@ a.label:hover, a.label:focus {
   .hidden-print {
     display: none !important; } }
 
+/* Removed un-used styles */
 /*--------------------------------------------------------------
 # Site Variables
 --------------------------------------------------------------*/
@@ -3328,6 +3342,7 @@ a.label:hover, a.label:focus {
 /* Used for nav and base link hover state */
 /* Button Variables */
 /* Body Text Color */
+/* General UI Colors */
 /* Blog and News Colors */
 /* Skw slider hover background */
 /* Typography Mixin */
@@ -3341,6 +3356,7 @@ a.label:hover, a.label:focus {
 /*Font Sizes */
 /* Main Page Header */
 /* Nav */
+/* SKW Slider */
 /*Slider Variables */
 /* Home Page Owl News */
 /* Media Pages */
@@ -3709,140 +3725,6 @@ h6 {
 /*--------------------------------------------------------------
 # Base Styles
 --------------------------------------------------------------*/
-.black-bg-block {
-  background-color: #202529;
-  color: #fff;
-  padding-bottom: 2em; }
-
-.light-bg {
-  background-color: #0066A8;
-  padding: 20px;
-  margin: 20px auto;
-  color: #FFF; }
-  .light-bg h2 {
-    color: #F3F5F8; }
-
-h3.style-guide-heading {
-  box-sizing: border-box;
-  display: block;
-  width: auto;
-  padding: 10px 15px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #4C555C;
-  color: #F3F5F8;
-  margin: 0 auto 1em;
-  text-shadow: none;
-  margin-left: -15px;
-  margin-right: -15px; }
-
-h4.style-guide-sub-heading {
-  display: block;
-  width: 100%;
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: #4C555C;
-  margin: 1em auto 1em;
-  padding-bottom: 0.5em;
-  text-shadow: none;
-  border-bottom: 1px solid #F3F5F8; }
-
-.style-guide-ui {
-  background-color: #32383D; }
-
-.style-block {
-  background-color: #FFF;
-  margin-bottom: 2em;
-  box-shadow: 0px 0px 7px #202529;
-  padding: 0 15px 15px 15px; }
-  @media (max-width: 992px) {
-    .style-block {
-      margin-left: 0px;
-      margin-right: 0px; } }
-
-.style-guide-ui h2, .style-guide-ui h3, .style-guide-ui h4 {
-  font-family: "Work Sans", sans-serif !important; }
-
-.color-swatch {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  border: 2px solid #CCC; }
-
-.color-brand-primary {
-  background-color: #65c402; }
-
-.color-brand-secondary {
-  background-color: #192f6b; }
-
-.color-cart-button {
-  background-color: #06192e; }
-
-.color-brand-primary-nav {
-  background-color: #65c402; }
-
-.color-brand-light-gray {
-  background-color: #CCC; }
-
-.color-brand-mid-gray {
-  background-color: #777; }
-
-.color-brand-dark-gray {
-  background-color: #202020; }
-
-.color-brand-black {
-  background-color: #000; }
-
-.button-brand-primary-text {
-  background-color: #FFF; }
-
-.color-light-text {
-  background-color: #FFF; }
-
-.color-light-p-text {
-  background-color: #DDD; }
-
-.font-style-guide {
-  font-size: 30px; }
-
-.font-1 {
-  font-family: "Bebas Neue"; }
-
-.font-2 {
-  font-family: "Bebas Neue Bold"; }
-
-.font-3 {
-  font-family: "BigNoodleTitling"; }
-
-.font-4 {
-  font-family: "DIN Cond"; }
-
-.font-5 {
-  font-family: "DIN Bold"; }
-
-.font-6 {
-  font-family: "DIN LtCon"; }
-
-.font-7 {
-  font-family: "DIN BdCon"; }
-
-.font-8 {
-  font-family: "DIN MdCon"; }
-
-.font-9 {
-  font-family: "DIN Lt"; }
-
-.font-10 {
-  font-family: "Work Sans", sans-serif; }
-
-.font-11 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-/*--------------------------------------------------------------
-# Base Styles TODO Add all variables from original liquid styles
---------------------------------------------------------------*/
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #fff; }
@@ -3960,16 +3842,6 @@ a:hover, a:focus {
     letter-spacing: 0; } }
 
 /* Other */
-.index-social-row {
-  background: #3b3838;
-  padding: 25px 0;
-  text-align: center; }
-  .index-social-row a {
-    display: inline-block;
-    margin: 0 15px; }
-  .index-social-row i {
-    font-size: 6vw; }
-
 .section-wrap:last-of-type .main-content {
   padding-bottom: 3em; }
 
@@ -4319,6 +4191,10 @@ body hr, body .page-header, body .collection--header .collection--intro > h1, .c
   width: 100px;
   margin: 0 auto; }
 
+/*--------------------------------------------------------------
+# Styleguide Styles
+--------------------------------------------------------------*/
+/*@import "style-guide";*/
 /*--------------------------------------------------------------
 # Sliders
 --------------------------------------------------------------*/
@@ -10428,48 +10304,35 @@ body.template-search #content {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer-content {
+.footer-content {
   padding-top: 10px;
   background: #000;
   display: block;
   height: initial; }
-  #footer-content a {
-    color: #fff;
-    font-family: 'Work Sans', sans-serif;
+  .footer-content a {
+    color: #FFF;
+    font-family: "Work Sans", sans-serif;
     text-transform: capitalize;
     font-size: 14px;
     margin: 0 10px 10px 10px;
     display: inline-block;
     padding-top: 3px; }
-    #footer-content a:hover {
+    .footer-content a:hover {
       color: #65c402; }
-  #footer-content .social-icons {
-    margin: 0 0 10px 30px;
-    display: inline-block; }
-    #footer-content .social-icons li {
-      display: inline-block;
-      margin: 0 5px; }
-      #footer-content .social-icons li a {
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-        border-radius: 50%;
-        text-align: center;
-        display: block;
-        color: #c62032;
-        background: #fff; }
-    #footer-content .social-icons i {
-      position: relative;
-      top: -1px;
-      font-size: 14px;
-      color: #000; }
-      #footer-content .social-icons i:hover {
-        color: #65c402; }
 
-@media screen and (max-width: 767px) {
-  #footer-content .social-icons {
-    margin: 0 0 10px 0;
-    display: block; } }
+/* Social Icons Footer Visible only on Mobile */
+.index-social-row {
+  background: #3b3838;
+  padding: 25px 0;
+  text-align: center; }
+  .index-social-row a {
+    display: inline-block;
+    margin: 0 15px; }
+  .index-social-row i {
+    font-size: 6vw;
+    color: #65c402; }
+    .index-social-row i:hover {
+      color: #FFF; }
 
 /*--------------------------------------------------------------
 # Utilities

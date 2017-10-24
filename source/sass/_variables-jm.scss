@@ -33,6 +33,12 @@ $brand-h2-heading-color: $color-brand-primary;
 $brand-h2-heading-light-color: #FFF;
 $brand-h2-sub-heading-color: #000;
 
+/* General UI Colors */
+$color-footer-bg: #000;
+$color-footer-nav-text: #FFF;
+
+$color-footer-social-icons-bg: #3b3838;
+
 /* Blog and News Colors */
 
 $color-news-date: #FFF;
@@ -84,16 +90,12 @@ $main-template-font:          $font-family-work-sans;
 $font-slider-titles:          $font-family-bebas-bold;
 $font-product-info-overlay:   $font-family-din-md-cond;
 
-
-
 /*eCommerce Store, Accounts, Rewards */
 
 $font-family-account-main:    $font-family-work-sans;
 $font-family-account-secondary: $font-family-big-noodle;
 $color-account-bg:            #f9f7f6;
 $font-family-account-labels:  $font-family-helvetica-neue;
-
-
 
 $font-main-brand:             $font-family-bebas-bold;
 $font-main-buttons:           $font-family-work-sans;
@@ -140,7 +142,6 @@ $color-slider-titles-dark:    #FFF;
 /*Font Sizes */
 
 /* Main Page Header */
-
 $font-weight-h2:              bold;
 $font-size-h2:                60px;
 $font-spacing-h2:             4px;
@@ -153,10 +154,12 @@ $font-size-nav-icons:            $font-size-nav-sm - 2px;
 
 $width-site:                  1200px;
 
+/* SKW Slider */
 $skw-border-width:3px;
-$skw-buttons-padding: 0 30px;
-$skw-font: $font-family-bebas-bold;
-$skw-text-padding:3px;
+$skw-buttons-padding: 0 10px;
+$skw-font: $font-family-work-sans;
+$skw-font-letter-spacing: 0;
+$skw-text-padding:0;
 
 /*Slider Variables */
 $color-slider-radio: #aaa;

@@ -4,25 +4,38 @@
 # OSCAR - SCSS still needs to be reworked to follow Atomic CSS Design.
 
 # Bootstrap
-# Fonts
 # Site Variables
+# Custom Styles
 # Mixins
+# Helper
+# Fonts
 # Base Styles
+# Buttons
+# Styleguide styles
 # Slider
+# Bio
 # Navigation
-# Cart Styles
+# Cart
 # Newsletter
 # Foundation
-# Instagram Feed
+# Instagram and Owl News
+# Blog
+# Media
+# Rewards
+# Schedule
+# Search
+# Pagination
+# Ads
+# Account
+# SKW Gallery
 # Footer
-# Utilities
 
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Bootstrap
 --------------------------------------------------------------*/
-@import "bootstrap";
+@import "bootstrap"; /* Removed un-used styles */
 
 /*--------------------------------------------------------------
 # Site Variables
@@ -50,14 +63,9 @@
 --------------------------------------------------------------*/
 @import "fonts";
 
+
 /*--------------------------------------------------------------
 # Base Styles
---------------------------------------------------------------*/
-@import "style-guide";
-
-
-/*--------------------------------------------------------------
-# Base Styles TODO Add all variables from original liquid styles
 --------------------------------------------------------------*/
 @import "base";
 
@@ -65,6 +73,11 @@
 # Buttons
 --------------------------------------------------------------*/
 @import "buttons";
+
+/*--------------------------------------------------------------
+# Styleguide Styles
+--------------------------------------------------------------*/
+/*@import "style-guide";*/
 
 /*--------------------------------------------------------------
 # Sliders

@@ -33,6 +33,12 @@ $brand-h2-heading-color:#777;
 $brand-h2-heading-light-color: #CCC;
 $brand-h2-sub-heading-color: #000;
 
+/* General UI Colors */
+$color-footer-bg: #000;
+$color-footer-nav-text: #FFF;
+
+$color-footer-social-icons-bg: #3b3838;
+
 /* Blog and News Colors */
 
 $color-news-date: #FFF;
@@ -86,14 +92,12 @@ $main-template-font:          $font-family-work-sans;
 $font-slider-titles:          $font-family-bebas;
 $font-product-info-overlay:   $font-family-din-md-cond;
 
-
 /*eCommerce Store, Accounts, Rewards */
 
 $font-family-account-main:    $font-family-work-sans;
 $font-family-account-secondary: $font-family-big-noodle;
 $color-account-bg:            #f9f7f6;
 $font-family-account-labels:  $font-family-helvetica-neue;
-
 
 $font-main-brand:             $font-family-work-sans;
 $font-main-buttons:           $font-family-work-sans;
@@ -151,6 +155,7 @@ $font-size-nav-icons:            $font-size-nav-sm - 2px;
 
 $width-site:                  1200px;
 
+/* SKW Slider */
 $skw-border-width:3px;
 $skw-buttons-padding: 0 10px;
 $skw-font: $font-family-work-sans;
