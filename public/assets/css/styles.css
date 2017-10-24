@@ -3324,7 +3324,6 @@ a.label:hover, a.label:focus {
 --------------------------------------------------------------*/
 /*@import "variables-jm"; Will need to recompile*/
 /* Variables to Use to change main values for different templates */
-/* Bootstrap Variable Overrides */
 /* Colors */
 /* Used for nav and base link hover state */
 /* Button Variables */
@@ -7946,7 +7945,7 @@ body.template-page-media .wrap {
 
 body.template-page-media #content {
   background-image: url(https://cdn.shopify.com/s/files/1/0259/2151/files/7.31.17-RS25-MediaBanner-Image-001.jpg?13538194520128212017);
-  background-size: contain;
+  background-size: cover;
   background-position: center top;
   background-repeat: no-repeat; }
 
@@ -10169,252 +10168,7 @@ body.template-search #content {
 /*--------------------------------------------------------------
 # Image Gallery
 --------------------------------------------------------------*/
-/* SKW Styles */
-.skw-list:hover .skw-content:after {
-  background: rgba(0, 0, 0, 0.6); }
-
-.skw-itemActive .skw-content:after {
-  background: transparent;
-  -webkit-transition-delay: all .3s;
-  -webkit-transition: all .8s; }
-
-.skw-visible .skw-content :after {
-  background: transparent !important; }
-
-.skw-list .skw-content:hover:after {
-  background: transparent;
-  transition: all 1.2s;
-  box-shadow: 0; }
-
-.skw-content:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  transition: all .9s;
-  top: 0;
-  left: 0;
-  pointer-events: none; }
-
-.skw-list > li:after {
-  content: "";
-  position: absolute;
-  top: -10%;
-  left: 0;
-  width: 100%;
-  height: 120%;
-  z-index: 9;
-  -webkit-transition: all 1s;
-  pointer-events: none; }
-
-.skw-nav:hover {
-  opacity: 1;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-  background: rgba(0, 0, 0, 0.7); }
-
-.skw-caption {
-  transition: all .8s;
-  z-index: 999; }
-  .skw-caption a {
-    font-family: "Work Sans", sans-serif;
-    font-weight: bold;
-    font-size: 3vw;
-    letter-spacing: 4px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 3px solid #fff;
-    padding: 0 30px;
-    margin: 0 auto;
-    padding-top: 0; }
-    .skw-caption a:hover {
-      background: #65c402;
-      border-color: #65c402;
-      color: #fff; }
-    @media screen and (max-width: 767px) {
-      .skw-caption a {
-        font-size: 30px; } }
-
-.skw-itemNext .skw-content:after {
-  background-color: rgba(25, 47, 107, 0.6); }
-
-.skw-itemPrev .skw-content:after {
-  background-color: rgba(101, 196, 2, 0.6); }
-
-.main-slide .skw-content {
-  padding-top: 20px; }
-
-.skewSlider:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
-  pointer-events: none; }
-
-.main-slide .skw-list > li .skw-content.slide1 {
-  transition: all 1.2s; }
-
-.skw-caption {
-  color: #fff;
-  transition: all .8s;
-  z-index: 999; }
-
-.main-slide .skw-list > li .skw-content.slide2 {
-  background-color: #9ACD32;
-  transition: all 1.2s; }
-
-.main-slide .skw-list > li.skw-itemActive .skw-content.slide2 {
-  background-color: #4169E1; }
-
-.info h2 {
-  color: #fff;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 2.5em;
-  padding-left: 20%;
-  padding-top: 30px; }
-
-.seef {
-  text-align: center; }
-  .seef span {
-    font-size: 3em;
-    cursor: pointer;
-    color: #FF0033;
-    transition: .5s all;
-    display: inline-block;
-    transform: scale(1) translateY(0); }
-    .seef span:hover {
-      transform: scale(1.3) translateY(6px); }
-  .seef h3 {
-    font-style: italic;
-    font-size: 3.1em;
-    color: #333;
-    margin-bottom: 0; }
-
-.features {
-  margin-top: 50px;
-  padding: 0 10%; }
-
-.feature {
-  display: inline-block;
-  width: 32%;
-  padding: 20px;
-  vertical-align: text-top; }
-  .feature .feature h4 {
-    font-size: 1.2em; }
-
-.demos {
-  margin-top: 50px;
-  padding: 0 12%; }
-  .demos h2 {
-    text-align: center; }
-  .demos .demos h4 {
-    color: #333; }
-  .demos .demo {
-    text-align: center;
-    width: 45%;
-    display: inline-block;
-    margin: 2.3%; }
-    .demos .demo img {
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
-
-.responsive {
-  margin-top: 50px;
-  padding: 0 12% 50px 12%;
-  text-align: center; }
-  .responsive p {
-    margin: 50px 10% 20px 10%; }
-  .responsive .get {
-    margin-top: 20px;
-    padding: 20px 30px;
-    font-size: 1.5em;
-    float: none;
-    display: inline-block; }
-
-.info .get {
-  padding: 20px 30px;
-  font-size: 1.5em;
-  float: none;
-  display: inline-block; }
-
-.demo-title {
-  padding: 50px 15%; }
-  .demo-title h2 {
-    float: left;
-    margin: 0;
-    padding: 0;
-    font-size: 3.1em; }
-    .demo-title h2 .get {
-      float: right; }
-
-.slide2 {
-  text-align: center; }
-
-.slide2 img {
-  max-width: 55%;
-  margin-top: 50px; }
-
-.slide4 {
-  text-align: center; }
-
-.slide4 img {
-  max-width: 50%;
-  margin-top: 50px; }
-
-.light .demo-title h2 {
-  color: #333; }
-
-.skewSlider li {
-  display: none; }
-
-.cont {
-  margin-bottom: 50px; }
-
-@media only screen and (max-width: 1024px) {
-  .skewSlider {
-    margin-top: 0; } }
-
-@media only screen and (max-width: 850px) {
-  .feature {
-    width: 49%; }
-  .demos .demo {
-    margin: 2%; } }
-
-@media only screen and (max-width: 780px) {
-  .main-slide .slide1 h2:before {
-    transform: skew(-20deg, 0); }
-  .main-slide .slide1 h2 {
-    font-size: 1.8em;
-    padding: 15px 30px; } }
-
-@media only screen and (max-width: 600px) {
-  .main-slide .slide1 h2:before {
-    transform: skew(-20deg, 0); }
-  .main-slide .slide1 h2 {
-    font-size: 1.4em;
-    padding: 10px 20px; }
-  .main-slide .slide1 .copy {
-    position: absolute;
-    bottom: 10%;
-    right: 20%; }
-  .skw-nav {
-    display: none; }
-  .demos .demo {
-    margin: 2%;
-    width: 96%; }
-  .feature {
-    width: 98%; }
-  .skw-caption {
-    color: #fff;
-    transition: all .8s;
-    z-index: 999;
-    opacity: 0; } }
-
-/*--------------------------------------------------------------
-# Skew Styles Core and Template
---------------------------------------------------------------*/
+/* SKW Core Styles */
 .skw-list {
   height: 100%;
   margin: 0;
@@ -10541,12 +10295,135 @@ body.template-search #content {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
 
-.blog-article-title {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: bold;
-  font-size: 3vw;
-  text-transform: uppercase;
-  margin: 0; }
+/* SKW Styles */
+.skw-list:hover .skw-content:after {
+  background: rgba(0, 0, 0, 0.6); }
+
+.skw-itemActive .skw-content:after {
+  background: transparent;
+  -webkit-transition-delay: all .3s;
+  -webkit-transition: all .8s; }
+
+.skw-visible .skw-content :after {
+  background: transparent !important; }
+
+.skw-list .skw-content:hover:after {
+  background: transparent;
+  transition: all 1.2s;
+  box-shadow: 0; }
+
+.skw-content:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all .9s;
+  top: 0;
+  left: 0;
+  pointer-events: none; }
+
+.skw-list > li:after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  z-index: 9;
+  -webkit-transition: all 1s;
+  pointer-events: none; }
+
+.skw-nav:hover {
+  opacity: 1;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7); }
+
+.skw-caption {
+  transition: all .8s;
+  z-index: 999; }
+  .skw-caption a {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    letter-spacing: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid #fff;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding-top: 0; }
+    .skw-caption a:hover {
+      background: #65c402;
+      border-color: #65c402;
+      color: #fff; }
+    @media screen and (max-width: 767px) {
+      .skw-caption a {
+        font-size: 30px; } }
+
+.skw-itemNext .skw-content:after {
+  background-color: rgba(25, 47, 107, 0.6); }
+
+.skw-itemPrev .skw-content:after {
+  background-color: rgba(101, 196, 2, 0.6); }
+
+.main-slide .skw-content {
+  padding-top: 20px; }
+
+.skewSlider:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  pointer-events: none; }
+
+.main-slide .skw-list > li .skw-content.slide1 {
+  transition: all 1.2s; }
+
+.skw-caption {
+  color: #fff;
+  transition: all .8s;
+  z-index: 999; }
+
+.main-slide .skw-list > li .skw-content.slide2 {
+  background-color: #9ACD32;
+  transition: all 1.2s; }
+
+.main-slide .skw-list > li.skw-itemActive .skw-content.slide2 {
+  background-color: #4169E1; }
+
+.info h2 {
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5em;
+  padding-left: 20%;
+  padding-top: 30px; }
+
+@media only screen and (max-width: 600px) {
+  .main-slide .slide1 h2:before {
+    transform: skew(-20deg, 0); }
+  .main-slide .slide1 h2 {
+    font-size: 1.4em;
+    padding: 10px 20px; }
+  .main-slide .slide1 .copy {
+    position: absolute;
+    bottom: 10%;
+    right: 20%; }
+  .skw-nav {
+    display: none; }
+  .demos .demo {
+    margin: 2%;
+    width: 96%; }
+  .feature {
+    width: 98%; }
+  .skw-caption {
+    color: #fff;
+    transition: all .8s;
+    z-index: 999;
+    opacity: 0; } }
 
 /*--------------------------------------------------------------
 # Footer

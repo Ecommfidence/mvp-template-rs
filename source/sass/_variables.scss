@@ -1,10 +1,5 @@
 /* Variables to Use to change main values for different templates */
 
-
-/* Bootstrap Variable Overrides */
-$grid-gutter-width:         30px ;
-
-
 /* Colors */
 
 $color-brand-primary: #65c402;
@@ -157,8 +152,9 @@ $font-size-nav-icons:            $font-size-nav-sm - 2px;
 $width-site:                  1200px;
 
 $skw-border-width:3px;
-$skw-buttons-padding: 0 30px;
+$skw-buttons-padding: 0 10px;
 $skw-font: $font-family-work-sans;
+$skw-font-letter-spacing: 0;
 $skw-text-padding:0;
 
 /*Slider Variables */
@@ -181,7 +177,7 @@ $owl-size: default !default;
 /* Media Pages */
 $media-bg-img:'https://cdn.shopify.com/s/files/1/0259/2151/files/7.31.17-RS25-MediaBanner-Image-001.jpg?13538194520128212017';
 $media-gallery-bg-img:'https://cdn.shopify.com/s/files/1/0259/2151/files/7.31.17-RS25-MediaBanner-Image-001.jpg?13538194520128212017';
-$media-bg-img-size: contain;
+$media-bg-img-size: cover;
 $media-gallery-bg-img-size: contain;
 
 $media-wrap-bg-color: #282828;
