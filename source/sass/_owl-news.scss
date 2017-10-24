@@ -487,7 +487,7 @@
 /* From Cart */
 
 body.template-product{
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $screen-xs-max) {
     .banner-snippet {
       padding: 15px 0;
     }
@@ -502,7 +502,7 @@ body.template-blog, body.template-news-article, body.template-article, body.temp
   .banner-snippet {
     margin-top: 40px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $screen-xs-max) {
     .banner-snippet {
       margin-top: 0;
       margin-bottom: -15px;
@@ -525,7 +525,7 @@ body.template-blog, body.template-news-article, body.template-article, body.temp
   }
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:$screen-xs-max){
 
   .banner-snippet {
     padding: 10px;
@@ -535,7 +535,7 @@ body.template-blog, body.template-news-article, body.template-article, body.temp
 .banner-snippet {
   margin-top: 40px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
   .banner-snippet {
     margin-top: 0;
     margin-bottom: -15px;
@@ -544,7 +544,7 @@ body.template-blog, body.template-news-article, body.template-article, body.temp
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
 
   #owl-news {
     .owl-item {
@@ -600,7 +600,7 @@ body.template-blog, body.template-news-article, body.template-article, body.temp
 }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: $screen-sm-max){
   .index-news {
     flex-wrap: wrap;
   }

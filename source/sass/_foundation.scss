@@ -1,15 +1,14 @@
 // Home Page Index Foundation Area
-
 .index-foundation {
   .foundation-header {
     background-image: url(#{$foundation-bg-img});
-    text-align:center;
+    text-align: center;
     @include bg-center-cover();
     padding: 50px;
-    h2{
-      line-height:60px;
-       }
+    h2 {
+      line-height: 60px;
     }
+  }
 
   .foundation-text {
     font-family: $font-family-work-sans;
@@ -29,21 +28,20 @@
       margin: 20px auto 0 auto;
       max-width: 275px;
     }
-    p{
-        font-size: 16px;
-        margin-bottom: 15px;
-
+    p {
+      font-size: $font-size-foundation-body;
+      margin-bottom: 15px;
     }
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $screen-sm-max) {
 
   .index-foundation {
     .foundation-header {
       padding: 25px;
-      h2{
-        line-height:32px;
+      h2 {
+        line-height: 32px;
       }
     }
     .foundation-text {
@@ -59,59 +57,44 @@
       }
     }
   }
-
 }
 
 /*Foundation Internal Page*/
+
 .foundation-page {
+
+  .foundation-wrap {
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
   .foundation-header-1 {
-    font-family: $font-family-work-sans;
+    font-family: $main-template-font;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 45px;
     line-height: 30px;
     margin: 0;
-    color: #999;
-    text-align: left;
-    letter-spacing: 0px;
+    color: $color-foundation-header-1;
 
   }
   .foundation-header-2 {
     font-family: $font-secondary-h2;
-    font-weight: 100;
     font-size: 30px;
     letter-spacing: 3px;
     line-height: 60px;
-    text-transform: uppercase;
-    color: #fff;
+    color: $color-foundation-header-2;
     text-align: left;
-    margin:0;
-    margin-bottom: 15px;
-  }
-  p{
-
-    font-size: 16px;
     margin: 0;
-    color: #fff;
     margin-bottom: 15px;
   }
-  .index-foundation{
-    .foundation-text{
-      .foundation-content{
-        padding: 15px 30px 15px 15px;
-      }
-    }
+
+  .foundation-content {
+    padding: 15px 30px 15px 15px;
   }
 }
 
-
-.foundation-wrap {
-  position: relative;
-  img {
-    width: 100%;
-  }
-
-}
 .donate-row {
   margin: 0;
   img {
@@ -132,24 +115,22 @@
       transform: translate(-50%, -50%);
       text-align: center;
       a {
-       @extend .btn-brand-default, .btn-brand-secondary, .btn-light, .btn-brand-sm;
-        margin-bottom:0;
-
+        @extend .btn-brand-default, .btn-brand-secondary, .btn-light, .btn-brand-sm;
+        margin-bottom: 0;
       }
-
     }
   }
 }
+
 .foundation-gallery {
   margin: 0;
-  text-align:center;
+  text-align: center;
   background-image: url(#{$foundation-gallery-bg});
   @include bg-center-cover();
-  padding-bottom:1em;
-
+  padding-bottom: 1em;
   h2 {
-   @extend .internal-h2;
-    margin:0;
+    @extend .internal-h2;
+    margin: 0;
   }
   img {
     display: block;
@@ -157,23 +138,23 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
 
   .foundation-page {
     .index-foundation {
-        p {
-          font-size: 14px;
-        }
-        .foundation-header-1 {
-          letter-spacing: 0;
-          font-size: 30px;
-          line-height: 30px;
-        }
-        .foundation-header-2 {
-          font-size: 20px;
-          letter-spacing: 2px;
-          margin-bottom: 10px;
-        }
+      p {
+        font-size: 14px;
+      }
+      .foundation-header-1 {
+        letter-spacing: 0;
+        font-size: 30px;
+        line-height: 30px;
+      }
+      .foundation-header-2 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+      }
     }
     .foundation-gallery {
       .container {
@@ -181,5 +162,4 @@
       }
     }
   }
-
 }

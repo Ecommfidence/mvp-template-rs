@@ -47,7 +47,7 @@ body.template-page-gallery {
     font-size: 36px;
     padding: 0 10px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $screen-xs-max) {
     .page-header {
       color: #fff;
       font-size: 26px;
@@ -307,7 +307,7 @@ body.template-page-gallery {
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $screen-sm-max) {
 
   .media .ind-gallery:nth-child(3n+1) {
     clear: none;
@@ -322,7 +322,7 @@ body.template-page-gallery {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
   #photos {
     -moz-column-count: $media-gallery-columns-sm;
     -webkit-column-count: $media-gallery-columns-sm;

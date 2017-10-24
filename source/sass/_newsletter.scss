@@ -129,7 +129,7 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
   .newsletter-stats {
     .home-newsletter {
       padding: 10px 15px 15px 15px;

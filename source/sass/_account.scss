@@ -285,7 +285,7 @@
 }
 
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: $screen-md-max) {
   .form-wrapper-horizontal #customer-login-form #forgotten-password-link,
   .form-wrapper-horizontal #customer-login-form form .form-group.sign-in-div,
   .form-wrapper-horizontal #customer-login-form form .form-group.reg-div {
@@ -294,7 +294,7 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
 
   .form-wrapper-horizontal #customer-login-form form #login_password {
     margin-left: -15px;
@@ -841,7 +841,7 @@
 
 
 
-@media (max-width: 991px) {
+@media (max-width: $screen-sm-max) {
   #swell-bootstrap .container.how-container {
     display: block;
     margin-top: 15px;

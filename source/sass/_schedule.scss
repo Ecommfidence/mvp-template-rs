@@ -143,7 +143,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $screen-sm-max) {
   .schedule-page{
     .game-week {
       padding: 20px 15px 15px 15px;
@@ -160,7 +160,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
   .schedule-page {
     .game-week {
       min-height: 200px;

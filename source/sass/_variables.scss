@@ -72,8 +72,6 @@ $dropdown-bg: #fff !default;
 $font-size-base: 14px !default;
 
 
-
-
 /* Typography Mixin */
 
 $font-family-work-sans:       'Work Sans', sans-serif !default;
@@ -109,14 +107,13 @@ $font-blog-date:              $font-family-bebas;
 $font-secondary-buttons:      $font-family-helvetica-neue;
 $font-slider-buttons:         $font-family-helvetica-neue;
 $font-account-buttons:        $font-family-big-noodle;
-$font-secondary-h2:           $font-family-big-noodle;
+$font-secondary-h2:           $font-family-big-noodle; /* Used on the Foundation Page */
 $font-main-nav:               $font-family-bebas;
 $font-sub-title-secondary:    $font-family-din-lt;
 $color-sub-title-secondary:   $color-brand-primary;
 
 /* Paddings and Margins */
 $thumbnail-caption-padding:    9px !default;
-
 
 /* Newsletter Styles */
 $font-newsletter-input:    $font-family-din-bold;
@@ -139,7 +136,6 @@ $font-slider-text-shadow-secondary: -2px 0px 6px rgba(0, 0, 0, 1); /* -2px 0px 2
 $color-slider-titles:         $color-brand-primary;
 $color-slider-titles-dark:    #FFF;
 
-
 /*Font Sizes */
 
 /* Main Page Header */
@@ -151,7 +147,7 @@ $font-lineheight-h2:          1.1;
 /* Nav */
 $font-size-nav:               26px;
 $font-size-nav-sm:            $font-size-nav - 2px;
-$font-size-nav-icons:            $font-size-nav-sm - 2px;
+$font-size-nav-icons:         $font-size-nav-sm - 2px;
 
 $width-site:                  1200px;
 
@@ -161,6 +157,13 @@ $skw-buttons-padding: 0 10px;
 $skw-font: $font-family-work-sans;
 $skw-font-letter-spacing: 0;
 $skw-text-padding:0;
+
+/* Insta Feed */
+$font-family-insta-feed: $font-family-din-md-cond;
+$font-family-insta-feed-titles: $font-family-din-cond;
+$font-size-insta-feed-titles: 18px;
+$insta-feed-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-004.jpg?10485047089988606683';
+$color-insta-feed-bg: #FFF;
 
 /*Slider Variables */
 $color-slider-radio: #aaa;
@@ -206,7 +209,12 @@ $color-blog-bg: #fefefe;
 $color-blog-news-bg: #3c3c3c;
 $news-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.31.17-RS25-Website-2017-NewsPage-001.jpg?11652835036440552667';
 
+/* Foundation on Home and Internal*/
+$font-size-foundation-body: 16px;
 $foundation-bg-img:'https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-003.jpg?18356651564452868234';
+$color-foundation-header-1: #999;
+$color-foundation-header-2: #fff;
+
 $index-bio-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.21.17-RS25-BlogBkgrnd-Graphic-001.jpg?1294120…';
 $newsletter-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-002.jpg?8372329649154329708';
 

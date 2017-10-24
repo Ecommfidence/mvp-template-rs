@@ -3347,6 +3347,7 @@ a.label:hover, a.label:focus {
 /* Skw slider hover background */
 /* Typography Mixin */
 /*eCommerce Store, Accounts, Rewards */
+/* Used on the Foundation Page */
 /* Paddings and Margins */
 /* Newsletter Styles */
 /* Countdown Styles */
@@ -3357,12 +3358,14 @@ a.label:hover, a.label:focus {
 /* Main Page Header */
 /* Nav */
 /* SKW Slider */
+/* Insta Feed */
 /*Slider Variables */
 /* Home Page Owl News */
 /* Media Pages */
 /* Rewards */
 /* Main Background Image on Product Slider */
 /* News Page Variables */
+/* Foundation on Home and Internal*/
 /* Bio Images */
 /*
 $skw-img-1: 'https://cdn.shopify.com/s/files/1/0259/2151/t/105/assets/media_slider_1.jpg?13550032680311357315';
@@ -3509,7 +3512,7 @@ TODO Remove these .h-tb-p-10, TODO Remove these .product-slick-container h2, .pr
 .lh-60 {
   line-height: 60px !important; }
 
-.lh-original, .insta-feed .insta-header h2 {
+.lh-original {
   line-height: 1.42858; }
 
 /* Typography */
@@ -6550,6 +6553,11 @@ li.product-single__thumbnails-item {
       width: 125px; } }
 
 /*Foundation Internal Page*/
+.foundation-page .foundation-wrap {
+  position: relative; }
+  .foundation-page .foundation-wrap img {
+    width: 100%; }
+
 .foundation-page .foundation-header-1 {
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
@@ -6557,35 +6565,20 @@ li.product-single__thumbnails-item {
   font-size: 45px;
   line-height: 30px;
   margin: 0;
-  color: #999;
-  text-align: left;
-  letter-spacing: 0px; }
+  color: #999; }
 
 .foundation-page .foundation-header-2 {
   font-family: "BigNoodleTitling";
-  font-weight: 100;
   font-size: 30px;
   letter-spacing: 3px;
   line-height: 60px;
-  text-transform: uppercase;
   color: #fff;
   text-align: left;
   margin: 0;
   margin-bottom: 15px; }
 
-.foundation-page p {
-  font-size: 16px;
-  margin: 0;
-  color: #fff;
-  margin-bottom: 15px; }
-
-.foundation-page .index-foundation .foundation-text .foundation-content {
+.foundation-page .foundation-content {
   padding: 15px 30px 15px 15px; }
-
-.foundation-wrap {
-  position: relative; }
-  .foundation-wrap img {
-    width: 100%; }
 
 .donate-row {
   margin: 0; }
@@ -6689,9 +6682,9 @@ li.product-single__thumbnails-item {
     top: 44%;
     z-index: 1; }
   .insta-feed #instafeed1 .caption {
-    font-family: 'DIN MdCon'; }
+    font-family: "DIN MdCon"; }
   .insta-feed #instafeed1 .username {
-    font-family: 'DIN MdCon';
+    font-family: "DIN MdCon";
     position: absolute;
     bottom: 0;
     margin-bottom: 15px; }
@@ -6709,26 +6702,26 @@ li.product-single__thumbnails-item {
   min-height: 400px; }
   .insta-feed #instafeed2 .col-md-6 {
     padding: 0;
+    background-position: center;
     background-size: cover;
-    background-position: center top;
     background-repeat: no-repeat; }
   .insta-feed #instafeed2 .insta-info {
     padding: 15px;
-    font-family: 'DIN Cond';
+    font-family: "DIN Cond";
     font-size: 18px;
     position: relative; }
   .insta-feed #instafeed2 .white-arrow-right {
     border-bottom: 21px solid transparent;
-    border-left: 21px solid #fff;
+    border-left: 21px solid #FFF;
     border-top: 21px solid transparent;
     position: absolute;
     right: -21px;
     top: 44%;
     z-index: 1; }
   .insta-feed #instafeed2 .caption {
-    font-family: 'DIN MdCon'; }
+    font-family: "DIN MdCon"; }
   .insta-feed #instafeed2 .username {
-    font-family: 'DIN MdCon';
+    font-family: "DIN MdCon";
     position: absolute;
     bottom: 0;
     margin-bottom: 15px; }
@@ -6740,9 +6733,10 @@ li.product-single__thumbnails-item {
     margin-right: 15px; }
 
 .insta-feed .insta-header {
-  background-image: url("https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-004.jpg?10485047089988606683");
-  background-size: cover;
+  background-image: url(https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-004.jpg?10485047089988606683);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   font-size: 60px;
   margin: 0;
@@ -6750,6 +6744,8 @@ li.product-single__thumbnails-item {
   text-transform: uppercase;
   position: relative;
   letter-spacing: 5px; }
+  .insta-feed .insta-header h2 {
+    line-height: 1.42858; }
 
 @media screen and (max-width: 991px) {
   .insta-feed .darken img {
@@ -6768,7 +6764,7 @@ li.product-single__thumbnails-item {
         flex-direction: row-reverse; }
         .insta-feed #instafeed1 .insta-content:nth-child(2) .white-arrow-left {
           border-bottom: 21px solid transparent;
-          border-left: 21px solid #fff;
+          border-left: 21px solid #FFF;
           border-right: none;
           border-top: 21px solid transparent;
           position: absolute;
@@ -6787,7 +6783,7 @@ li.product-single__thumbnails-item {
         flex-direction: row-reverse; }
         .insta-feed #instafeed2 .insta-content:first-child .white-arrow-right {
           border-bottom: 21px solid transparent;
-          border-right: 21px solid #fff;
+          border-right: 21px solid #FFF;
           border-left: none;
           border-top: 21px solid transparent;
           position: absolute;
@@ -6821,7 +6817,7 @@ li.product-single__thumbnails-item {
     display: block; }
     .insta-feed #instafeed1 .insta-content .white-arrow-left {
       border-left: 21px solid transparent;
-      border-bottom: 21px solid #fff;
+      border-bottom: 21px solid #FFF;
       border-top: none;
       border-right: 21px solid transparent;
       position: absolute;
@@ -6830,7 +6826,7 @@ li.product-single__thumbnails-item {
       top: -21px; }
     .insta-feed #instafeed1 .insta-content:nth-child(2) .white-arrow-left {
       border-left: 21px solid transparent;
-      border-bottom: 21px solid #fff;
+      border-bottom: 21px solid #FFF;
       border-top: none;
       border-right: 21px solid transparent;
       position: absolute;
@@ -6851,7 +6847,7 @@ li.product-single__thumbnails-item {
       flex-direction: column-reverse; }
     .insta-feed #instafeed2 .insta-content .white-arrow-right {
       border-left: 21px solid transparent;
-      border-bottom: 21px solid #fff;
+      border-bottom: 21px solid #FFF;
       border-top: none;
       border-right: 21px solid transparent;
       position: absolute;
@@ -6861,7 +6857,7 @@ li.product-single__thumbnails-item {
       right: initial; }
     .insta-feed #instafeed2 .insta-content:first-child .white-arrow-right {
       border-left: 21px solid transparent;
-      border-bottom: 21px solid #fff;
+      border-bottom: 21px solid #FFF;
       border-top: none;
       border-right: 21px solid transparent;
       position: absolute;
@@ -9247,18 +9243,15 @@ body.template-search #content {
   .article-container .dfptiledesktop {
     margin: 0 auto; } }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .dfptilemobile {
     margin: 0 auto; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .dfpbanner {
     margin: 0 auto; }
   .dfptiledesktop {
     margin: 0 auto; } }
-
-.swell-tab {
-  display: none !important; }
 
 .article-container .dfptiledesktop {
   margin: inherit; }

@@ -260,7 +260,7 @@ h3{
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $screen-sm-max) {
 
   .page-internal {
     h2 {
@@ -275,7 +275,7 @@ h3{
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
   .page-internal {
     h2 {
       margin: 0;
@@ -355,7 +355,7 @@ h6 {
   margin: 0;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $screen-sm-max) {
   h2 {
     font-size: 30px;
     line-height: 35px;
@@ -377,7 +377,7 @@ h6 {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
   h2 {
     letter-spacing: 0;
   }

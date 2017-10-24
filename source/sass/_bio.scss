@@ -61,7 +61,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $screen-sm-max) {
   .col-md-6 {
     padding: 0;
   }
@@ -91,7 +91,7 @@
     }
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
   .bio{
     &.bio-1 {
       min-height: 50px;

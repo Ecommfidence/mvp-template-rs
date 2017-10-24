@@ -452,7 +452,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
 
   /* Main Slider  */
   .slick-1 .slick-dots li {
@@ -559,7 +559,7 @@
 
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $screen-sm-max) {
   .follow-scroll {
     clear: both;
   }

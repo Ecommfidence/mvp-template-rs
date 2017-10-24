@@ -112,10 +112,8 @@ $font-main-nav:               $font-family-bebas;
 $font-sub-title-secondary:    $font-family-din-lt;
 $color-sub-title-secondary:   $color-brand-primary;
 
-
 /* Paddings and Margins */
 $thumbnail-caption-padding:    9px !default;
-
 
 /* Newsletter Styles */
 $font-newsletter-input:    $font-family-din-bold;
@@ -138,7 +136,6 @@ $font-slider-text-shadow-secondary: none; /* -2px 0px 20px rgba(0, 0, 0, 1) */
 $color-slider-titles:         $color-brand-primary;
 $color-slider-titles-dark:    #FFF;
 
-
 /*Font Sizes */
 
 /* Main Page Header */
@@ -150,7 +147,7 @@ $font-lineheight-h2:           1.1;
 /* Nav */
 $font-size-nav:               26px;
 $font-size-nav-sm:            $font-size-nav - 2px;
-$font-size-nav-icons:            $font-size-nav-sm - 2px;
+$font-size-nav-icons:         $font-size-nav-sm - 2px;
 
 $width-site:                  1200px;
 
@@ -160,6 +157,13 @@ $skw-buttons-padding: 0 10px;
 $skw-font: $font-family-work-sans;
 $skw-font-letter-spacing: 0;
 $skw-text-padding:0;
+
+/* Insta Feed */
+$font-family-insta-feed: $font-family-din-md-cond;
+$font-family-insta-feed-titles: $font-family-din-cond;
+$font-size-insta-feed-titles: 18px;
+$insta-feed-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-004.jpg?10485047089988606683';
+$color-insta-feed-bg: #FFF;
 
 /*Slider Variables */
 $color-slider-radio: #aaa;
@@ -204,7 +208,12 @@ $color-blog-bg: #fefefe;
 $color-blog-news-bg: #202020;
 $news-bg-img: 'https://cdn.shopify.com/s/files/1/2292/0769/files/9.21.17-JM95-Website-2017-News-Background-01.jpg?14516689298437051388';
 
+/* Foundation on Home and Internal*/
+$font-size-foundation-body: 16px;
 $foundation-bg-img:'https://cdn.shopify.com/s/files/1/0259/2151/files/7.18.17-RS25-Background-Image-003.jpg?18356651564452868234';
+$color-foundation-header-1: #999;
+$color-foundation-header-2: #fff;
+
 $index-bio-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/7.21.17-RS25-BlogBkgrnd-Graphic-001.jpg?1294120…';
 $newsletter-bg-img: 'https://cdn.shopify.com/s/files/1/2292/0769/files/9.19.17-JM95-Website-Desktop-Newsletter-01.jpg?18100947108492007874';
 

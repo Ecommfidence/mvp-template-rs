@@ -120,7 +120,7 @@ a:hover, a:focus {
   border:0;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $screen-sm-max) {
 
   .page-header {
     min-height: initial;
@@ -130,7 +130,7 @@ a:hover, a:focus {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-xs-max) {
   .page-header {
     margin: 0;
     font-size: 30px;

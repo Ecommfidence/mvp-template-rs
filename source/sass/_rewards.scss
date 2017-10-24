@@ -495,7 +495,7 @@ body.page-rewards{
   .you-have p {
     display: inline-block;
   }
-  @media (max-width: 991px) {
+  @media (max-width: $screen-sm-max) {
     #swell-bootstrap .container.how-container {
       display: block;
       margin-top: 15px;
