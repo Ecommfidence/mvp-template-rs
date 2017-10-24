@@ -1,26 +1,196 @@
+$styleguide-ui-color-dark: #202529;
+$styleguide-ui-color-med-dark:#32383D;
+$styleguide-ui-color-med:#4C555C;
+$styleguide-ui-color-light:#F3F5F8;
+$styleguide-ui-color-primary:#0066A8;
+$styleguide-ui-color-secondary:#009BFF;
+
+
+
+.black-bg-block{
+
+  background-color:$styleguide-ui-color-dark;
+  color:#fff;
+  padding-bottom:2em;
+}
+.light-bg{
+
+  background-color:$styleguide-ui-color-primary;
+  padding:20px;
+  margin:20px auto;
+  color:#FFF;
+  h2{
+
+    color:$styleguide-ui-color-light;
+  }
+
+}
+
+h3.style-guide-heading{
+  box-sizing:border-box;
+  display:block;
+  width:auto;
+  padding:10px 15px;
+  font-size:18px;
+  font-weight:bold;
+  background-color: $styleguide-ui-color-med;
+  color:$styleguide-ui-color-light;
+  margin: 0 auto 1em;
+  text-shadow:none;
+
+  margin-left:-15px;
+  margin-right:-15px;
+
+
+}
+h4.style-guide-sub-heading{
+
+  display:block;
+  width:100%;
+  margin:0;
+  font-size:18px;
+  font-weight:bold;
+  color:$styleguide-ui-color-med;
+  margin: 1em auto 1em;
+  padding-bottom:0.5em;
+  text-shadow:none;
+  border-bottom:1px solid $styleguide-ui-color-light;
+}
+
+.style-guide-ui{
+background-color:$styleguide-ui-color-med-dark;
+}
+
+
+.style-block{
+  background-color:#FFF;
+  margin-bottom:2em;
+  box-shadow:0px 0px 7px $styleguide-ui-color-dark;
+  padding:0 15px 15px 15px;
+
+  @media (max-width: $screen-md-min){
+
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.style-guide-ui{
+
+  h2, h3, h4{
+    font-family: $font-family-work-sans !important;
+  }
+}
+
+
+
 .color-swatch {
 
   display: inline-block;
   width: 100px;
   height: 100px;
 
-  background-color: transparent;border:2px solid #CCC;
+  background-color: transparent;
+  border:2px solid #CCC;
 
 }
 
-.swatch-1{
+.color-brand-primary{
 
   background-color:$color-brand-primary;
 }
-.swatch-2{
+.color-brand-secondary{
 
   background-color:$color-brand-secondary;
 }
-.swatch-3{
+.color-cart-button{
 
   background-color:$color-cart-button;
 }
-.swatch-4{
+.color-brand-primary-nav{
 
-  background-color:$brand-h2-heading-color;
+  background-color:$color-brand-primary-nav;
+}
+.color-brand-light-gray{
+
+  background-color: $color-brand-light-gray;
+}
+.color-brand-mid-gray{
+
+  background-color: $color-brand-mid-gray;
+}
+.color-brand-dark-gray{
+
+  background-color: $color-brand-dark-gray;
+}
+.color-brand-black{
+
+  background-color: $color-brand-black;
+}
+.button-brand-primary-text{
+
+  background-color: $button-brand-primary-text;
+}
+.color-light-text{
+
+  background-color: $color-light-text;
+}
+.color-light-p-text{
+
+  background-color: $color-light-p-text;
+}
+
+
+
+
+
+.font-style-guide{
+
+  font-size:30px;
+
+}
+
+.font-1{
+  font-family: $font-family-bebas;
+
+}
+.font-2{
+  font-family: $font-family-bebas-bold;
+
+}
+.font-3{
+  font-family: $font-family-big-noodle;
+
+}
+.font-4{
+  font-family: $font-family-din-cond;
+
+}
+.font-5{
+  font-family: $font-family-din-bold;
+
+}
+.font-6{
+  font-family: $font-family-din-lt-cond;
+
+}
+.font-7{
+  font-family: $font-family-din-bd-cond;
+
+}
+.font-8{
+  font-family: $font-family-din-md-cond;
+
+}
+.font-9{
+  font-family: $font-family-din-lt;
+
+}
+.font-10{
+  font-family: $font-family-work-sans;
+
+}
+.font-11{
+  font-family: $font-family-helvetica-neue;
+
 }

@@ -113,16 +113,16 @@
 
                     <form class="navbar-form" action="/search">
                         <div class="input-group">
-                            <input type="search" name="q" class="form-control nav-search-bar search-bar" autocomplete="off" placeholder="Search and Hit Enter..." value="{{ search.terms }}">
-
+                            <span class="header-search">
+                                <input type="search" name="q" class="form-control nav-search-bar search-bar" autocomplete="off" placeholder="Search and Hit Enter..." value="" spellcheck="false" dir="auto">
+                            </span>
                             <span class="input-group-btn search-btn-grp">
-                                <button class="btn btn-default search-btn" type="submit">
+                                <button class="btn btn-default search-btn" type="submit" style="">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </button>
                             </span>
-
                             <span class="input-group-btn">
-                                    <i class='fa nav-search-fa fa-search' aria-hidden='true'></i>
+                                    <i class="fa nav-search-fa fa-search" aria-hidden="true"></i>
                             </span>
                         </div>
                     </form>
@@ -930,8 +930,7 @@
 <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
 
 
-<script src="https://cdn.shopify.com/s/files/1/0259/2151/t/105/assets/typeahead.js?13550032680311357315"
-        type="text/javascript"></script>
+
 <script src="assets/js/dist/scripts.js"
         type="text/javascript"></script>
 

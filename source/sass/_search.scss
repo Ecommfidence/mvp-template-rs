@@ -1,6 +1,41 @@
+/* Header Search UI */
+.nav-search-bar{
+  position: relative;
+  vertical-align: top;
+  background-color: transparent;
+  display: none;
+}
+.header-search {
+  width: 100%;
+  position: relative;
+}
+
+.input-group > .header-search {
+  display: block !important;
+  height: $input-height-base;
+  & > .tt-query, & > .tt-hint {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-form .input-group > .header-search {
+    position: absolute !important;
+    right: 240px;
+    top: -9px;
+  }
+  .navbar-form .search-btn-grp {
+    position: absolute;
+    top: -9px;
+    right: 51px;
+  }
+}
+
+/* Search Page Results */
 .search-products,
 .search-pages {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $main-template-font;
 }
 /* Products */
 .share-icons {
@@ -29,7 +64,7 @@
 body.template-search{
 
   #content {
-    background: #f9f7f6;
+    background: $color-account-bg;
   }
 }
 

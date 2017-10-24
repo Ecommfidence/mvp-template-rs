@@ -71,6 +71,7 @@
   font-family:$font-main-buttons;
   text-transform:uppercase;
 }
+
 .btn-button-brand{
 
   /*
@@ -82,6 +83,7 @@
   */
   @include button-size(5px, 15px, 16px, 1.1, 0);
 }
+
 #update-cart,
 .checkout-btn {
   padding: 5px;
@@ -102,6 +104,44 @@
   }
 }
 
+/* Button Used for Account Pages */
+
+.btn-brand-account{
+
+  cursor: pointer;
+  padding: 5px 20px;
+  width:auto;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-account-buttons;
+  font-size: 22px;
+  letter-spacing: 1px;
+  border-radius: 0;
+  border: 0;
+  background: $color-cart-button;
+  color: $button-brand-primary-text;
+  outline: none;
+  margin-bottom:15px;
+  @include   animation-mixin (all,0.3,ease-out,0.1)  -webkit-transition: all .3s ease-out 0.1s;
+  &:hover {
+    color:$button-brand-primary-text;
+    background: $color-brand-primary-nav;
+  }
+
+}
+
+.btn-brand-account-inverted{
+
+  @extend .btn-brand-account;
+  color:$button-brand-primary-text;
+  background: $color-brand-primary-nav;
+  &:hover{
+
+    background: $color-cart-button;
+    color: $button-brand-primary-text;
+  }
+}
 
 .btn-light {
   color:#000;
@@ -286,15 +326,30 @@
 
 .btn-secondary{
 
-  font-family: 'DIN Bold';
-  background: transparent;
-  border: 2px solid #ddd;
-  padding: 10px 20px;
-  outline: none;
-  font-size: 16px;
-  color: #fff;
-  -webkit-appearance: none;
-  border-radius: 0;
+   font-family: 'DIN Bold';
+   background: transparent;
+   border: 2px solid #ddd;
+   padding: 10px 20px;
+   outline: none;
+   font-size: 16px;
+   color: #fff;
+   -webkit-appearance: none;
+   border-radius: 0;
+
+ }
+
+.btn-brand-tertiary{
+  font-family: $font-brand-button-tertiary;
+}
+
+
+.btn-primary{
+
+  background-color: $color-brand-primary-nav;
+  color:$button-brand-primary-text;
+}
+.btn-primary:hover{
+
 
 }
 

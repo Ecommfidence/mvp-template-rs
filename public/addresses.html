@@ -129,16 +129,16 @@
 
                     <form class="navbar-form" action="/search">
                         <div class="input-group">
-                            <input type="search" name="q" class="form-control nav-search-bar search-bar" autocomplete="off" placeholder="Search and Hit Enter..." value="{{ search.terms }}">
-
+                            <span class="header-search">
+                                <input type="search" name="q" class="form-control nav-search-bar search-bar" autocomplete="off" placeholder="Search and Hit Enter..." value="" spellcheck="false" dir="auto">
+                            </span>
                             <span class="input-group-btn search-btn-grp">
-                                <button class="btn btn-default search-btn" type="submit">
+                                <button class="btn btn-default search-btn" type="submit" style="">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </button>
                             </span>
-
                             <span class="input-group-btn">
-                                    <i class='fa nav-search-fa fa-search' aria-hidden='true'></i>
+                                    <i class="fa nav-search-fa fa-search" aria-hidden="true"></i>
                             </span>
                         </div>
                     </form>
@@ -201,17 +201,7 @@
             </div>
         </header>
 
-
-
-
-
-
-
-
-
-
         <section id="addresses" class="section-wrap">
-
 
             <div class="container">
 
@@ -219,8 +209,8 @@
                     <div class="main-content col-xs-12">
 
                         <div id="admin_header" class="clearfix">
-                            <h1 class="page-header">Manage Account Address</h1>
-                            <div id="action" class="action_link action_add note pull-left"><a href="#" class="btn btn-default" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;">Add New Address</a></div>
+                            <h2>Manage Account Address</h2>
+                            <div id="action" class="action_link action_add note pull-left"><a href="#" class="btn-brand-account" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;">Add New Address</a></div>
                         </div>
 
                         <div id="add_address" class="customer_address edit_address" style="display:none;">
@@ -228,10 +218,6 @@
 
                                 <div id="customer-address-form">
                                     <form method="post" action="/account/addresses" id="address_form_new" accept-charset="UTF-8"><input type="hidden" value="customer_address" name="form_type"><input type="hidden" name="utf8" value="✓">
-
-
-
-
 
                                         <div class="form-group">
                                             <label for="address_first_name_new" class="col-md-2 control-label">First Name</label>
@@ -548,7 +534,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="">
+                                        <div class="account-label">
                                             <div class="checkbox">
                                                 <label>
                                                     <input type="checkbox" id="address_default_address_new" name="address[default]" value="1"> Set as Default Address?
@@ -567,8 +553,6 @@
                         </div>
 
                         <div class="customer_addresses">
-
-
                             <div id="view_address_32477577225">
                                 <ul class="list-inline pull-right">
                                     <li><span class="action_link action_edit"><a href="#" onclick="Shopify.CustomerAddress.toggleForm(32477577225); return false">Edit</a></span></li>
@@ -588,10 +572,6 @@
 
                                     <div id="customer-address-form">
                                         <form method="post" action="/account/addresses/32477577225" id="address_form_32477577225" accept-charset="UTF-8"><input type="hidden" value="customer_address" name="form_type"><input type="hidden" name="utf8" value="✓">
-
-
-
-
 
                                             <div class="form-group">
                                                 <label for="address_first_name_32477577225" class="col-md-2 control-label">First Name</label>
@@ -908,7 +888,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="">
+                                            <div class="account-label">
                                                 <div class="checkbox">
                                                     <label>
                                                         <input type="checkbox" id="address_default_address_32477577225" name="address[default]" value="1"> Set as Default Address?
@@ -917,13 +897,11 @@
                                             </div>
 
                                             <div class="">
-                                                <input class="btn btn-primary" type="submit" value="Update Address">
+                                                <input class="btn-brand-account-inverted" type="submit" value="Update Address">
                                                 <span class="note">or <a href="#" onclick="Shopify.CustomerAddress.toggleForm(32477577225); return false;">Cancel</a></span>
                                             </div>
                                             <input type="hidden" name="_method" value="put"></form>
                                     </div>
-
-
                                 </div>
                             </div>
 

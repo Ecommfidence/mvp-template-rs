@@ -120,16 +120,16 @@
 
                     <form class="navbar-form" action="/search">
                         <div class="input-group">
-                            <input type="search" name="q" class="form-control nav-search-bar search-bar" autocomplete="off" placeholder="Search and Hit Enter..." value="{{ search.terms }}">
-
+                            <span class="header-search">
+                                <input type="search" name="q" class="form-control nav-search-bar search-bar" autocomplete="off" placeholder="Search and Hit Enter..." value="" spellcheck="false" dir="auto">
+                            </span>
                             <span class="input-group-btn search-btn-grp">
-                                <button class="btn btn-default search-btn" type="submit">
+                                <button class="btn btn-default search-btn" type="submit" style="">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </button>
                             </span>
-
                             <span class="input-group-btn">
-                                    <i class='fa nav-search-fa fa-search' aria-hidden='true'></i>
+                                    <i class="fa nav-search-fa fa-search" aria-hidden="true"></i>
                             </span>
                         </div>
                     </form>
@@ -253,8 +253,8 @@
                                     <div class="form-actions pull-right text-right col-sm-4 col-md-3">
                                         <div class="product-price"><small style="color:black;">Sub-total</small> <span style="color:black;" class="money">$29.99&nbsp;USD</span></div>
 
-                                        <input type="submit" id="update-cart" name="update" value="Update" class="btn btn-primary btn-block">
-                                        <input type="submit" name="checkout" value="Checkout" class="btn checkout-btn btn-primary btn-block">
+                                        <input type="submit" id="update-cart" name="update" value="Update" class="btn btn-brand-account">
+                                        <input type="submit" name="checkout" value="Checkout" class="btn btn-brand-default checkout-btn">
 
                                         <div class="additional-checkout-buttons">
                                             <span class="text-muted">or</span>

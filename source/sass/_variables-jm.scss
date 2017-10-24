@@ -10,30 +10,30 @@ $color-cart-button: #06192e;
 
 $color-brand-primary-nav: #65c402;
 
+$color-brand-body-color: #FFF;
+
+/* Button Variables */
 
 $btn-brand-font-weight:500;
 $font-size-brand-base:16px;
 $font-button-letter-spacing: 4px;
 
 $button-brand-primary-text: #FFF;
-$color-brand-body-color: #FFF;
 
 /* Body Text Color */
 $color-light-text: #FFF;
 $color-light-p-text: #DDD;
-
-
-
 
 $color-link-hover: $color-brand-primary-nav;
 
 $dropdown-link-hover-color: #000;
 $dropdown-link-hover-bg: #000;
 
-
 $brand-h2-heading-color: $color-brand-primary;
 $brand-h2-heading-light-color: #FFF;
 $brand-h2-sub-heading-color: #000;
+
+/* Blog and News Colors */
 
 $color-news-date: #FFF;
 $color-news-article-date: #65c402;
@@ -48,11 +48,13 @@ $btn-light-bg: #fff;
 $btn-light-border: #fff;
 
 $color-brand-light-gray:#CCC;
+$color-brand-mid-gray: #777;
+$color-brand-dark-gray: #202020;
+$color-brand-black: #000;
 
 $btn-dark-color: #FFF;
 $btn-dark-bg: #000;
 $btn-dark-border: #000;
-
 
 $dropdown-link-color: #fff;
 $border-radius-base: 3px;
@@ -63,53 +65,58 @@ $dropdown-bg: #fff !default;
 
 $font-size-base: 14px !default;
 
-$padding-base-vertical: 6px !default;
-$padding-base-horizontal: 12px !default;
-
-$padding-large-vertical: 10px !default;
-$padding-large-horizontal: 16px !default;
-
-$padding-small-vertical: 5px !default;
-$padding-small-horizontal: 10px !default;
-
-$padding-xs-vertical: 1px !default;
-$padding-xs-horizontal: 5px !default;
-
-$line-height-large: 1.33 !default;
-$line-height-small: 1.5 !default;
-
-$border-radius-base: 4px !default;
-$border-radius-large: 6px !default;
-$border-radius-small: 3px !default;
-
-
 
 /* Typography Mixin */
 
 $font-family-work-sans:       'Work Sans', sans-serif !default;
 $font-family-bebas:           'Bebas Neue' !default;
-$font-family-bebas-bold:           'Bebas Neue Bold';
+$font-family-bebas-bold:      'Bebas Neue Bold' !default;
+$font-family-big-noodle:      'BigNoodleTitling' !default;
+$font-family-din-cond:        'DIN Cond' !default;
+$font-family-din-bold:        'DIN Bold' !default;
+$font-family-din-lt-cond:     'DIN LtCon' !default;
+$font-family-din-bd-cond:     'DIN BdCon' !default;
+$font-family-din-md-cond:     'DIN MdCon' !default;
+$font-family-din-lt:          'DIN Lt' !default;
+$font-family-helvetica-neue:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 $main-template-font:          $font-family-work-sans;
-$thumbnail-caption-padding:    9px !default;
-$font-slider-titles:          'Bebas Neue Bold' !default;
-$font-product-info-overlay:   'DIN MdCon' !default;
+$font-slider-titles:          $font-family-bebas-bold;
+$font-product-info-overlay:   $font-family-din-md-cond;
+
+
+
+/*eCommerce Store, Accounts, Rewards */
+
+$font-family-account-main:    $font-family-work-sans;
+$font-family-account-secondary: $font-family-big-noodle;
+$color-account-bg:            #f9f7f6;
+$font-family-account-labels:  $font-family-helvetica-neue;
+
+
 
 $font-main-brand:             $font-family-bebas-bold;
 $font-main-buttons:           $font-family-work-sans;
 $font-main-text:              $font-family-work-sans;
 
+$font-brand-button-tertiary:  $font-family-bebas;
+
 $font-blog-date:              $font-family-bebas;
-$font-secondary-buttons:      "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-slider-buttons:         "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-account-buttons:        'BigNoodleTitling';
-$font-secondary-h2:           'BigNoodleTitling';
+$font-secondary-buttons:      $font-family-helvetica-neue;
+$font-slider-buttons:         $font-family-helvetica-neue;
+$font-account-buttons:        $font-family-big-noodle;
+$font-secondary-h2:           $font-family-big-noodle;
 $font-main-nav:               $font-family-bebas;
-$font-sub-title-secondary:    'DIN Lt';
+$font-sub-title-secondary:    $font-family-din-lt;
 $color-sub-title-secondary:   $color-brand-primary;
 
 
+/* Paddings and Margins */
+$thumbnail-caption-padding:    9px !default;
+
+
 /* Newsletter Styles */
-$font-newsletter-input:    'DIN Bold';
+$font-newsletter-input:    $font-family-din-bold;
 $color-newsletter-input-border: #BBB;
 $placeholder-text-color: $color-newsletter-input-border;
 $color-newsletter-button-bg: $color-brand-primary;
@@ -118,7 +125,7 @@ $logo-height: 33px;
 $logo-width: auto;
 
 /* Countdown Styles */
-$font-countdown-number: 'DIN Cond';
+$font-countdown-number: $font-family-din-cond;
 $font-countdown-title: $font-family-bebas;
 
 /* Main Slider Variables */
@@ -128,12 +135,6 @@ $font-slider-text-shadow-secondary: none; /* -2px 0px 20px rgba(0, 0, 0, 1) */
 
 $color-slider-titles:         $color-brand-primary;
 $color-slider-titles-dark:    #FFF;
-
-
-$font-account-buttons:        'BigNoodleTitling';
-$font-secondary-h2:           'BigNoodleTitling';
-$font-main-nav:               $font-family-bebas;
-
 
 
 /*Font Sizes */
@@ -152,7 +153,6 @@ $font-size-nav-icons:            $font-size-nav-sm - 2px;
 
 $width-site:                  1200px;
 
-
 $skw-border-width:3px;
 $skw-buttons-padding: 0 30px;
 $skw-font: $font-family-bebas-bold;
@@ -162,13 +162,9 @@ $skw-text-padding:3px;
 $color-slider-radio: #aaa;
 $color-slider-radio-active: #fff;
 
-
-
 $color-stats-bg: $color-brand-primary;
 $color-stats-value: #fff;
 $color-stats-title-value: #ccc;
-
-
 
 $overlay-img-bg:'https://cdn.shopify.com/s/files/1/0535/3409/files/Blue-Hero-min.jpg?14462823438105375394';
 /* Home Page Owl News */
@@ -179,7 +175,22 @@ $owl-img-4: 'https://cdn.shopify.com/s/files/1/2292/0769/t/2/assets/news_4.jpg?4
 $owl-pos: default !default;
 $owl-size: default !default;
 
+/* Media Pages */
+$media-bg-img:'https://cdn.shopify.com/s/files/1/2292/0769/files/9.21.17-JM95-Website-Desktop-Media-BackgroundImage-01.jpg?15336542491135157682';
+$media-gallery-bg-img:'https://cdn.shopify.com/s/files/1/2292/0769/files/9.21.17-JM95-Website-Desktop-Media-BackgroundImage-01.jpg?15336542491135157682';
+$media-bg-img-size: contain;
+$media-gallery-bg-img-size: contain;
 
+$media-wrap-bg-color: #282828;
+
+$media-gallery-columns-lg: 4;
+$media-gallery-columns-md: 3;
+$media-gallery-columns-sm: 2;
+$media-gallery-columns-xs: 1;
+$media-gallery-column-gap: 0px;
+
+/* Rewards */
+$rewards-login-bg-img: 'https://cdn.shopify.com/s/files/1/0259/2151/files/RS25-LoginBox.jpg?6441389875070774912';
 
 /* Main Background Image on Product Slider */
 $main-bg-img:'https://cdn.shopify.com/s/files/1/2292/0769/files/9.19.17-JM95-Website-Desktop-Apparel-01.jpg?12061983155472766960';

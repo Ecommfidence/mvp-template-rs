@@ -62,6 +62,14 @@
 
 }
 
+@mixin animation-mixin ( $property:all, $length:0.3, $ease:ease-out, $delay:0.1) {
+
+    -webkit-transition: $property $length+s $ease $delay+s;
+    -moz-transition: $property $length+s $ease $delay+s;
+    -o-transition: $property $length+s $ease $delay+s;
+    transition: $property $length+s $ease $delay+s;
+}
+
 // Button variants
 //
 // Easily pump out default styles, as well as :hover, :focus, :active,

@@ -74,7 +74,7 @@
 <body class="page-shipping-information template-page  has-cart has-prices has-top-navbar has-fixed-top-navbar has-footer banner-window-width thumbnails-cropped thumbnail-layout-ordered  is-sold-out"
       ng-app="Athlete"> <!--<![endif]-->
 
-<div class="wrap">
+<div class="wrap style-guide-ui">
     <div class="sticky-top black-bg">
         <div class="menu-container row">
 
@@ -127,16 +127,16 @@
 
                     <form class="navbar-form" action="/search">
                         <div class="input-group">
-                            <input type="search" name="q" class="form-control nav-search-bar search-bar" autocomplete="off" placeholder="Search and Hit Enter..." value="{{ search.terms }}">
-
+                            <span class="header-search">
+                                <input type="search" name="q" class="form-control nav-search-bar search-bar" autocomplete="off" placeholder="Search and Hit Enter..." value="" spellcheck="false" dir="auto">
+                            </span>
                             <span class="input-group-btn search-btn-grp">
-                                <button class="btn btn-default search-btn" type="submit">
+                                <button class="btn btn-default search-btn" type="submit" style="">
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </button>
                             </span>
-
                             <span class="input-group-btn">
-                                    <i class='fa nav-search-fa fa-search' aria-hidden='true'></i>
+                                    <i class="fa nav-search-fa fa-search" aria-hidden="true"></i>
                             </span>
                         </div>
                     </form>
@@ -194,21 +194,33 @@
         <section id="page-wrap" class="section-wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 text-center" style="background-color:#efefef;padding:20px;margin:20px auto;">
+                    <div class="col-sm-12 text-center light-bg">
                         <h2>Style Guide</h2>
                         <p>The purpose of this style guide is to provide a place that lists all styles and functionality of this theme.</p>
                     </div>
-                    <div class="col-sm-12 text-center" style="background-color:#efefef;padding:20px;margin:20px auto;">
-                        <h2>Buttons</h2>
-                    </div>
-                    <div class="col-sm-6" style="padding-bottom:2em;">
-                        <h2>Default</h2>
+                </div>
+
+
+                <!--Buttons-->
+                <div class="row style-block">
+                    <h3 class="style-guide-heading"> 1: Buttons</h3>
+
+
+                    <div id="col-box-1" class="col-sm-6" style="padding-bottom:2em;">
+                        <h4 class="style-guide-sub-heading">Default</h4>
                         <p>Normal</p><a href="#" class="btn-brand-default">btn-brand-default</a><br/>
                         <p>Solid White</p>
-                        <a href="#" class="btn-brand-default btn-light">Solid White</a>  <a href="#" class="btn-brand-default btn-light btn-brand-sm ">Solid White SM</a><br/>
-                        <p>Inverted</p><a href="#" class="btn-brand-default btn-brand-inverse">btn-brand-default btn-brand-inverse</a><br/>
-                        <p>Double Brand Colors</p><a href="#" class="btn-brand-default btn-brand-double">btn-brand-default btn-brand-double</a><br/>
-                        <p>Double Brand Colors Inverted</p><a href="#" class="btn-brand-default btn-brand-double inverted">btn-brand-default btn-brand-double inverted</a><br/>
+                        <a href="#" class="btn-brand-default btn-light">Solid White</a>
+                        <a href="#" class="btn-brand-default btn-light btn-brand-sm ">Solid White SM</a><br/>
+
+                        <p>Inverted</p>
+                        <a href="#" class="btn-brand-default btn-brand-inverse">btn-brand-default btn-brand-inverse</a><br/>
+
+                        <p>Double Brand Colors</p>
+                        <a href="#" class="btn-brand-default btn-brand-double">btn-brand-default btn-brand-double</a><br/>
+
+                        <p>Double Brand Colors Inverted</p>
+                        <a href="#" class="btn-brand-default btn-brand-double inverted">btn-brand-default btn-brand-double inverted</a><br/>
 
                         <p>Small Version</p>
                         <a href="#" class="btn-brand-default btn-brand-sm">btn-brand-default btn-brand-sm</a><br/>
@@ -242,15 +254,15 @@
                         Add Checkout Buttons
 
                     </div>
-                    <div class="col-sm-6 dark-block" style="background-color:#000; color:#fff;padding-bottom:2em;">
-                        <h2>Dark</h2>
+                    <div class="col-sm-6 dark-block black-bg-block">
+                        <h4 class="style-guide-sub-heading">Dark</h4>
 
-                            <p>Normal</p>
-                            <a href="#" class="btn-brand-default">btn-brand-default </a><br/>
-                            <p>Solid White</p>
-                            <a href="#" class="btn-brand-default btn-light">Solid White</a>  <a href="#" class="btn-brand-default btn-light btn-brand-sm ">Solid White SM</a><br/>
-                            <p>Inverted</p>
-                            <a href="#" class="btn-brand-default btn-brand-inverse">btn-brand-default btn-brand-inverse</a><br/>
+                        <p>Normal</p>
+                        <a href="#" class="btn-brand-default">btn-brand-default </a><br/>
+                        <p>Solid White</p>
+                        <a href="#" class="btn-brand-default btn-light">Solid White</a>  <a href="#" class="btn-brand-default btn-light btn-brand-sm ">Solid White SM</a><br/>
+                        <p>Inverted</p>
+                        <a href="#" class="btn-brand-default btn-brand-inverse">btn-brand-default btn-brand-inverse</a><br/>
                         <p>Double Brand Colors</p><a href="#" class="btn-brand-default btn-brand-double">btn-brand-default btn-brand-double</a><br/>
                         <p>Double Brand Colors Inverted</p><a href="#" class="btn-brand-default btn-brand-double inverted">btn-brand-default btn-brand-double inverted</a><br/>
 
@@ -266,7 +278,7 @@
 
 
                         <p>Others</p>
-                            <a href="#" class="btn-brand-default btn-brand-secondary btn-brand-sm">btn-brand-default btn-secondary</a><br/>
+                        <a href="#" class="btn-brand-default btn-brand-secondary btn-brand-sm">btn-brand-default btn-secondary</a><br/>
 
                         <p>Article Pagination</p>
                         <div class="article-nav text-left">
@@ -281,20 +293,31 @@
                         </div>
 
                     </div>
-                    <div class="col-sm-12 text-center" style="background-color:#efefef;padding:20px;margin:20px auto;">
-                        <h2>Typography</h2>
+                </div>
+
+                <!--Typography-->
+
+                <div class="row style-block">
+                        <h3 class="style-guide-heading">2: Typography</h3>
+                    <div class="col-sm-12"> <h4 class="style-guide-sub-heading">Main Fonts</h4></div>
+                    <div class="col-sm-6">
+
+                        <p class="font-style-guide font-1">font-main-brand - Bebas Neue</p>
+                        <p class="font-style-guide font-2">font-main-brand - Bebas Neue Bold</p>
+                        <p class="font-style-guide font-3">BigNoodleTitling</p>
+                        <p class="font-style-guide font-4">DIN Cond</p>
+                        <p class="font-style-guide font-5">DIN Bold</p>
+                        <p class="font-style-guide font-6">DIN LtCon</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="font-style-guide font-7">DIN BdCon</p>
+                        <p class="font-style-guide font-8">DIN MdCon</p>
+                        <p class="font-style-guide font-9">DIN Lt</p>
+                        <p class="font-style-guide font-10">Work Sans</p>
+                        <p class="font-style-guide font-11">Helvetica Neue</p>
                     </div>
                     <div class="col-sm-12">
-                        <p><strong>Fonts</strong></p>
-                        <p style="font-family:'Bebas Neue';font-size:30px;">font-main-brand - Bebas Neue</p>
-                        <p style="font-family:'BigNoodleTitling';font-size:30px;">BigNoodleTitling</p>
-                        <p style="font-family:'DIN Cond';font-size:30px;">DIN Cond</p>
-                        <p style="font-family:'DIN Bold';font-size:30px;">DIN Bold</p>
-                        <p style="font-family:'DIN LtCon';font-size:30px;">DIN LtCon</p>
-                        <p style="font-family:'DIN BdCon';font-size:30px;">DIN BdCon</p>
-                        <p style="font-family:'DIN MdCon';font-size:30px;">DIN MdCon</p>
-                        <p style="font-family:'DIN Lt';font-size:30px;">DIN Lt</p>
-                        <hr />
+                        <h4 class="style-guide-sub-heading">Headings</h4>
                         <h1>This is a Heading Tag H1</h1>
                         <h2>This is a Heading Tag H2</h2>
                         <h3>This is a Heading Tag H3</h3>
@@ -310,17 +333,17 @@
                         <h2 class="sub-title lh-60">SUB TITLES</h2>
 
                         <div class="col-sm-12 " style="border:2px solid black; padding:20px;margin:20px auto;">
-                        <p><strong>Paragraph Style Default</strong></p>
-                        <p>Blanket Coverage, the Richard Sherman Family Foundation, was formed in 2013 by Richard
-                            Sherman to provide students in low-income communities with school supplies and clothing
-                            so they can more adequately achieve their goals.</p>
+                            <p><strong>Paragraph Style Default</strong></p>
+                            <p>Blanket Coverage, the Richard Sherman Family Foundation, was formed in 2013 by Richard
+                                Sherman to provide students in low-income communities with school supplies and clothing
+                                so they can more adequately achieve their goals.</p>
 
-                        <p>Since forming Blanket Coverage, Richard Sherman and the Blanket Coverage team have made it
-                            their mission to provide school supplies for students across America. Richard has visited
-                            several elementary and high schools, speaking to the student body on making the world a
-                            better place than when they entered it.</p>
+                            <p>Since forming Blanket Coverage, Richard Sherman and the Blanket Coverage team have made it
+                                their mission to provide school supplies for students across America. Richard has visited
+                                several elementary and high schools, speaking to the student body on making the world a
+                                better place than when they entered it.</p>
 
-                        <a href="#" class="btn-brand-default">btn-brand-default</a>
+                            <a href="#" class="btn-brand-default">btn-brand-default</a>
                         </div>
 
 
@@ -341,47 +364,109 @@
                         </div>
 
                     </div>
-<style>
+                </div>
+                <!--Colours-->
+                <div class="row style-block">
+
+                        <h3 class="style-guide-heading">Colors</h3>
+
+
+                    <div class="col-sm-12">
+
+                        <h3>Main Colors</h3>
+                        <div class="col-sm-2 col-xs-6 text-center">
+                            <div class="color-swatch color-brand-primary"></div>
+                            <p>color-brand-primary</p>
+                        </div>
+                        <div class="col-sm-2 col-xs-6 text-center">
+                            <div class="color-swatch color-brand-secondary"></div>
+                            <p>color-brand-secondary</p>
+                        </div>
+                        <div class="col-sm-2 col-xs-6 text-center">
+                            <div class="color-swatch color-cart-button"></div>
+                            <p>color-cart-button</p>
+                        </div>
+                        <div class="col-sm-2 col-xs-6 text-center">
+                            <div class="color-swatch color-brand-primary-nav"></div>
+                            <p>color-brand-primary-nav</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3>Grays</h3>
+
+                            </div>
+                            <div class="col-sm-2 col-xs-6 text-center">
+                                <div class="color-swatch color-brand-light-gray"></div>
+                                <p>color-brand-light-gray</p>
+                            </div>
+                            <div class="col-sm-2 col-xs-6 text-center">
+                                <div class="color-swatch color-brand-mid-gray"></div>
+                                <p>color-brand-mid-gray</p>
+                            </div>
+                            <div class="col-sm-2 col-xs-6 text-center">
+                                <div class="color-swatch color-brand-dark-gray"></div>
+                                <p>color-brand-dark-gray</p>
+                            </div>
+                            <div class="col-sm-2 col-xs-6 text-center">
+                                <div class="color-swatch color-brand-black"></div>
+                                <p>color-brand-black</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3>Button Color Variables</h3>
+
+                            </div>
+                            <div class="col-sm-2 col-xs-6 text-center">
+                                <div class="color-swatch button-brand-primary-text"></div>
+                                <p>button-brand-primary-text</p>
+                            </div>
+                            <div class="col-sm-2 col-xs-6 text-center">
+                                <div class="color-swatch color-light-text"></div>
+                                <p>color-light-text</p>
+                            </div>
+
+                            <div class="col-sm-2 col-xs-6 text-center">
+                                <div class="color-swatch color-light-p-text"></div>
+                                <p>color-light-p-text</p>
+                            </div>
 
 
 
-</style>
-                    <div class="col-sm-12 text-center" style="background-color:#efefef;padding:20px;margin:20px auto;">
-                        <h2>Colors</h2>
-                    </div>
-                    <div class="col-sm-2 text-center">
-                        <div class="color-swatch swatch-1"></div>
-                        <p>color-brand-primary</p>
-                    </div>
-                    <div class="col-sm-2 text-center">
-                        <div class="color-swatch swatch-2"></div>
-                        <p>color-brand-secondary</p>
-                    </div>
-                    <div class="col-sm-2 text-center">
-                        <div class="color-swatch swatch-3"></div>
-                        <p>color-cart-button</p>
-                    </div>
-                    <div class="col-sm-2 text-center">
-                        <div class="color-swatch swatch-4"></div>
-                        <p>brand-h2-heading-color</p>
-                    </div>
 
-                    <div class="col-sm-12 text-center" style="background-color:#efefef;padding:20px;margin:20px auto;">
-                        <h2>Form Elements</h2>
+                        </div>
+
                     </div>
+                </div>
+
+                <!--Form Elements-->
+                <div class="row style-block">
+                    <h3 class="style-guide-heading">Form Elements</h3>
                     <div class="col-sm-12">
                         Inputs, Labels, Form Controls, Buttons
                     </div>
-
-                    <div class="col-sm-12 text-center" style="background-color:#efefef;padding:20px;margin:20px auto;">
-                        <h2>eCommerce Styles</h2>
-                    </div>
+                </div>
+                <!--eCommerce Styles-->
+                <div class="row style-block">
+                    <h3 class="style-guide-heading">eCommerce Styles</h3>
                     <div class="col-sm-12">
                         Account, Login, Signup, Cart, Checkout
                     </div>
-                    <div class="col-sm-12 text-center" style="background-color:#efefef;padding:20px;margin:20px auto;">
-                        <h2>Modules</h2>
-                    </div>
+                </div>
+
+                <!--Banner Ads-->
+                <div class="row style-block">
                     <div class="col-sm-12">
                         <p>Owl News Module: Banners</p>
                         <div id="banner-owl">
@@ -414,12 +499,18 @@
 
 
                     </div>
+                </div>
+
+                <!--Modules-->
+                <div class="row style-block">
+                    <h3 class="style-guide-heading">Modules</h3>
+
                     <div class="col-sm-12">
                         eNewsletter, Countdown, Schedule, Rewards
                     </div>
 
-
                 </div>
+
             </div>
         </section>
     </div>

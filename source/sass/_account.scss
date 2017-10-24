@@ -3,7 +3,7 @@
 /* TODO Make this background color a variable for account pages */
 .template-customers-login, .template-customers-account, .template-customers-register{
   #content {
-    background: #f9f7f6;
+    background: $color-account-bg;
   }
 }
 
@@ -19,93 +19,101 @@
   vertical-align: top;
 }
 
-.input__field--ichiro {
-  position: relative;
-  display: block;
-  float: right;
-  padding: 0.8em;
-  width: 60%;
-  border: none;
-  border-radius: 0;
-  background: #f0f0f0;
-  color: #aaa;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-appearance: none; /* for box shadows to show on iOS */
+.input__field {
+  &--ichiro {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 0.8em;
+    width: 60%;
+    border: none;
+    border-radius: 0;
+    background: #f0f0f0;
+    color: #aaa;
+    font-weight: bold;
+    font-family: $font-family-helvetica-neue;
+    -webkit-appearance: none; /* for box shadows to show on iOS */
 
-  &:focus {
-    outline: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  &--ichiro {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 100;
+    display: block;
+    padding: 0 0.55em;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background: #f0f0f0;
+    color: #7F8994;
+    opacity: 0;
+    -webkit-transform: scale3d(1, 0, 1);
+    transform: scale3d(1, 0, 1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
   }
 }
+/* Used on Address.html */
 
-.input__label--ichiro {
-  display: inline-block;
-  float: right;
-  padding: 0 1em;
-  width: 40%;
-  color: #6a7989;
-  font-weight: bold;
-  font-size: 13px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.account-label{
+  margin-bottom:15px;
 }
 
-.input__label-content--ichiro {
-  position: relative;
-  display: block;
-  padding: 1.6em 0;
-  width: 100%;
-}
 
-.input__field--ichiro {
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  z-index: 100;
-  display: block;
-  padding: 0 0.55em;
-  width: calc(100% - 8px);
-  height: calc(100% - 8px);
-  background: #f0f0f0;
-  color: #7F8994;
-  opacity: 0;
-  -webkit-transform: scale3d(1, 0, 1);
-  transform: scale3d(1, 0, 1);
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s;
-}
 
-.input__label--ichiro {
-  width: 100%;
-  text-align: left;
-  cursor: text;
-}
+.input__label{
+  font-family:$font-family-account-labels;
+  &--ichiro {
+    display: inline-block;
+    float: right;
+    padding: 0 1em;
+    width: 40%;
+    color: #6a7989;
+    font-weight: bold;
+    font-size: 13px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  &-content--ichiro {
+    position: relative;
+    display: block;
+    padding: 1.6em 0;
+    width: 100%;
+  }
+  &--ichiro {
+    width: 100%;
+    text-align: left;
+    cursor: text;
 
-.input__label--ichiro::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-}
-
-.input__label-content--ichiro {
-  -webkit-transform-origin: 0% 50%;
-  transform-origin: 0% 50%;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: transform 0.3s;
+    }
+  }
+  &-content--ichiro {
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+  }
 }
 
 .input__field--ichiro:focus,
@@ -133,6 +141,8 @@
   transform: translate3d(0, -3.15em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
 }
 
+
+
 .has-error .form-control:focus,
 .form-control,
 .form-control:focus {
@@ -144,29 +154,18 @@
   box-shadow: none;
 }
 
-#login_email,
-#login_password {
-  text-align: center;
-  padding: 0;
-}
 
+/* Login Form */
 #customer-login-form {
   padding: 0 15px;
 }
 
+/* Not Used */
 .shopify-challenge__container {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   margin: 50px auto !important;
   .btn {
-    padding: 5px;
-    width: 100px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'BigNoodleTitling';
-    font-size: 22px;
-    letter-spacing: 1px;
-    border-radius: 0;
-    border: 0;
+    @extend .btn-brand-account;
     color: #fff;
     background: $color-brand-primary;
     &:hover {
@@ -175,132 +174,73 @@
   }
 }
 
+/* Not Used */
 .def-btn {
-  padding: 5px;
-  width: 100px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'BigNoodleTitling';
-  font-size: 22px;
-  letter-spacing: 1px;
-  border-radius: 0;
-  border: 0;
+  @extend .btn-brand-account;
   margin-left: 15px;
   &:hover {
     background: $color-brand-primary;
   }
 }
 
-
+/* Login Page Only */
 .form-wrapper-horizontal #customer-login-form form #login_password {
   margin-left: 15px;
 }
 .form-wrapper-horizontal #customer-login-form #forgotten-password-link {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
 }
 .form-wrapper-horizontal #customer-login-form form .form-group.sign-in-div {
   .btn {
-    padding: 5px;
-    width: 100px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'BigNoodleTitling';
-    font-size: 22px;
-    letter-spacing: 1px;
-    border-radius: 0;
-    border: 0;
+    @extend .btn-brand-account;
     &:hover {
       background: $color-cart-button;
     }
   }
 }
 .reset-btn .btn {
-  padding: 5px;
-  width: 100px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'BigNoodleTitling';
-  font-size: 22px;
-  letter-spacing: 1px;
-  border-radius: 0;
-  border: 0;
+  @extend .btn-brand-account;
   &:hover {
     background: $color-cart-button;
   }
 }
-.reg-btn .btn {
-  padding: 5px;
-  width: 100px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'BigNoodleTitling';
-  font-size: 22px;
-  letter-spacing: 1px;
-  border-radius: 0;
-  border: 0;
-  &:hover {
-    background: $color-cart-button;
-  }
-}
+
+
+/* Account Page Only */
 #customer_details {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
 }
-.action_add {
-  font-family: 'BigNoodleTitling';
-  a {
-    font-size: 22px;
-    padding: 10px 0;
-  }
-}
-.action_add {
-  font-family: 'BigNoodleTitling';
-}
+
+
+
+
+/* Addresses Only*/
 .customer_addresses {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
 }
+
+/* Addresses Only*/
 #customer-address-form {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   .form-control, .form-control:focus {
     border: 1px solid #000;
     margin-top: 5px;
   }
   .btn {
-    padding: 5px;
-    width: 150px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'BigNoodleTitling';
-    font-size: 22px;
-    letter-spacing: 1px;
-    border-radius: 0;
-    border: 0;
+    @extend .btn-brand-account;
     &:hover {
       background: $color-brand-primary;
     }
   }
 }
-#customer_logout_link {
-  padding: 5px;
-  width: 150px;
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'BigNoodleTitling';
-  font-size: 22px;
-  letter-spacing: 1px;
-  border-radius: 0;
-  border: 0;
-  background: $color-brand-primary;
-  color: #fff;
-  &:hover {
-    background: $color-brand-primary;
-  }
-}
+/* Addresses Only*/
 .form-wrapper-horizontal #customer-address-form form .control-label {
   text-align: left;
 }
+
+/* Not Used */
 .no-results {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
 }
 
 /* Customer */
@@ -371,115 +311,135 @@
 }
 
 
+#swell-bootstrap{
 
-#swell-bootstrap .rewards-templete h1,
-#swell-bootstrap .rewards-templete h2,
-#swell-bootstrap .rewards-templete h3,
-#swell-bootstrap .rewards-templete h4,
-#swell-bootstrap .rewards-templete h5,
-#swell-bootstrap .rewards-templete h6 {
-  letter-spacing: 0;
-  word-spacing: 0;
-  text-transform: capitalize;
-  padding: 5px 10px;
+  .rewards-templete{
+
+    h1, h2, h3, h4, h5, h6{
+      letter-spacing: 0;
+      word-spacing: 0;
+      text-transform: capitalize;
+      padding: 5px 10px;
+
+    }
+
+    .banner .img-responsive {
+      margin: 0;
+      min-height: 180px;
+    }
+    .container .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .caption{
+      h1 {
+        font-size: 36px;
+        color: #111144;
+        margin: 10px 0;
+        padding: 0;
+        opacity: 1;
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        background: transparent;
+      }
+      p {
+        font-size: 14px;
+        color: #111144;
+        opacity: 1;
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        background: transparent;
+      }
+    }
+
+    .point-circle{
+      background-color: #111144;
+
+      h2, p{
+        opacity: 1;
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        background: transparent;
+
+      }
+    }
+
+    .earn-section {
+      padding-top: 25px;
+    }
+    .rewards-page-campaigns-section-image {
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+    }
+    .redeem-section {
+      padding-top: 0;
+    }
+    .rewards-page-redeem-section-image {
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+    }
+
+    .banner{
+      overflow: inherit ;
+      position: relative ;
+      -webkit-background-size: cover ;
+      -moz-background-size: cover ;
+      -o-background-size: cover ;
+      background-size: cover ;
+
+      .caption{
+        width: 100% ;
+        text-align: center ;
+          h1, p{
+            font-family: $font-family-account-main;
+            text-transform: uppercase;
+            color: #000;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 20px;
+
+          }
+
+      }
+
+      .point-circle{
+        bottom: -63px ;
+        left: 0 ;
+        right: 0 ;
+        margin: 0 auto ;
+        border-radius: 100% ;
+        text-align: center ;
+        vertical-align: middle ;
+        width: 170px ;
+        height: 170px ;
+        font-size: 25px ;
+
+        h2{
+          font-size: 60px ;
+          margin: 30px 0 0 ;
+          line-height: 55px ;
+
+        }
+      }
+
+
+    }
+
+
+
+  } /* Rewards templete end */
 }
-#swell-bootstrap .rewards-templete .banner .img-responsive {
-  margin: 0;
-  min-height: 180px;
-}
-#swell-bootstrap .rewards-templete .container .row {
-  margin-right: 0;
-  margin-left: 0;
-}
-#swell-bootstrap .rewards-templete .caption h1 {
-  font-size: 36px;
-  color: #111144;
-  margin: 10px 0;
-  padding: 0;
-  opacity: 1;
-  float: none;
-  display: block;
-  width: 100%;
-  height: auto;
-  background: transparent;
-}
-#swell-bootstrap .rewards-templete .caption p {
-  font-size: 14px;
-  color: #111144;
-  opacity: 1;
-  float: none;
-  display: block;
-  width: 100%;
-  height: auto;
-  background: transparent;
-}
-#swell-bootstrap .rewards-templete .point-circle {
-  background-color: #111144;
-}
-#swell-bootstrap .rewards-templete .point-circle h2,
-#swell-bootstrap .rewards-templete .point-circle p {
-  opacity: 1;
-  float: none;
-  display: block;
-  width: 100%;
-  height: auto;
-  background: transparent;
-}
-#swell-bootstrap .rewards-templete .earn-section {
-  padding-top: 25px;
-}
-#swell-bootstrap .rewards-templete .rewards-page-campaigns-section-image {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-}
-#swell-bootstrap .rewards-templete .redeem-section {
-  padding-top: 0;
-}
-#swell-bootstrap .rewards-templete .rewards-page-redeem-section-image {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-}
-#swell-bootstrap .rewards-templete .banner {
-  overflow: inherit ;
-  position: relative ;
-  -webkit-background-size: cover ;
-  -moz-background-size: cover ;
-  -o-background-size: cover ;
-  background-size: cover ;
-}
-#swell-bootstrap .rewards-templete .banner .caption {
-  width: 100% ;
-  text-align: center ;
-}
-#swell-bootstrap .rewards-templete .banner .caption h1,
-#swell-bootstrap .rewards-templete .banner .caption p {
-  font-family: 'Work Sans', sans-serif;
-  text-transform: uppercase;
-  color: #000;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 20px;
-}
-#swell-bootstrap .rewards-templete .banner .point-circle {
-  bottom: -63px ;
-  left: 0 ;
-  right: 0 ;
-  margin: 0 auto ;
-  border-radius: 100% ;
-  text-align: center ;
-  vertical-align: middle ;
-  width: 170px ;
-  height: 170px ;
-  font-size: 25px ;
-}
-#swell-bootstrap .rewards-templete .banner .point-circle h2 {
-  font-size: 60px ;
-  margin: 30px 0 0 ;
-  line-height: 55px ;
-}
+
 #swell-bootstrap .rewards-templete .main-block .heading-holder {
   text-align: center ;
   margin: 0;
@@ -525,7 +485,7 @@
   padding: 3px 0 0 ;
 }
 #swell-bootstrap .rewards-templete .main-block .block-holder .item-box h3 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 18px;
@@ -538,7 +498,7 @@
   display: block;
   width: 130px;
   background: #65c402;
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -572,7 +532,7 @@
   background: transparent ;
 }
 #swell-bootstrap .rewards-templete .referral-block .share-link {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   color: #fff;
   font-weight: 500;
   font-size: 16px;
@@ -629,7 +589,7 @@
   background-color: #D9E1F6 ;
 }
 #swell-bootstrap .rewards-templete .block-holder .heading-holder h2 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   text-transform: uppercase;
   color: #000;
   font-size: 24px;
@@ -639,7 +599,7 @@
   margin-bottom: 10px;
 }
 #swell-bootstrap .rewards-templete .block-holder .heading-holder p {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   color: #000;
   font-weight: 500;
   font-size: 16px;
@@ -680,7 +640,7 @@
   display: flex;
 }
 .how-container .col-md-4 {
-  background-image: url('https://cdn.shopify.com/s/files/1/0259/2151/files/RS25-LoginBox.jpg?6441389875070774912');
+  background-image: url(#{$rewards-login-bg-img});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -695,7 +655,7 @@
   flex-direction: column;
 }
 #swell-bootstrap .how-container .col-md-4 .login-swell {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   text-transform: uppercase;
   color: #65c402;
   font-size: 18px;
@@ -703,7 +663,7 @@
   margin-bottom: 0;
 }
 .how-container .col-md-4 .earn-swell {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 18px;
@@ -716,7 +676,7 @@
   width: 130px;
   padding: 5px 0;
   background: #65c402;
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -727,11 +687,11 @@
 }
 #swell-bootstrap .how-container .col-md-4 .login-swell-btn:hover {
   background: #fff;
-  color: #06192e;
+  color: $color-cart-button;
   text-decoration: none;
 }
 #swell-bootstrap .how-container .col-md-4 .signup-swell-btn {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   color: #fff;
   font-weight: 500;
 }
@@ -775,14 +735,14 @@
   background-repeat: no-repeat;
 }
 #swell-bootstrap .give-container .col-md-8 .give-10 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   text-transform: uppercase;
   color: #65c402;
   font-size: 30px;
   font-weight: 500;
 }
 #swell-bootstrap .give-container .col-md-8 .refer-friends {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   color: #fff;
   font-weight: 500;
   font-size: 16px;
@@ -799,7 +759,7 @@
   width: 180px;
   padding: 5px 0;
   background: #65c402;
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -810,7 +770,7 @@
 }
 #swell-bootstrap .give-container .col-md-8 .ref-login:hover {
   background: #fff;
-  color: #06192e;
+  color: $color-cart-button;
   text-decoration: none;
 }
 #swell-bootstrap .give-container .col-md-8 .ref-reg {
@@ -820,7 +780,7 @@
   width: 180px;
   padding: 5px 0;
   background: #65c402;
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -831,7 +791,7 @@
 }
 #swell-bootstrap .give-container .col-md-8 .ref-reg:hover {
   background: #fff;
-  color: #06192e;
+  color: $color-cart-button;
   text-decoration: none;
 }
 #swell-bootstrap .rewards-templete .main-block .block-holder #redeem-options-region .item-box h2 {
@@ -859,7 +819,7 @@
   background-color: #4a8a15;
 }
 .you-have {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-account-main;
   text-transform: uppercase;
   color: #000;
   font-size: 36px;
@@ -871,6 +831,11 @@
 .you-have p {
   display: inline-block;
 }
+
+
+
+
+
 @media (max-width: 991px) {
   #swell-bootstrap .container.how-container {
     display: block;
@@ -935,4 +900,54 @@
   #swell-bootstrap .give-container .col-md-8 .give-10 {
     font-size: 24px;
   }
+}
+
+
+#swell-bootstrap .btn-earn-points{
+  @extend .btn-brand-account;
+}
+#swell-bootstrap .btn-earn-points:hover{
+  color: white;
+  background: $color-brand-primary;
+  text-decoration: none;
+}
+.rewards-templete .divider-text {
+  color: #FFFFFF;
+}
+.rewards-templete .referral-block .social-icon ul {
+  font-family: $font-family-account-main;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 !important;
+  margin: 20px 0 0 !important;
+  list-style: none !important;
+  text-align: center !important;
+}
+.rewards-templete .referral-block .social-icon ul li {
+  color: #777;
+  display: inline-block;
+  cursor: pointer !important;
+  margin: 0 10px;
+  -webkit-transition: all .3s ease-out 0.1s;
+  -moz-transition: all .3s ease-out 0.1s;
+  -o-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+.rewards-templete .referral-block .social-icon ul li i {
+  color: #777;
+  font-size: 24px !important;
+  margin-top: 13px !important;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+  -webkit-transition: all .3s ease-out 0.1s;
+  -moz-transition: all .3s ease-out 0.1s;
+  -o-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+.rewards-templete .referral-block .social-icon ul li:hover {
+  color: #65c402;
+}
+.rewards-templete .referral-block .social-icon ul li:hover i {
+  color: #65c402;
 }
