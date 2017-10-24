@@ -9396,6 +9396,10 @@ body.template-search #content {
 .template-customers-login #content, .template-customers-account #content, .template-customers-register #content {
   background: #f9f7f6; }
 
+#login_email, #login_password {
+  text-align: center;
+  padding: 0; }
+
 .input--ichiro {
   float: none;
   position: relative;
